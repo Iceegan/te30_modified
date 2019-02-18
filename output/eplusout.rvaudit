@@ -1,0 +1,13 @@
+ ReadVarsESO
+ processing:..\..\support\energyplus\SchoolDualController.rvi
+ input file:output\eplusout.eso
+ output file:output\eplusout.csv
+ getting all vars from:output\eplusout.eso
+  number variables requested for output=          35
+ ReadVars Run Time=00hr 00min  0.17sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:..\..\support\energyplus\SchoolDualController.mvi
+ Requested ESO file=output\eplusout.mtr
+ does not exist.  ReadVarsESO program terminated.
+ ReadVarsESO program terminated.

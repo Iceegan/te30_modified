@@ -1,0 +1,37 @@
+Program Version,EnergyPlus, Version 8.3.0-c243b2160b, YMD=2019.02.17 23:42,IDD_Version 8.3.0
+   ** Warning ** Output:PreprocessorMessage="Conversion 7.2 => 8.0" has the following Warning conditions:
+   **   ~~~   ** Boiler:HotWater="HeatSys1 Boiler"
+   **   ~~~   ** defaults for this object have changed. Results may be different than previous. See
+   **   ~~~   ** InputOutputReference document for details.
+   ** Warning ** Sizing:Parameters: note Timesteps in Averaging Window entered value=[6] is less than 1 hour (i.e., 12 timesteps).
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=USA IL-CHICAGO-OHARE
+   **   ~~~   ** ..Weather File Location=Tucson International Ap AZ USA TMY3 WMO#=722740
+   **   ~~~   ** ..due to location differences, Latitude difference=[9.64] degrees, Longitude difference=[23.20] degrees.
+   **   ~~~   ** ..Time Zone difference=[1.0] hour(s), Elevation difference=[308.95] percent, [587.00] meters.
+   ** Warning ** CheckUsedConstructions: There are 2 nominally unused constructions in input.
+   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ************* Beginning System Sizing Calculations
+   ************* Beginning Plant Sizing Calculations
+   ** Warning ** CalcTwoSpeedDXCoilStandardRating: Did not find a variable air volume fan associated with DX coil named = "PSZ-AC_2:7_COOLC DXCOIL". Standard Ratings will not be calculated.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ************* Simulation Error Summary *************
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 3 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 5 Warning; 0 Severe Errors; Elapsed Time=00hr 11min 15.33sec
