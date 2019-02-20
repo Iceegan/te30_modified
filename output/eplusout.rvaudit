@@ -4,7 +4,7 @@
  output file:output\eplusout.csv
  getting all vars from:output\eplusout.eso
   number variables requested for output=          35
- ReadVars Run Time=00hr 00min  0.17sec
+ ReadVars Run Time=00hr 00min  0.20sec
  ReadVarsESO program completed successfully.
  ReadVarsESO
  processing:..\..\support\energyplus\SchoolDualController.mvi

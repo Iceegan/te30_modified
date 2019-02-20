@@ -1,6 +1,7 @@
 import string;
 import sys
 import tesp_support.fncs as fncs
+import tesp_support.simple_auction as simple_auction
 if sys.platform != 'win32':
 	import resource
 
@@ -13,12 +14,13 @@ fncs.initialize()
 while time_granted < time_stop:
 	time_granted = fncs.time_request(time_stop)
 	events = fncs.get_events()
-	"""for topic in events:
+	for topic in events:
 		value = fncs.get_value(topic)
-		print (time_granted, topic, value, flush=True)
+		#print (time_granted, topic, value, flush=True)
 		if topic == 'refload':
-			if value > 1000:
-				fncs.publish('sw_status', 0)"""
+			if simple_auction.parse_fncs_magnitude(value) > 50000:
+				print (time_granted, "Refload too large! Opening switch", flush=True)
+				fncs.publish('sw_status', 0)
 
 fncs.finalize()
 

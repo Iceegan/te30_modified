@@ -233,6 +233,12 @@ object transformer {
 	configuration default_transformer_C;
 }
 
+//----------------------------------------------------------------------------
+//Pre-load meters
+
+
+//----------------------------------------------------------------------------
+
 object triplex_meter {
 	name F1_tpm_flatrate_B0;
 	groupid F1_flatrate_meter;

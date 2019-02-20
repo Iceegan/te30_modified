@@ -23,4 +23,4 @@ start /b cmd /c python testAgent.py 172800 ^>testRun.log 2^>^&1
 set FNCS_CONFIG_FILE=
 set FNCS_LOG_LEVEL=
 set FNCS_LOG_STDOUT=yes
-start /b cmd /c gridlabd -D USE_FNCS -D METRICS_FILE=TE_Challenge_metrics.json TE_Challenge.glm ^>gridlabd.log 2^>^&1
+start /b cmd /c gridlabd -D USE_FNCS -D METRICS_FILE=TE_Challenge_metrics.json TE_Challenge.glm & :: ^>gridlabd.log 2^>^&1
