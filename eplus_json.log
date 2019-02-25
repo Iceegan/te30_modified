@@ -12,6 +12,3 @@ aggregating heating_desired_temperature
 aggregating heating_power_state
 aggregating kwhr_price
 aggregating occupants_## into occupants_total
-last time_granted was 2880
-time_stop was 2880
-done

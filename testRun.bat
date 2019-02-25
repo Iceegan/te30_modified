@@ -17,10 +17,10 @@ start /b cmd /c eplus_json 2d 5m SchoolDualController eplus_TE_Challenge_metrics
 set FNCS_CONFIG_FILE=pypower30.yaml
 start /b cmd /c python -c "import tesp_support.api as tesp;tesp.pypower_loop('te30_pp.json','TE_Challenge')" ^>pypower.log 2^>^&1
 
-set FNCS_CONFIG_FILE=TE_Challenge_auction.yaml
-start /b cmd /c python testAgent.py 172800 ^>testRun.log 2^>^&1
+set FNCS_CONFIG_FILE=TE_Challenge_testAgent.yaml
+start /b cmd /c python testAgent.py 86400 ^>testRun.log 2^>^&1
 
 set FNCS_CONFIG_FILE=
 set FNCS_LOG_LEVEL=
 set FNCS_LOG_STDOUT=yes
-start /b cmd /c gridlabd -D USE_FNCS -D METRICS_FILE=TE_Challenge_metrics.json TE_Challenge.glm & :: ^>gridlabd.log 2^>^&1
+start /b cmd /c gridlabd -D USE_FNCS -D METRICS_FILE=TE_Challenge_metrics.json TE_Challenge.glm ^>gridlabd.log 2^>^&1

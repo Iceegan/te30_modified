@@ -8,7 +8,7 @@
 clock {
 	timezone PST+8PDT;
 	starttime '2013-07-01 00:00:00';
-	stoptime '2013-07-03 00:00:00';
+	stoptime '2013-07-02 00:00:00';
 }
 
 module climate;
@@ -235,7 +235,44 @@ object transformer {
 
 //----------------------------------------------------------------------------
 //Pre-load meters
+//object triplex_meter {
+//	name F1_pre_sw_A;
+//	phases SA;
+//	nominal_voltage 120;
+//}
 
+//object triplex_meter {
+//	name F1_pre_sw_B;
+//	phases SB;
+//	nominal_voltage 120;
+//}
+
+//object triplex_meter {
+//	name F1_pre_sw_C;
+//	phases SC;
+//	nominal_voltage 120;
+//}
+
+//object switch {
+//	phases "SA";
+//	name F1_sw_A;
+//	from F1_pre_sw_A;
+//	to F1_triplex_node_A;
+//}
+
+//object switch {
+//	phases "SB";
+//	name F1_sw_B;
+//	from F1_pre_sw_B;
+//	to F1_triplex_node_B;
+//}
+
+//object switch {
+//	phases "SC";
+//	name F1_sw_C;
+//	from F1_pre_sw_C;
+//	to F1_triplex_node_C;
+//}
 
 //----------------------------------------------------------------------------
 

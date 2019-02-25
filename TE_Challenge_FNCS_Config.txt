@@ -6,10 +6,6 @@ subscribe "precommit:Eplus_load.constant_power_C <- eplus_json/power_C";
 subscribe "precommit:Eplus_meter.bill_mode <- eplus_json/bill_mode";
 subscribe "precommit:Eplus_meter.price <- eplus_json/price";
 subscribe "precommit:Eplus_meter.monthly_fee <- eplus_json/monthly_fee";
-//Testing additions--------------------------------------------------------------------------------
-subscribe "precommit:sw_Eplus.status <- testAgent/eplus_sw_status";
-
-//End testing additions----------------------------------------------------------------------------
 publish "commit:F1_house_B0.air_temperature -> F1_house_B0/air_temperature";
 publish "commit:F1_house_B0.power_state -> F1_house_B0/power_state";
 publish "commit:F1_house_B0.hvac_load -> F1_house_B0/hvac_load";

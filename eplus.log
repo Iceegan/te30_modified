@@ -1,5 +1,5 @@
 EnergyPlus Starting
-EnergyPlus, Version 8.3.0-c243b2160b, YMD=2019.02.20 00:21
+EnergyPlus, Version 8.3.0-c243b2160b, YMD=2019.02.24 20:59
 Processing Data Dictionary
 Processing Input File
 Initializing Response Factors
@@ -186,12 +186,3 @@ Warming up {5}
 Warming up {6}
 Starting Simulation at 07/01 for Tucson International Ap AZ USA TMY3 WMO#=722740
 ExternalInterface starts first data exchange. (FNCS)
-Writing final SQL reports
- ReadVarsESO program starting.
- ReadVars Run Time=00hr 00min  0.20sec
- ReadVarsESO program completed successfully.
- ReadVarsESO program starting.
- Requested ESO file=output\eplusout.mtr
- does not exist.  ReadVarsESO program terminated.
- ReadVarsESO program terminated.
-EnergyPlus Run Time=00hr 07min  5.59sec
