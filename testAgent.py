@@ -18,6 +18,8 @@ fncs.initialize()
 while time_granted < time_stop:
 	time_granted = fncs.time_request(time_stop)
 	events = fncs.get_events()
+#Testing with Publishing on and off - likely will remove
+#-------------------------------------------------------------------------------
 	if (count == 100):
 		print(events)
 		print(time_granted, "Switching off AC in houses")
@@ -47,14 +49,11 @@ while time_granted < time_stop:
 		fncs.publish('F1_House_A9/system_mode', 'ON')
 		fncs.publish('F1_House_C10/system_mode', 'ON')
 	count = count+1
+#-------------------------------------------------------------------------------
 	#print(count)
 	for topic in events:
 		value = fncs.get_value(topic)
-		#print (time_granted, topic, value, flush=True)
-		if topic == 'refload':
-			if simple_auction.parse_fncs_magnitude(value) > 250000:
-				print (time_granted, "Refload too large! Opening switch. Value = ",simple_auction.parse_fncs_magnitude(value), flush=True)
-				fncs.publish('eplus_sw_status', 'OPEN')
+
 
 
 fncs.finalize()
