@@ -1,3 +1,37 @@
+//Changes to FNCS config - AC system 'ON' or 'OFF'
+//------------------------------------------------------------------------------
+subscribe "precommit:F1_house_B0.system_mode <- auction/F1_house_B0_hvac/system_mode";
+subscribe "precommit:F1_house_C1.system_mode <- auction/F1_house_C1_hvac/system_mode";
+subscribe "precommit:F1_house_C2.system_mode <- auction/F1_house_C2_hvac/system_mode";
+subscribe "precommit:F1_house_B3.system_mode <- auction/F1_house_B3_hvac/system_mode";
+subscribe "precommit:F1_house_B4.system_mode <- auction/F1_house_B4_hvac/system_mode";
+subscribe "precommit:F1_house_A5.system_mode <- auction/F1_house_A5_hvac/system_mode";
+subscribe "precommit:F1_house_B6.system_mode <- auction/F1_house_B6_hvac/system_mode";
+subscribe "precommit:F1_house_B7.system_mode <- auction/F1_house_B7_hvac/system_mode";
+subscribe "precommit:F1_house_A8.system_mode <- auction/F1_house_A8_hvac/system_mode";
+subscribe "precommit:F1_house_A9.system_mode <- auction/F1_house_A9_hvac/system_mode";
+subscribe "precommit:F1_house_C10.system_mode <- auction/F1_house_C10_hvac/system_mode";
+subscribe "precommit:F1_house_A11.system_mode <- auction/F1_house_A11_hvac/system_mode";
+subscribe "precommit:F1_house_A12.system_mode <- auction/F1_house_A12_hvac/system_mode";
+subscribe "precommit:F1_house_A13.system_mode <- auction/F1_house_A13_hvac/system_mode";
+subscribe "precommit:F1_house_C14.system_mode <- auction/F1_house_C14_hvac/system_mode";
+subscribe "precommit:F1_house_A15.system_mode <- auction/F1_house_A15_hvac/system_mode";
+subscribe "precommit:F1_house_A16.system_mode <- auction/F1_house_A16_hvac/system_mode";
+subscribe "precommit:F1_house_C17.system_mode <- auction/F1_house_C17_hvac/system_mode";
+subscribe "precommit:F1_house_C18.system_mode <- auction/F1_house_C18_hvac/system_mode";
+subscribe "precommit:F1_house_B19.system_mode <- auction/F1_house_B19_hvac/system_mode";
+subscribe "precommit:F1_house_B20.system_mode <- auction/F1_house_B20_hvac/system_mode";
+subscribe "precommit:F1_house_C21.system_mode <- auction/F1_house_C21_hvac/system_mode";
+subscribe "precommit:F1_house_B22.system_mode <- auction/F1_house_B22_hvac/system_mode";
+subscribe "precommit:F1_house_B23.system_mode <- auction/F1_house_B23_hvac/system_mode";
+subscribe "precommit:F1_house_B24.system_mode <- auction/F1_house_B24_hvac/system_mode";
+subscribe "precommit:F1_house_A25.system_mode <- auction/F1_house_A25_hvac/system_mode";
+subscribe "precommit:F1_house_A26.system_mode <- auction/F1_house_A26_hvac/system_mode";
+subscribe "precommit:F1_house_C27.system_mode <- auction/F1_house_C27_hvac/system_mode";
+subscribe "precommit:F1_house_A28.system_mode <- auction/F1_house_A28_hvac/system_mode";
+subscribe "precommit:F1_house_C29.system_mode <- auction/F1_house_C29_hvac/system_mode";
+//------------------------------------------------------------------------------
+//Default FNCS Config
 publish "commit:network_node.distribution_load -> distribution_load; 1000";
 subscribe "precommit:network_node.positive_sequence_voltage <- pypower/three_phase_voltage_B7";
 subscribe "precommit:Eplus_load.constant_power_A <- eplus_json/power_A";

@@ -1,61 +1,40 @@
 import string;
+import json
 import sys
 import tesp_support.fncs as fncs
 import tesp_support.simple_auction as simple_auction
 if sys.platform != 'win32':
 	import resource
 
+MAX_HVAC_TEMP = 85.0
+MAX_LOAD = 400000
+
 time_stop = int(sys.argv[1])
 time_granted = 0
-count = 0
+firstLoop = True
 
-# requires yaml specificied in an envar
+
+#establish list of hvac controllers for hvac monitoring
+dict_file = open("TE_Challenge_glm_dict.json").read()
+glm_dict = json.loads(dict_file)
+house_list = list(glm_dict['houses'].keys()) #need to add #
+
 fncs.initialize()
 
-#fncs.publish(sw_A_status, 'CLOSED')
-#fncs.publish(sw_B_status, 'CLOSED')
-#fncs.publish(sw_C_status, 'CLOSED')
 while time_granted < time_stop:
 	time_granted = fncs.time_request(time_stop)
+	#Default to on
+	if firstLoop:
+		firstLoop = False
+		for house in house_list:
+			fncs.publish(house + '_hvac/system_mode', 'ON')
+			print(house + '/system_mode set ON', flush = True)
 	events = fncs.get_events()
-#Testing with Publishing on and off - likely will remove
-#-------------------------------------------------------------------------------
-	if (count == 100):
-		print(events)
-		print(time_granted, "Switching off AC in houses")
-		fncs.publish('F1_House_B0/system_mode', 'OFF')
-		fncs.publish('F1_House_C1/system_mode', 'OFF')
-		fncs.publish('F1_House_C2/system_mode', 'OFF')
-		fncs.publish('F1_House_B3/system_mode', 'OFF')
-		fncs.publish('F1_House_B4/system_mode', 'OFF')
-		fncs.publish('F1_House_A5/system_mode', 'OFF')
-		fncs.publish('F1_House_B6/system_mode', 'OFF')
-		fncs.publish('F1_House_B7/system_mode', 'OFF')
-		fncs.publish('F1_House_A8/system_mode', 'OFF')
-		fncs.publish('F1_House_A9/system_mode', 'OFF')
-		fncs.publish('F1_House_C10/system_mode', 'OFF')
-	if (count == 300):
-		print(events)
-		print(time_granted, "Switching off AC in houses")
-		fncs.publish('F1_House_B0/system_mode', 'ON')
-		fncs.publish('F1_House_C1/system_mode', 'ON')
-		fncs.publish('F1_House_C2/system_mode', 'ON')
-		fncs.publish('F1_House_B3/system_mode', 'ON')
-		fncs.publish('F1_House_B4/system_mode', 'ON')
-		fncs.publish('F1_House_A5/system_mode', 'ON')
-		fncs.publish('F1_House_B6/system_mode', 'ON')
-		fncs.publish('F1_House_B7/system_mode', 'ON')
-		fncs.publish('F1_House_A8/system_mode', 'ON')
-		fncs.publish('F1_House_A9/system_mode', 'ON')
-		fncs.publish('F1_House_C10/system_mode', 'ON')
-	count = count+1
-#-------------------------------------------------------------------------------
-	#print(count)
 	for topic in events:
 		value = fncs.get_value(topic)
-
-
-
+		if topic == 'refload' and simple_auction.parse_fncs_magnitude(value) > MAX_LOAD:
+			for house in house_list:
+				fncs.publish(house + '_hvac/system_mode', 'OFF')
 fncs.finalize()
 
 if sys.platform != 'win32':
