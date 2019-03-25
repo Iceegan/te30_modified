@@ -6,35 +6,27 @@ import tesp_support.simple_auction as simple_auction
 if sys.platform != 'win32':
 	import resource
 
-MAX_HVAC_TEMP = 85.0
-MAX_LOAD = 400000
-
 time_stop = int(sys.argv[1])
 time_granted = 0
-firstLoop = True
 
-
-#establish list of hvac controllers for hvac monitoring
 dict_file = open("TE_Challenge_glm_dict.json").read()
 glm_dict = json.loads(dict_file)
-house_list = list(glm_dict['houses'].keys()) #need to add #
 
 fncs.initialize()
 
 while time_granted < time_stop:
 	time_granted = fncs.time_request(time_stop)
-	#Default to on
-	if firstLoop:
-		firstLoop = False
-		for house in house_list:
-			fncs.publish(house + '_hvac/system_mode', 'ON')
-			print(house + '/system_mode set ON', flush = True)
 	events = fncs.get_events()
 	for topic in events:
 		value = fncs.get_value(topic)
-		if topic == 'refload' and simple_auction.parse_fncs_magnitude(value) > MAX_LOAD:
-			for house in house_list:
-				fncs.publish(house + '_hvac/system_mode', 'OFF')
+		#can improve this by creating a set of all the relevant topics
+		#Check if topic is in the set
+		if ('batt' in topic and 'charge' in topic):
+			batt_num = topic.split('_')[1]
+			if simple_auction.parse_fncs_number(value) > 0.95:
+				fncs.publish('batt_' + batt_num + '_P_Out', 1000)
+				print('batt_', batt_num, '_P_Out', flush=True)
+
 fncs.finalize()
 
 if sys.platform != 'win32':

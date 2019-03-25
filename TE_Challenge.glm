@@ -1257,37 +1257,42 @@ object triplex_meter {
     interval 300;
   };
 }
-//-------------------------------End Houses-------------------------------------
+//-------------------------------End Lines-------------------------------------
 
-//-------------------------------Begin Solar------------------------------------
-
+//-------------------------Begin Battery----------------------------------------
 object triplex_meter {
-	name solar_F1_tpm_rt_B0;
+    name batt_F1_tpm_rt_B0;
 	parent F1_tpm_rt_B0;
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_B0;
+		name batt_inv_F1_house_B0;
 		phases BS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_B0;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_B0;
+			parent batt_inv_F1_house_B0;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1296,32 +1301,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_C1;
+    name batt_F1_tpm_rt_C1;
 	parent F1_tpm_rt_C1;
 	phases CS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_C1;
+		name batt_inv_F1_house_C1;
 		phases CS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_C1;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_C1;
+			parent batt_inv_F1_house_C1;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1330,32 +1341,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_C2;
+    name batt_F1_tpm_rt_C2;
 	parent F1_tpm_rt_C2;
 	phases CS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_C2;
+		name batt_inv_F1_house_C2;
 		phases CS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_C2;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_C2;
+			parent batt_inv_F1_house_C2;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1364,32 +1381,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_B3;
+    name batt_F1_tpm_rt_B3;
 	parent F1_tpm_rt_B3;
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_B3;
+		name batt_inv_F1_house_B3;
 		phases BS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_B3;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_B3;
+			parent batt_inv_F1_house_B3;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1398,32 +1421,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_B4;
+    name batt_F1_tpm_rt_B4;
 	parent F1_tpm_rt_B4;
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_B4;
+		name batt_inv_F1_house_B4;
 		phases BS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_B4;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_B4;
+			parent batt_inv_F1_house_B4;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1432,32 +1461,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_A5;
+    name batt_F1_tpm_rt_A5;
 	parent F1_tpm_rt_A5;
 	phases AS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_A5;
+		name batt_inv_F1_house_A5;
 		phases AS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_A5;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_A5;
+			parent batt_inv_F1_house_A5;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1466,32 +1501,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_B6;
+    name batt_F1_tpm_rt_B6;
 	parent F1_tpm_rt_B6;
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_B6;
+		name batt_inv_F1_house_B6;
 		phases BS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_B6;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_B6;
+			parent batt_inv_F1_house_B6;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1500,32 +1541,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_B7;
+    name batt_F1_tpm_rt_B7;
 	parent F1_tpm_rt_B7;
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_B7;
+		name batt_inv_F1_house_B7;
 		phases BS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_B7;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_B7;
+			parent batt_inv_F1_house_B7;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1534,32 +1581,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_A8;
+    name batt_F1_tpm_rt_A8;
 	parent F1_tpm_rt_A8;
 	phases AS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_A8;
+		name batt_inv_F1_house_A8;
 		phases AS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_A8;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_A8;
+			parent batt_inv_F1_house_A8;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1568,32 +1621,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_A9;
+    name batt_F1_tpm_rt_A9;
 	parent F1_tpm_rt_A9;
 	phases AS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_A9;
+		name batt_inv_F1_house_A9;
 		phases AS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_A9;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_A9;
+			parent batt_inv_F1_house_A9;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1602,32 +1661,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_C10;
+    name batt_F1_tpm_rt_C10;
 	parent F1_tpm_rt_C10;
 	phases CS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_C10;
+		name batt_inv_F1_house_C10;
 		phases CS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_C10;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_C10;
+			parent batt_inv_F1_house_C10;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1636,32 +1701,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_A11;
+    name batt_F1_tpm_rt_A11;
 	parent F1_tpm_rt_A11;
 	phases AS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_A11;
+		name batt_inv_F1_house_A11;
 		phases AS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_A11;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_A11;
+			parent batt_inv_F1_house_A11;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1670,32 +1741,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_A12;
+    name batt_F1_tpm_rt_A12;
 	parent F1_tpm_rt_A12;
 	phases AS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_A12;
+		name batt_inv_F1_house_A12;
 		phases AS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_A12;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_A12;
+			parent batt_inv_F1_house_A12;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1704,32 +1781,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_A13;
+    name batt_F1_tpm_rt_A13;
 	parent F1_tpm_rt_A13;
 	phases AS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_A13;
+		name batt_inv_F1_house_A13;
 		phases AS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_A13;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_A13;
+			parent batt_inv_F1_house_A13;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1738,32 +1821,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_C14;
+    name batt_F1_tpm_rt_C14;
 	parent F1_tpm_rt_C14;
 	phases CS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_C14;
+		name batt_inv_F1_house_C14;
 		phases CS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_C14;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_C14;
+			parent batt_inv_F1_house_C14;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1772,32 +1861,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_A15;
+    name batt_F1_tpm_rt_A15;
 	parent F1_tpm_rt_A15;
 	phases AS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_A15;
+		name batt_inv_F1_house_A15;
 		phases AS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_A15;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_A15;
+			parent batt_inv_F1_house_A15;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1806,32 +1901,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_A16;
+    name batt_F1_tpm_rt_A16;
 	parent F1_tpm_rt_A16;
 	phases AS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_A16;
+		name batt_inv_F1_house_A16;
 		phases AS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_A16;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_A16;
+			parent batt_inv_F1_house_A16;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1840,32 +1941,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_C17;
+    name batt_F1_tpm_rt_C17;
 	parent F1_tpm_rt_C17;
 	phases CS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_C17;
+		name batt_inv_F1_house_C17;
 		phases CS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_C17;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_C17;
+			parent batt_inv_F1_house_C17;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1874,32 +1981,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_C18;
+    name batt_F1_tpm_rt_C18;
 	parent F1_tpm_rt_C18;
 	phases CS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_C18;
+		name batt_inv_F1_house_C18;
 		phases CS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_C18;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_C18;
+			parent batt_inv_F1_house_C18;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1908,32 +2021,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_B19;
+    name batt_F1_tpm_rt_B19;
 	parent F1_tpm_rt_B19;
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_B19;
+		name batt_inv_F1_house_B19;
 		phases BS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_B19;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_B19;
+			parent batt_inv_F1_house_B19;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1942,32 +2061,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_B20;
+    name batt_F1_tpm_rt_B20;
 	parent F1_tpm_rt_B20;
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_B20;
+		name batt_inv_F1_house_B20;
 		phases BS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_B20;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_B20;
+			parent batt_inv_F1_house_B20;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -1976,32 +2101,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_C21;
+    name batt_F1_tpm_rt_C21;
 	parent F1_tpm_rt_C21;
 	phases CS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_C21;
+		name batt_inv_F1_house_C21;
 		phases CS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_C21;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_C21;
+			parent batt_inv_F1_house_C21;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -2010,32 +2141,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_B22;
+    name batt_F1_tpm_rt_B22;
 	parent F1_tpm_rt_B22;
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_B22;
+		name batt_inv_F1_house_B22;
 		phases BS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_B22;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_B22;
+			parent batt_inv_F1_house_B22;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -2044,32 +2181,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_B23;
+    name batt_F1_tpm_rt_B23;
 	parent F1_tpm_rt_B23;
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_B23;
+		name batt_inv_F1_house_B23;
 		phases BS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_B23;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_B23;
+			parent batt_inv_F1_house_B23;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -2078,32 +2221,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_B24;
+    name batt_F1_tpm_rt_B24;
 	parent F1_tpm_rt_B24;
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_B24;
+		name batt_inv_F1_house_B24;
 		phases BS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_B24;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_B24;
+			parent batt_inv_F1_house_B24;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -2112,32 +2261,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_A25;
+    name batt_F1_tpm_rt_A25;
 	parent F1_tpm_rt_A25;
 	phases AS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_A25;
+		name batt_inv_F1_house_A25;
 		phases AS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_A25;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_A25;
+			parent batt_inv_F1_house_A25;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -2146,32 +2301,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_A26;
+    name batt_F1_tpm_rt_A26;
 	parent F1_tpm_rt_A26;
 	phases AS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_A26;
+		name batt_inv_F1_house_A26;
 		phases AS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_A26;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_A26;
+			parent batt_inv_F1_house_A26;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -2180,32 +2341,38 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_C27;
+    name batt_F1_tpm_rt_C27;
 	parent F1_tpm_rt_C27;
 	phases CS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_C27;
+		name batt_inv_F1_house_C27;
 		phases CS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_C27;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_C27;
+			parent batt_inv_F1_house_C27;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
@@ -2214,66 +2381,78 @@ object triplex_meter {
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_A28;
+    name batt_F1_tpm_rt_A28;
 	parent F1_tpm_rt_A28;
 	phases AS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_A28;
+		name batt_inv_F1_house_A28;
 		phases AS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_A28;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_A28;
+			parent batt_inv_F1_house_A28;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
-		  interval 300;
+    	interval 300;
     };
 	};
 }
 
 object triplex_meter {
-	name solar_F1_tpm_rt_C29;
+    name batt_F1_tpm_rt_C29;
 	parent F1_tpm_rt_C29;
 	phases CS;
 	nominal_voltage 120;
 	groupid inverter_meter;
 
 	object inverter {
-		name inv_F1_house_C29;
+		name batt_inv_F1_house_C29;
 		phases CS;
 		inverter_type FOUR_QUADRANT;
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
 		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
+		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
+		P_Out -1000; //VA
 
-		object solar {
-			name sol_inv_F1_house_C29;
+		object battery {
+			use_internal_battery_model TRUE;
+			name batt_F1_house_C29;
+			parent batt_inv_F1_house_C29;
+			use_internal_battery_model TRUE;
+			battery_type LI_ION;
+			rated_power 5000;
+			nominal_voltage 120;
+			battery_capacity 14 kWh;
+			round_trip_efficiency 0.9;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
 		};
     object metrics_collector {
     	interval 300;
