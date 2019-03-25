@@ -1319,7 +1319,7 @@ object triplex_meter {
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
-		P_Out -1000; //VA
+		P_Out -100; //VA
 
 		object battery {
 			use_internal_battery_model TRUE;
@@ -1359,7 +1359,7 @@ object triplex_meter {
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
-		P_Out -1000; //VA
+		P_Out -800; //VA
 
 		object battery {
 			use_internal_battery_model TRUE;
@@ -1399,7 +1399,7 @@ object triplex_meter {
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
-		P_Out -1000; //VA
+		P_Out -1300; //VA
 
 		object battery {
 			use_internal_battery_model TRUE;
@@ -1439,7 +1439,7 @@ object triplex_meter {
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
-		P_Out -1000; //VA
+		P_Out -1500; //VA
 
 		object battery {
 			use_internal_battery_model TRUE;
@@ -1479,7 +1479,7 @@ object triplex_meter {
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
-		P_Out -1000; //VA
+		P_Out -370; //VA
 
 		object battery {
 			use_internal_battery_model TRUE;
@@ -1519,7 +1519,7 @@ object triplex_meter {
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
-		P_Out -1000; //VA
+		P_Out -500; //VA
 
 		object battery {
 			use_internal_battery_model TRUE;
@@ -1559,7 +1559,7 @@ object triplex_meter {
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
-		P_Out -1000; //VA
+		P_Out -3000; //VA
 
 		object battery {
 			use_internal_battery_model TRUE;
@@ -1599,7 +1599,7 @@ object triplex_meter {
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
-		P_Out -1000; //VA
+		P_Out -1700; //VA
 
 		object battery {
 			use_internal_battery_model TRUE;
@@ -1639,7 +1639,7 @@ object triplex_meter {
 		generator_status ONLINE;
 		rated_power 6500;
 		inverter_efficiency 0.90;
-		P_Out -1000; //VA
+		P_Out -1100; //VA
 
 		object battery {
 			use_internal_battery_model TRUE;
