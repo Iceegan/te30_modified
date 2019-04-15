@@ -83,8 +83,9 @@ for key in sub_keys:
 fig, ax = plt.subplots(1, 1, sharex = 'col')
 
 ax.plot(hrs, data_s[0,:,SUB_POWER_IDX], color="blue", label="Total")
-ax.plot(hrs, data_s[0,:,SUB_LOSSES_IDX], color="red", label="Losses")
+#ax.plot(hrs, data_s[0,:,SUB_LOSSES_IDX], color="red", label="Losses")
 ax.set_ylabel(SUB_POWER_UNITS)
+ax.set_xlabel("Hour")
 ax.set_title ("Substation Real Power at " + sub_keys[0])
 ax.legend(loc='best')
 

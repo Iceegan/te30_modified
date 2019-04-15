@@ -9,8 +9,8 @@ if sys.platform != 'win32':
 time_stop = int(sys.argv[1])
 time_granted = 0
 
-dict_file = open("TE_Challenge_glm_dict.json").read()
-glm_dict = json.loads(dict_file)
+#dict_file = open("TE_Challenge_glm_dict.json").read()
+#glm_dict = json.loads(dict_file)
 
 fncs.initialize()
 
@@ -21,11 +21,11 @@ while time_granted < time_stop:
 		value = fncs.get_value(topic)
 		#can improve this by creating a set of all the relevant topics
 		#Check if topic is in the set
-		if ('batt' in topic and 'charge' in topic):
-			batt_num = topic.split('_')[1]
-			if simple_auction.parse_fncs_number(value) > 0.95:
-				fncs.publish('batt_' + batt_num + '_P_Out', 1000)
-				print('batt_', batt_num, '_P_Out', flush=True)
+#		if ('batt' in topic and 'charge' in topic):
+#			batt_num = topic.split('_')[1]
+#			if simple_auction.parse_fncs_number(value) > 0.95:
+#				fncs.publish('batt_' + batt_num + '_P_Out', 50)
+#				print('batt_', batt_num, '_P_Out', flush=True)
 
 fncs.finalize()
 

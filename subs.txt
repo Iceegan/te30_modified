@@ -1,0 +1,154 @@
+subscribe "precommit:batt_inv_F1_house_B0.P_Out <- testAgent/batt_0_P_Out";
+subscribe "precommit:batt_inv_F1_house_C1.P_Out <- testAgent/batt_1_P_Out";
+subscribe "precommit:batt_inv_F1_house_C2.P_Out <- testAgent/batt_2_P_Out";
+subscribe "precommit:batt_inv_F1_house_B3.P_Out <- testAgent/batt_3_P_Out";
+subscribe "precommit:batt_inv_F1_house_B4.P_Out <- testAgent/batt_4_P_Out";
+subscribe "precommit:batt_inv_F1_house_A5.P_Out <- testAgent/batt_5_P_Out";
+subscribe "precommit:batt_inv_F1_house_B6.P_Out <- testAgent/batt_6_P_Out";
+subscribe "precommit:batt_inv_F1_house_B7.P_Out <- testAgent/batt_7_P_Out";
+subscribe "precommit:batt_inv_F1_house_A8.P_Out <- testAgent/batt_8_P_Out";
+subscribe "precommit:batt_inv_F1_house_A9.P_Out <- testAgent/batt_9_P_Out";
+subscribe "precommit:batt_inv_F1_house_C10.P_Out <- testAgent/batt_10_P_Out";
+subscribe "precommit:batt_inv_F1_house_A11.P_Out <- testAgent/batt_11_P_Out";
+subscribe "precommit:batt_inv_F1_house_A12.P_Out <- testAgent/batt_12_P_Out";
+subscribe "precommit:batt_inv_F1_house_A13.P_Out <- testAgent/batt_13_P_Out";
+subscribe "precommit:batt_inv_F1_house_C14.P_Out <- testAgent/batt_14_P_Out";
+subscribe "precommit:batt_inv_F1_house_A15.P_Out <- testAgent/batt_15_P_Out";
+subscribe "precommit:batt_inv_F1_house_A16.P_Out <- testAgent/batt_16_P_Out";
+subscribe "precommit:batt_inv_F1_house_C17.P_Out <- testAgent/batt_17_P_Out";
+subscribe "precommit:batt_inv_F1_house_C18.P_Out <- testAgent/batt_18_P_Out";
+subscribe "precommit:batt_inv_F1_house_B19.P_Out <- testAgent/batt_19_P_Out";
+subscribe "precommit:batt_inv_F1_house_B20.P_Out <- testAgent/batt_20_P_Out";
+subscribe "precommit:batt_inv_F1_house_C21.P_Out <- testAgent/batt_21_P_Out";
+subscribe "precommit:batt_inv_F1_house_B22.P_Out <- testAgent/batt_22_P_Out";
+subscribe "precommit:batt_inv_F1_house_B23.P_Out <- testAgent/batt_23_P_Out";
+subscribe "precommit:batt_inv_F1_house_B24.P_Out <- testAgent/batt_24_P_Out";
+subscribe "precommit:batt_inv_F1_house_A25.P_Out <- testAgent/batt_25_P_Out";
+subscribe "precommit:batt_inv_F1_house_A26.P_Out <- testAgent/batt_26_P_Out";
+subscribe "precommit:batt_inv_F1_house_C27.P_Out <- testAgent/batt_27_P_Out";
+subscribe "precommit:batt_inv_F1_house_A28.P_Out <- testAgent/batt_28_P_Out";
+subscribe "precommit:batt_inv_F1_house_C29.P_Out <- testAgent/batt_29_P_Out";
+
+
+publish "commit:batt_F1_house_B0.state_of_charge -> batt_0_charge";
+publish "commit:batt_F1_house_C1.state_of_charge -> batt_1_charge";
+publish "commit:batt_F1_house_C2.state_of_charge -> batt_2_charge";
+publish "commit:batt_F1_house_B3.state_of_charge -> batt_3_charge";
+publish "commit:batt_F1_house_B4.state_of_charge -> batt_4_charge";
+publish "commit:batt_F1_house_A5.state_of_charge -> batt_5_charge";
+publish "commit:batt_F1_house_B6.state_of_charge -> batt_6_charge";
+publish "commit:batt_F1_house_B7.state_of_charge -> batt_7_charge";
+publish "commit:batt_F1_house_A8.state_of_charge -> batt_8_charge";
+publish "commit:batt_F1_house_A9.state_of_charge -> batt_9_charge";
+publish "commit:batt_F1_house_C10.state_of_charge -> batt_10_charge";
+publish "commit:batt_F1_house_A11.state_of_charge -> batt_11_charge";
+publish "commit:batt_F1_house_A12.state_of_charge -> batt_12_charge";
+publish "commit:batt_F1_house_A13.state_of_charge -> batt_13_charge";
+publish "commit:batt_F1_house_C14.state_of_charge -> batt_14_charge";
+publish "commit:batt_F1_house_A15.state_of_charge -> batt_15_charge";
+publish "commit:batt_F1_house_A16.state_of_charge -> batt_16_charge";
+publish "commit:batt_F1_house_C17.state_of_charge -> batt_17_charge";
+publish "commit:batt_F1_house_C18.state_of_charge -> batt_18_charge";
+publish "commit:batt_F1_house_B19.state_of_charge -> batt_19_charge";
+publish "commit:batt_F1_house_B20.state_of_charge -> batt_20_charge";
+publish "commit:batt_F1_house_C21.state_of_charge -> batt_21_charge";
+publish "commit:batt_F1_house_B22.state_of_charge -> batt_22_charge";
+publish "commit:batt_F1_house_B23.state_of_charge -> batt_23_charge";
+publish "commit:batt_F1_house_B24.state_of_charge -> batt_24_charge";
+publish "commit:batt_F1_house_A25.state_of_charge -> batt_25_charge";
+publish "commit:batt_F1_house_A26.state_of_charge -> batt_26_charge";
+publish "commit:batt_F1_house_C27.state_of_charge -> batt_27_charge";
+publish "commit:batt_F1_house_A28.state_of_charge -> batt_28_charge";
+publish "commit:batt_F1_house_C29.state_of_charge -> batt_29_charge";
+
+
+batt_0_charge:
+    topic: gridlabdSimulator1/batt_0_charge
+    default: 0
+batt_1_charge:
+    topic: gridlabdSimulator1/batt_1_charge
+    default: 0
+batt_2_charge:
+    topic: gridlabdSimulator1/batt_2_charge
+    default: 0
+batt_3_charge:
+    topic: gridlabdSimulator1/batt_3_charge
+    default: 0
+batt_4_charge:
+    topic: gridlabdSimulator1/batt_4_charge
+    default: 0
+batt_5_charge:
+    topic: gridlabdSimulator1/batt_5_charge
+    default: 0
+batt_6_charge:
+    topic: gridlabdSimulator1/batt_6_charge
+    default: 0
+batt_7_charge:
+    topic: gridlabdSimulator1/batt_7_charge
+    default: 0
+batt_8_charge:
+    topic: gridlabdSimulator1/batt_8_charge
+    default: 0
+batt_9_charge:
+    topic: gridlabdSimulator1/batt_9_charge
+    default: 0
+batt_10_charge:
+    topic: gridlabdSimulator1/batt_10_charge
+    default: 0
+batt_11_charge:
+    topic: gridlabdSimulator1/batt_11_charge
+    default: 0
+batt_12_charge:
+    topic: gridlabdSimulator1/batt_12_charge
+    default: 0
+batt_13_charge:
+    topic: gridlabdSimulator1/batt_13_charge
+    default: 0
+batt_14_charge:
+    topic: gridlabdSimulator1/batt_14_charge
+    default: 0
+batt_15_charge:
+    topic: gridlabdSimulator1/batt_15_charge
+    default: 0
+batt_16_charge:
+    topic: gridlabdSimulator1/batt_16_charge
+    default: 0
+batt_17_charge:
+    topic: gridlabdSimulator1/batt_17_charge
+    default: 0
+batt_18_charge:
+    topic: gridlabdSimulator1/batt_18_charge
+    default: 0
+batt_19_charge:
+    topic: gridlabdSimulator1/batt_19_charge
+    default: 0
+batt_20_charge:
+    topic: gridlabdSimulator1/batt_20_charge
+    default: 0
+batt_21_charge:
+    topic: gridlabdSimulator1/batt_21_charge
+    default: 0
+batt_22_charge:
+    topic: gridlabdSimulator1/batt_22_charge
+    default: 0
+batt_23_charge:
+    topic: gridlabdSimulator1/batt_23_charge
+    default: 0
+batt_24_charge:
+    topic: gridlabdSimulator1/batt_24_charge
+    default: 0
+batt_25_charge:
+    topic: gridlabdSimulator1/batt_25_charge
+    default: 0
+batt_26_charge:
+    topic: gridlabdSimulator1/batt_26_charge
+    default: 0
+batt_27_charge:
+    topic: gridlabdSimulator1/batt_27_charge
+    default: 0
+batt_28_charge:
+    topic: gridlabdSimulator1/batt_28_charge
+    default: 0
+batt_29_charge:
+    topic: gridlabdSimulator1/batt_29_charge
+    default: 0
