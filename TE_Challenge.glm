@@ -642,6 +642,10 @@ object triplex_meter {
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
+	bill_mode UNIFORM;
+  price ${FIXED_PRICE};
+  bill_day 1;
+  monthly_fee 6;
 
 	object inverter {
 		name b1m1_batt_inv;
@@ -653,10 +657,10 @@ object triplex_meter {
 		//maximum_dc_power 10000; //Might need to less than rated_power for the battery
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 6500;
+		rated_power 10000;
 		//rated_battery_power 10000;
-		inverter_efficiency 0.90;
-		P_Out 5000; //VA
+		inverter_efficiency 1;
+		P_Out 3900; //VA
 
 		object battery {
 			name b1m1_batt;
@@ -666,7 +670,7 @@ object triplex_meter {
 			rated_power 10000;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
-			round_trip_efficiency 0.9;
+			round_trip_efficiency 1;
 			state_of_charge 1;
 			generator_mode SUPPLY_DRIVEN;
 		};

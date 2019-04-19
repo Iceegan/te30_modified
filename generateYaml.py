@@ -9,16 +9,11 @@ meter_name = ['branch_1_meter_1','branch_1_meter_2','branch_1_meter_3','branch_1
 'branch_3_meter_1','branch_3_meter_2','branch_3_meter_3','branch_3_meter_4','branch_3_meter_5','branch_3_meter_6','branch_3_meter_7','branch_3_meter_8','branch_3_meter_9','branch_3_meter_10',]
 
 
-ofile = open("FNCSdata.txt",'w')
-for i in range(30):
-    ostring ="""subscribe "precommit:{0}_batt_inv.P_Out <- Agent/{0}_batt_P_Out";""".format(house_num[i]);
+ofile = open("yamldata.txt",'w')
+for i in range(1,30):
+    ostring ="""{0}_batt_charge:\n\ttopic: gridlabdSimulator1/{0}_batt_charge\n\tdefault: 0""".format(house_num[i]);
     ofile.write(ostring)
     ofile.write('\n')
-
-ofile.write('\n')
-for i in range(30):
-    ostring ="""publish "commit:{0}_batt.state_of_charge -> {0}_batt_charge";\n""".format(house_num[i]);
-    ofile.write(ostring)
 
 
 ofile.close()

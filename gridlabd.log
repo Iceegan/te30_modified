@@ -1,4 +1,4 @@
 WARNING  [2013-07-01 00:00:00 PDT] : DC maximum power output is less than the real power output from the inverter. A higher DC power rating is recommended. Currently the VSI power output is not limited by the DC power output.
-WARNING  [2013-07-01 03:13:15 PDT] : last warning message was repeated 44 times
-WARNING  [2013-07-01 03:13:15 PDT] : inverter:b1m1_batt_inv - battery at or below the SOC reserve - no discharging allowed
-WARNING  [2013-07-02 00:00:00 PDT] : last warning message was repeated 278 times
+Processing 2013-07-01 03:15:00 PDT...WARNING  [2013-07-01 03:41:15 PDT] : last warning message was repeated 50 times
+WARNING  [2013-07-01 03:41:15 PDT] : inverter:b1m1_batt_inv - battery at or below the SOC reserve - no discharging allowed
+WARNING  [2013-07-02 00:00:00 PDT] : last warning message was repeated 272 times

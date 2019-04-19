@@ -566,96 +566,16 @@
 			<rank>
 				<ordinal>5</ordinal>
 				<object>
-					<name>b2m7_house_trans</name>
-					<id>186</id>
-				</object>
-				<object>
-					<name>b1m10_house_trans</name>
-					<id>137</id>
-				</object>
-				<object>
-					<name>b3m3_house_trans</name>
-					<id>228</id>
-				</object>
-				<object>
 					<name>b2m2_house_trans</name>
 					<id>151</id>
-				</object>
-				<object>
-					<name>b1m2_house_trans</name>
-					<id>81</id>
-				</object>
-				<object>
-					<name>b1m4_house_trans</name>
-					<id>95</id>
-				</object>
-				<object>
-					<name>b2m8_house_trans</name>
-					<id>193</id>
-				</object>
-				<object>
-					<name>b1m3_house_trans</name>
-					<id>88</id>
-				</object>
-				<object>
-					<name>b2m4_house_trans</name>
-					<id>165</id>
-				</object>
-				<object>
-					<name>b3m4_house_trans</name>
-					<id>235</id>
-				</object>
-				<object>
-					<name>b3m5_house_trans</name>
-					<id>242</id>
-				</object>
-				<object>
-					<name>b2m9_house_trans</name>
-					<id>200</id>
-				</object>
-				<object>
-					<name>b1m8_house_trans</name>
-					<id>123</id>
-				</object>
-				<object>
-					<name>b3m1_house_trans</name>
-					<id>214</id>
-				</object>
-				<object>
-					<name>b3m2_house_trans</name>
-					<id>221</id>
 				</object>
 				<object>
 					<name>b2m10_house_trans</name>
 					<id>207</id>
 				</object>
 				<object>
-					<name>b1m5_house_trans</name>
-					<id>102</id>
-				</object>
-				<object>
-					<name>b3m10_house_trans</name>
-					<id>277</id>
-				</object>
-				<object>
-					<name>b2m6_house_trans</name>
-					<id>179</id>
-				</object>
-				<object>
-					<name>b2m3_house_trans</name>
-					<id>158</id>
-				</object>
-				<object>
-					<name>b3m9_house_trans</name>
-					<id>270</id>
-				</object>
-				<object>
-					<name>b1m9_house_trans</name>
-					<id>130</id>
-				</object>
-				<object>
-					<name>b3m6_house_trans</name>
-					<id>249</id>
+					<name>b3m8_house_trans</name>
+					<id>263</id>
 				</object>
 				<object>
 					<name>b2m5_house_trans</name>
@@ -666,158 +586,238 @@
 					<id>116</id>
 				</object>
 				<object>
-					<name>b1m1_house_trans</name>
-					<id>74</id>
+					<name>b3m2_house_trans</name>
+					<id>221</id>
+				</object>
+				<object>
+					<name>b2m7_house_trans</name>
+					<id>186</id>
+				</object>
+				<object>
+					<name>b1m9_house_trans</name>
+					<id>130</id>
+				</object>
+				<object>
+					<name>b1m8_house_trans</name>
+					<id>123</id>
+				</object>
+				<object>
+					<name>b3m10_house_trans</name>
+					<id>277</id>
+				</object>
+				<object>
+					<name>b2m9_house_trans</name>
+					<id>200</id>
+				</object>
+				<object>
+					<name>b3m4_house_trans</name>
+					<id>235</id>
+				</object>
+				<object>
+					<name>b1m2_house_trans</name>
+					<id>81</id>
+				</object>
+				<object>
+					<name>b3m1_house_trans</name>
+					<id>214</id>
+				</object>
+				<object>
+					<name>b3m3_house_trans</name>
+					<id>228</id>
 				</object>
 				<object>
 					<name>b1m6_house_trans</name>
 					<id>109</id>
 				</object>
 				<object>
-					<name>b2m1_house_trans</name>
-					<id>144</id>
+					<name>b1m3_house_trans</name>
+					<id>88</id>
+				</object>
+				<object>
+					<name>b2m8_house_trans</name>
+					<id>193</id>
+				</object>
+				<object>
+					<name>b3m5_house_trans</name>
+					<id>242</id>
+				</object>
+				<object>
+					<name>b2m3_house_trans</name>
+					<id>158</id>
 				</object>
 				<object>
 					<name>b3m7_house_trans</name>
 					<id>256</id>
 				</object>
 				<object>
-					<name>b3m8_house_trans</name>
-					<id>263</id>
+					<name>b1m10_house_trans</name>
+					<id>137</id>
+				</object>
+				<object>
+					<name>b3m9_house_trans</name>
+					<id>270</id>
+				</object>
+				<object>
+					<name>b2m4_house_trans</name>
+					<id>165</id>
+				</object>
+				<object>
+					<name>b1m4_house_trans</name>
+					<id>95</id>
+				</object>
+				<object>
+					<name>b2m6_house_trans</name>
+					<id>179</id>
+				</object>
+				<object>
+					<name>b1m1_house_trans</name>
+					<id>74</id>
+				</object>
+				<object>
+					<name>b2m1_house_trans</name>
+					<id>144</id>
+				</object>
+				<object>
+					<name>b1m5_house_trans</name>
+					<id>102</id>
+				</object>
+				<object>
+					<name>b3m6_house_trans</name>
+					<id>249</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>4</ordinal>
 				<object>
-					<name>b2m6_house_node</name>
-					<id>180</id>
-				</object>
-				<object>
-					<name>b1m9_house_node</name>
-					<id>131</id>
-				</object>
-				<object>
-					<name>b3m8_house_node</name>
-					<id>264</id>
-				</object>
-				<object>
-					<name>b3m2_house_node</name>
-					<id>222</id>
-				</object>
-				<object>
-					<name>b2m2_house_node</name>
-					<id>152</id>
-				</object>
-				<object>
-					<name>b2m8_house_node</name>
-					<id>194</id>
-				</object>
-				<object>
-					<name>b3m3_house_node</name>
-					<id>229</id>
-				</object>
-				<object>
-					<name>b2m5_house_node</name>
-					<id>173</id>
-				</object>
-				<object>
-					<name>b1m2_house_node</name>
-					<id>82</id>
-				</object>
-				<object>
-					<name>b2m1_house_node</name>
-					<id>145</id>
-				</object>
-				<object>
-					<name>b3m9_house_node</name>
-					<id>271</id>
-				</object>
-				<object>
 					<name>b1m8_house_node</name>
 					<id>124</id>
-				</object>
-				<object>
-					<name>b2m4_house_node</name>
-					<id>166</id>
-				</object>
-				<object>
-					<name>b1m1_house_node</name>
-					<id>75</id>
-				</object>
-				<object>
-					<name>b1m6_house_node</name>
-					<id>110</id>
-				</object>
-				<object>
-					<name>b2m7_house_node</name>
-					<id>187</id>
-				</object>
-				<object>
-					<name>b3m10_house_node</name>
-					<id>278</id>
-				</object>
-				<object>
-					<name>b1m7_house_node</name>
-					<id>117</id>
-				</object>
-				<object>
-					<name>b2m9_house_node</name>
-					<id>201</id>
-				</object>
-				<object>
-					<name>b3m1_house_node</name>
-					<id>215</id>
-				</object>
-				<object>
-					<name>b1m3_house_node</name>
-					<id>89</id>
 				</object>
 				<object>
 					<name>b1m5_house_node</name>
 					<id>103</id>
 				</object>
 				<object>
-					<name>b3m4_house_node</name>
-					<id>236</id>
-				</object>
-				<object>
-					<name>b2m3_house_node</name>
-					<id>159</id>
-				</object>
-				<object>
-					<name>b1m10_house_node</name>
-					<id>138</id>
-				</object>
-				<object>
-					<name>b1m4_house_node</name>
-					<id>96</id>
-				</object>
-				<object>
-					<name>b2m10_house_node</name>
-					<id>208</id>
+					<name>b2m5_house_node</name>
+					<id>173</id>
 				</object>
 				<object>
 					<name>b3m5_house_node</name>
 					<id>243</id>
 				</object>
 				<object>
-					<name>b3m6_house_node</name>
-					<id>250</id>
+					<name>b1m3_house_node</name>
+					<id>89</id>
+				</object>
+				<object>
+					<name>b3m9_house_node</name>
+					<id>271</id>
 				</object>
 				<object>
 					<name>b3m7_house_node</name>
 					<id>257</id>
 				</object>
+				<object>
+					<name>b1m4_house_node</name>
+					<id>96</id>
+				</object>
+				<object>
+					<name>b1m1_house_node</name>
+					<id>75</id>
+				</object>
+				<object>
+					<name>b2m7_house_node</name>
+					<id>187</id>
+				</object>
+				<object>
+					<name>b2m2_house_node</name>
+					<id>152</id>
+				</object>
+				<object>
+					<name>b2m4_house_node</name>
+					<id>166</id>
+				</object>
+				<object>
+					<name>b2m6_house_node</name>
+					<id>180</id>
+				</object>
+				<object>
+					<name>b1m10_house_node</name>
+					<id>138</id>
+				</object>
+				<object>
+					<name>b2m8_house_node</name>
+					<id>194</id>
+				</object>
+				<object>
+					<name>b3m6_house_node</name>
+					<id>250</id>
+				</object>
+				<object>
+					<name>b3m4_house_node</name>
+					<id>236</id>
+				</object>
+				<object>
+					<name>b2m9_house_node</name>
+					<id>201</id>
+				</object>
+				<object>
+					<name>b3m2_house_node</name>
+					<id>222</id>
+				</object>
+				<object>
+					<name>b1m6_house_node</name>
+					<id>110</id>
+				</object>
+				<object>
+					<name>b2m10_house_node</name>
+					<id>208</id>
+				</object>
+				<object>
+					<name>b3m1_house_node</name>
+					<id>215</id>
+				</object>
+				<object>
+					<name>b1m9_house_node</name>
+					<id>131</id>
+				</object>
+				<object>
+					<name>b3m10_house_node</name>
+					<id>278</id>
+				</object>
+				<object>
+					<name>b2m1_house_node</name>
+					<id>145</id>
+				</object>
+				<object>
+					<name>b1m7_house_node</name>
+					<id>117</id>
+				</object>
+				<object>
+					<name>b3m3_house_node</name>
+					<id>229</id>
+				</object>
+				<object>
+					<name>b1m2_house_node</name>
+					<id>82</id>
+				</object>
+				<object>
+					<name>b2m3_house_node</name>
+					<id>159</id>
+				</object>
+				<object>
+					<name>b3m8_house_node</name>
+					<id>264</id>
+				</object>
 			</rank>
 			<rank>
 				<ordinal>3</ordinal>
 				<object>
-					<name>(triplex_line:209)</name>
-					<id>209</id>
+					<name>(triplex_line:181)</name>
+					<id>181</id>
 				</object>
 				<object>
-					<name>(triplex_line:188)</name>
-					<id>188</id>
+					<name>(triplex_line:167)</name>
+					<id>167</id>
 				</object>
 				<object>
 					<name>(triplex_line:132)</name>
@@ -828,163 +828,155 @@
 					<id>146</id>
 				</object>
 				<object>
-					<name>(triplex_line:202)</name>
-					<id>202</id>
-				</object>
-				<object>
-					<name>(triplex_line:258)</name>
-					<id>258</id>
-				</object>
-				<object>
-					<name>(triplex_line:167)</name>
-					<id>167</id>
-				</object>
-				<object>
-					<name>(triplex_line:97)</name>
-					<id>97</id>
-				</object>
-				<object>
-					<name>(triplex_line:111)</name>
-					<id>111</id>
-				</object>
-				<object>
-					<name>(triplex_line:118)</name>
-					<id>118</id>
-				</object>
-				<object>
-					<name>(triplex_line:265)</name>
-					<id>265</id>
-				</object>
-				<object>
-					<name>(triplex_line:160)</name>
-					<id>160</id>
-				</object>
-				<object>
-					<name>(triplex_line:272)</name>
-					<id>272</id>
-				</object>
-				<object>
-					<name>(triplex_line:230)</name>
-					<id>230</id>
-				</object>
-				<object>
-					<name>(triplex_line:139)</name>
-					<id>139</id>
-				</object>
-				<object>
-					<name>(triplex_line:223)</name>
-					<id>223</id>
-				</object>
-				<object>
-					<name>(triplex_line:83)</name>
-					<id>83</id>
-				</object>
-				<object>
-					<name>(triplex_line:216)</name>
-					<id>216</id>
-				</object>
-				<object>
-					<name>(triplex_line:90)</name>
-					<id>90</id>
-				</object>
-				<object>
-					<name>(triplex_line:237)</name>
-					<id>237</id>
-				</object>
-				<object>
-					<name>(triplex_line:76)</name>
-					<id>76</id>
-				</object>
-				<object>
-					<name>(triplex_line:251)</name>
-					<id>251</id>
-				</object>
-				<object>
 					<name>(triplex_line:195)</name>
 					<id>195</id>
-				</object>
-				<object>
-					<name>(triplex_line:244)</name>
-					<id>244</id>
 				</object>
 				<object>
 					<name>(triplex_line:279)</name>
 					<id>279</id>
 				</object>
 				<object>
-					<name>(triplex_line:153)</name>
-					<id>153</id>
-				</object>
-				<object>
 					<name>(triplex_line:174)</name>
 					<id>174</id>
 				</object>
 				<object>
-					<name>(triplex_line:104)</name>
-					<id>104</id>
+					<name>(triplex_line:202)</name>
+					<id>202</id>
+				</object>
+				<object>
+					<name>(triplex_line:83)</name>
+					<id>83</id>
+				</object>
+				<object>
+					<name>(triplex_line:153)</name>
+					<id>153</id>
+				</object>
+				<object>
+					<name>(triplex_line:111)</name>
+					<id>111</id>
+				</object>
+				<object>
+					<name>(triplex_line:188)</name>
+					<id>188</id>
+				</object>
+				<object>
+					<name>(triplex_line:272)</name>
+					<id>272</id>
+				</object>
+				<object>
+					<name>(triplex_line:90)</name>
+					<id>90</id>
+				</object>
+				<object>
+					<name>(triplex_line:265)</name>
+					<id>265</id>
 				</object>
 				<object>
 					<name>(triplex_line:125)</name>
 					<id>125</id>
 				</object>
 				<object>
-					<name>(triplex_line:181)</name>
-					<id>181</id>
+					<name>(triplex_line:251)</name>
+					<id>251</id>
+				</object>
+				<object>
+					<name>(triplex_line:237)</name>
+					<id>237</id>
+				</object>
+				<object>
+					<name>(triplex_line:160)</name>
+					<id>160</id>
+				</object>
+				<object>
+					<name>(triplex_line:244)</name>
+					<id>244</id>
+				</object>
+				<object>
+					<name>(triplex_line:258)</name>
+					<id>258</id>
+				</object>
+				<object>
+					<name>(triplex_line:104)</name>
+					<id>104</id>
+				</object>
+				<object>
+					<name>(triplex_line:230)</name>
+					<id>230</id>
+				</object>
+				<object>
+					<name>(triplex_line:209)</name>
+					<id>209</id>
+				</object>
+				<object>
+					<name>(triplex_line:97)</name>
+					<id>97</id>
+				</object>
+				<object>
+					<name>(triplex_line:118)</name>
+					<id>118</id>
+				</object>
+				<object>
+					<name>(triplex_line:139)</name>
+					<id>139</id>
+				</object>
+				<object>
+					<name>(triplex_line:76)</name>
+					<id>76</id>
+				</object>
+				<object>
+					<name>(triplex_line:223)</name>
+					<id>223</id>
+				</object>
+				<object>
+					<name>(triplex_line:216)</name>
+					<id>216</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>2</ordinal>
 				<object>
-					<name>b1m7_batt_meter</name>
-					<id>119</id>
+					<name>b1m2_batt_meter</name>
+					<id>84</id>
 				</object>
 				<object>
-					<name>b3m3_batt_meter</name>
-					<id>231</id>
-				</object>
-				<object>
-					<name>b2m3_batt_meter</name>
-					<id>161</id>
-				</object>
-				<object>
-					<name>b3m9_batt_meter</name>
-					<id>273</id>
-				</object>
-				<object>
-					<name>b1m10_batt_meter</name>
-					<id>140</id>
-				</object>
-				<object>
-					<name>b1m1_batt_meter</name>
-					<id>77</id>
-				</object>
-				<object>
-					<name>b2m1_batt_meter</name>
-					<id>147</id>
-				</object>
-				<object>
-					<name>b1m6_batt_meter</name>
-					<id>112</id>
-				</object>
-				<object>
-					<name>b2m7_batt_meter</name>
-					<id>189</id>
-				</object>
-				<object>
-					<name>b1m9_batt_meter</name>
-					<id>133</id>
-				</object>
-				<object>
-					<name>b3m1_batt_meter</name>
-					<id>217</id>
+					<name>b2m9_batt_meter</name>
+					<id>203</id>
 				</object>
 				<object>
 					<name>b2m8_batt_meter</name>
 					<id>196</id>
 				</object>
 				<object>
-					<name>b2m2_batt_meter</name>
-					<id>154</id>
+					<name>b1m4_batt_meter</name>
+					<id>98</id>
+				</object>
+				<object>
+					<name>b1m7_batt_meter</name>
+					<id>119</id>
+				</object>
+				<object>
+					<name>b2m1_batt_meter</name>
+					<id>147</id>
+				</object>
+				<object>
+					<name>b2m7_batt_meter</name>
+					<id>189</id>
+				</object>
+				<object>
+					<name>b1m8_batt_meter</name>
+					<id>126</id>
+				</object>
+				<object>
+					<name>b3m9_batt_meter</name>
+					<id>273</id>
+				</object>
+				<object>
+					<name>b1m3_batt_meter</name>
+					<id>91</id>
+				</object>
+				<object>
+					<name>b3m4_batt_meter</name>
+					<id>238</id>
 				</object>
 				<object>
 					<name>b3m7_batt_meter</name>
@@ -995,52 +987,48 @@
 					<id>245</id>
 				</object>
 				<object>
-					<name>b2m4_batt_meter</name>
-					<id>168</id>
+					<name>b3m10_batt_meter</name>
+					<id>280</id>
 				</object>
 				<object>
-					<name>b3m6_batt_meter</name>
-					<id>252</id>
-				</object>
-				<object>
-					<name>b2m5_batt_meter</name>
-					<id>175</id>
-				</object>
-				<object>
-					<name>b1m4_batt_meter</name>
-					<id>98</id>
-				</object>
-				<object>
-					<name>b3m4_batt_meter</name>
-					<id>238</id>
+					<name>b1m1_batt_meter</name>
+					<id>77</id>
 				</object>
 				<object>
 					<name>b1m5_batt_meter</name>
 					<id>105</id>
 				</object>
 				<object>
-					<name>b3m10_batt_meter</name>
-					<id>280</id>
+					<name>b1m6_batt_meter</name>
+					<id>112</id>
 				</object>
 				<object>
-					<name>b3m8_batt_meter</name>
-					<id>266</id>
+					<name>b3m2_batt_meter</name>
+					<id>224</id>
 				</object>
 				<object>
-					<name>b1m8_batt_meter</name>
-					<id>126</id>
+					<name>b1m9_batt_meter</name>
+					<id>133</id>
 				</object>
 				<object>
-					<name>b1m3_batt_meter</name>
-					<id>91</id>
+					<name>b3m3_batt_meter</name>
+					<id>231</id>
 				</object>
 				<object>
-					<name>b2m9_batt_meter</name>
-					<id>203</id>
+					<name>b3m1_batt_meter</name>
+					<id>217</id>
 				</object>
 				<object>
-					<name>b1m2_batt_meter</name>
-					<id>84</id>
+					<name>b3m6_batt_meter</name>
+					<id>252</id>
+				</object>
+				<object>
+					<name>b2m2_batt_meter</name>
+					<id>154</id>
+				</object>
+				<object>
+					<name>b1m10_batt_meter</name>
+					<id>140</id>
 				</object>
 				<object>
 					<name>b2m6_batt_meter</name>
@@ -1051,174 +1039,218 @@
 					<id>210</id>
 				</object>
 				<object>
-					<name>b3m2_batt_meter</name>
-					<id>224</id>
+					<name>b2m5_batt_meter</name>
+					<id>175</id>
+				</object>
+				<object>
+					<name>b2m4_batt_meter</name>
+					<id>168</id>
+				</object>
+				<object>
+					<name>b2m3_batt_meter</name>
+					<id>161</id>
+				</object>
+				<object>
+					<name>b3m8_batt_meter</name>
+					<id>266</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>1</ordinal>
 				<object>
-					<name>b2m8_batt_inv</name>
-					<id>197</id>
-				</object>
-				<object>
-					<name>b2m9_batt_inv</name>
-					<id>204</id>
-				</object>
-				<object>
-					<name>b3m7_batt_inv</name>
-					<id>260</id>
-				</object>
-				<object>
-					<name>b2m1_batt_inv</name>
-					<id>148</id>
-				</object>
-				<object>
-					<name>b2m2_batt_inv</name>
-					<id>155</id>
-				</object>
-				<object>
-					<name>b1m5_batt_inv</name>
-					<id>106</id>
-				</object>
-				<object>
-					<name>b2m5_batt_inv</name>
-					<id>176</id>
-				</object>
-				<object>
-					<name>b2m3_batt_inv</name>
-					<id>162</id>
-				</object>
-				<object>
-					<name>b3m2_batt_inv</name>
-					<id>225</id>
-				</object>
-				<object>
-					<name>b3m5_batt_inv</name>
-					<id>246</id>
-				</object>
-				<object>
-					<name>b3m3_batt_inv</name>
-					<id>232</id>
-				</object>
-				<object>
-					<name>b2m4_batt_inv</name>
-					<id>169</id>
+					<name>b3m10_batt_inv</name>
+					<id>281</id>
 				</object>
 				<object>
 					<name>b1m4_batt_inv</name>
 					<id>99</id>
 				</object>
 				<object>
-					<name>b2m6_batt_inv</name>
-					<id>183</id>
-				</object>
-				<object>
 					<name>b3m9_batt_inv</name>
 					<id>274</id>
-				</object>
-				<object>
-					<name>b1m6_batt_inv</name>
-					<id>113</id>
-				</object>
-				<object>
-					<name>b3m1_batt_inv</name>
-					<id>218</id>
-				</object>
-				<object>
-					<name>b2m10_batt_inv</name>
-					<id>211</id>
-				</object>
-				<object>
-					<name>b1m7_batt_inv</name>
-					<id>120</id>
-				</object>
-				<object>
-					<name>b2m7_batt_inv</name>
-					<id>190</id>
-				</object>
-				<object>
-					<name>b1m9_batt_inv</name>
-					<id>134</id>
-				</object>
-				<object>
-					<name>b3m4_batt_inv</name>
-					<id>239</id>
-				</object>
-				<object>
-					<name>b1m10_batt_inv</name>
-					<id>141</id>
 				</object>
 				<object>
 					<name>b1m3_batt_inv</name>
 					<id>92</id>
 				</object>
 				<object>
-					<name>b1m1_batt_inv</name>
-					<id>78</id>
+					<name>b3m2_batt_inv</name>
+					<id>225</id>
 				</object>
 				<object>
-					<name>b1m2_batt_inv</name>
-					<id>85</id>
+					<name>b2m9_batt_inv</name>
+					<id>204</id>
 				</object>
 				<object>
-					<name>b3m8_batt_inv</name>
-					<id>267</id>
+					<name>b2m4_batt_inv</name>
+					<id>169</id>
 				</object>
 				<object>
-					<name>b3m10_batt_inv</name>
-					<id>281</id>
+					<name>b2m3_batt_inv</name>
+					<id>162</id>
+				</object>
+				<object>
+					<name>b2m7_batt_inv</name>
+					<id>190</id>
+				</object>
+				<object>
+					<name>b3m7_batt_inv</name>
+					<id>260</id>
+				</object>
+				<object>
+					<name>b1m10_batt_inv</name>
+					<id>141</id>
+				</object>
+				<object>
+					<name>b2m8_batt_inv</name>
+					<id>197</id>
+				</object>
+				<object>
+					<name>b2m6_batt_inv</name>
+					<id>183</id>
 				</object>
 				<object>
 					<name>b1m8_batt_inv</name>
 					<id>127</id>
 				</object>
 				<object>
+					<name>b2m5_batt_inv</name>
+					<id>176</id>
+				</object>
+				<object>
+					<name>b3m8_batt_inv</name>
+					<id>267</id>
+				</object>
+				<object>
+					<name>b3m1_batt_inv</name>
+					<id>218</id>
+				</object>
+				<object>
+					<name>b1m7_batt_inv</name>
+					<id>120</id>
+				</object>
+				<object>
 					<name>b3m6_batt_inv</name>
 					<id>253</id>
+				</object>
+				<object>
+					<name>b2m2_batt_inv</name>
+					<id>155</id>
+				</object>
+				<object>
+					<name>b3m4_batt_inv</name>
+					<id>239</id>
+				</object>
+				<object>
+					<name>b1m5_batt_inv</name>
+					<id>106</id>
+				</object>
+				<object>
+					<name>b2m1_batt_inv</name>
+					<id>148</id>
+				</object>
+				<object>
+					<name>b3m3_batt_inv</name>
+					<id>232</id>
+				</object>
+				<object>
+					<name>b1m1_batt_inv</name>
+					<id>78</id>
+				</object>
+				<object>
+					<name>b1m9_batt_inv</name>
+					<id>134</id>
+				</object>
+				<object>
+					<name>b1m2_batt_inv</name>
+					<id>85</id>
+				</object>
+				<object>
+					<name>b2m10_batt_inv</name>
+					<id>211</id>
+				</object>
+				<object>
+					<name>b3m5_batt_inv</name>
+					<id>246</id>
+				</object>
+				<object>
+					<name>b1m6_batt_inv</name>
+					<id>113</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>0</ordinal>
 				<object>
-					<name>RegionalWeather</name>
-					<id>1</id>
+					<name>gridlabdSimulator1</name>
+					<id>11</id>
 				</object>
 				<object>
-					<name>b3m3_batt</name>
-					<id>233</id>
+					<name>b1m7_batt</name>
+					<id>121</id>
 				</object>
 				<object>
-					<name>b1m2_batt</name>
-					<id>86</id>
-				</object>
-				<object>
-					<name>b1m1_batt</name>
-					<id>79</id>
-				</object>
-				<object>
-					<name>b1m8_batt</name>
-					<id>128</id>
-				</object>
-				<object>
-					<name>b2m4_batt</name>
-					<id>170</id>
-				</object>
-				<object>
-					<name>b2m5_batt</name>
-					<id>177</id>
+					<name>b2m8_batt</name>
+					<id>198</id>
 				</object>
 				<object>
 					<name>b2m10_batt</name>
 					<id>212</id>
 				</object>
 				<object>
-					<name>gridlabdSimulator1</name>
-					<id>11</id>
+					<name>b3m6_batt</name>
+					<id>254</id>
+				</object>
+				<object>
+					<name>b1m3_batt</name>
+					<id>93</id>
+				</object>
+				<object>
+					<name>b3m8_batt</name>
+					<id>268</id>
+				</object>
+				<object>
+					<name>b2m3_batt</name>
+					<id>163</id>
+				</object>
+				<object>
+					<name>b2m4_batt</name>
+					<id>170</id>
+				</object>
+				<object>
+					<name>b2m1_batt</name>
+					<id>149</id>
+				</object>
+				<object>
+					<name>b2m6_batt</name>
+					<id>184</id>
+				</object>
+				<object>
+					<name>b3m10_batt</name>
+					<id>282</id>
+				</object>
+				<object>
+					<name>b2m2_batt</name>
+					<id>156</id>
+				</object>
+				<object>
+					<name>b3m3_batt</name>
+					<id>233</id>
+				</object>
+				<object>
+					<name>b2m5_batt</name>
+					<id>177</id>
 				</object>
 				<object>
 					<name>b1m4_batt</name>
 					<id>100</id>
+				</object>
+				<object>
+					<name>b1m6_batt</name>
+					<id>114</id>
+				</object>
+				<object>
+					<name>b2m7_batt</name>
+					<id>191</id>
 				</object>
 				<object>
 					<name>b1m9_batt</name>
@@ -1233,8 +1265,32 @@
 					<id>247</id>
 				</object>
 				<object>
-					<name>b2m1_batt</name>
-					<id>149</id>
+					<name>b1m10_batt</name>
+					<id>142</id>
+				</object>
+				<object>
+					<name>b3m2_batt</name>
+					<id>226</id>
+				</object>
+				<object>
+					<name>b1m2_batt</name>
+					<id>86</id>
+				</object>
+				<object>
+					<name>b1m5_batt</name>
+					<id>107</id>
+				</object>
+				<object>
+					<name>RegionalWeather</name>
+					<id>1</id>
+				</object>
+				<object>
+					<name>b3m7_batt</name>
+					<id>261</id>
+				</object>
+				<object>
+					<name>b3m1_batt</name>
+					<id>219</id>
 				</object>
 				<object>
 					<name>b2m9_batt</name>
@@ -1245,68 +1301,12 @@
 					<id>275</id>
 				</object>
 				<object>
-					<name>b2m6_batt</name>
-					<id>184</id>
+					<name>b1m1_batt</name>
+					<id>79</id>
 				</object>
 				<object>
-					<name>b2m8_batt</name>
-					<id>198</id>
-				</object>
-				<object>
-					<name>b1m7_batt</name>
-					<id>121</id>
-				</object>
-				<object>
-					<name>b2m7_batt</name>
-					<id>191</id>
-				</object>
-				<object>
-					<name>b2m3_batt</name>
-					<id>163</id>
-				</object>
-				<object>
-					<name>b3m1_batt</name>
-					<id>219</id>
-				</object>
-				<object>
-					<name>b1m3_batt</name>
-					<id>93</id>
-				</object>
-				<object>
-					<name>b1m10_batt</name>
-					<id>142</id>
-				</object>
-				<object>
-					<name>b3m2_batt</name>
-					<id>226</id>
-				</object>
-				<object>
-					<name>b3m8_batt</name>
-					<id>268</id>
-				</object>
-				<object>
-					<name>b2m2_batt</name>
-					<id>156</id>
-				</object>
-				<object>
-					<name>b3m6_batt</name>
-					<id>254</id>
-				</object>
-				<object>
-					<name>b1m5_batt</name>
-					<id>107</id>
-				</object>
-				<object>
-					<name>b3m7_batt</name>
-					<id>261</id>
-				</object>
-				<object>
-					<name>b1m6_batt</name>
-					<id>114</id>
-				</object>
-				<object>
-					<name>b3m10_batt</name>
-					<id>282</id>
+					<name>b1m8_batt</name>
+					<id>128</id>
 				</object>
 			</rank>
 		</pass>
@@ -1315,314 +1315,286 @@
 			<rank>
 				<ordinal>0</ordinal>
 				<object>
-					<name>b3m6_batt</name>
-					<id>254</id>
-				</object>
-				<object>
-					<name>b2m1_batt</name>
-					<id>149</id>
-				</object>
-				<object>
-					<name>b2m2_batt</name>
-					<id>156</id>
-				</object>
-				<object>
 					<name>b1m9_batt</name>
 					<id>135</id>
-				</object>
-				<object>
-					<name>b2m10_batt</name>
-					<id>212</id>
-				</object>
-				<object>
-					<name>b1m1_batt</name>
-					<id>79</id>
-				</object>
-				<object>
-					<name>b2m3_batt</name>
-					<id>163</id>
-				</object>
-				<object>
-					<name>b3m3_batt</name>
-					<id>233</id>
-				</object>
-				<object>
-					<name>b1m4_batt</name>
-					<id>100</id>
 				</object>
 				<object>
 					<name>b2m5_batt</name>
 					<id>177</id>
 				</object>
 				<object>
-					<name>b3m7_batt</name>
-					<id>261</id>
+					<name>b2m7_batt</name>
+					<id>191</id>
 				</object>
 				<object>
-					<name>b3m1_batt</name>
-					<id>219</id>
-				</object>
-				<object>
-					<name>b2m6_batt</name>
-					<id>184</id>
-				</object>
-				<object>
-					<name>b2m8_batt</name>
-					<id>198</id>
-				</object>
-				<object>
-					<name>b1m6_batt</name>
-					<id>114</id>
-				</object>
-				<object>
-					<name>gridlabdSimulator1</name>
-					<id>11</id>
-				</object>
-				<object>
-					<name>b1m5_batt</name>
-					<id>107</id>
+					<name>b2m10_batt</name>
+					<id>212</id>
 				</object>
 				<object>
 					<name>b1m3_batt</name>
 					<id>93</id>
 				</object>
 				<object>
+					<name>b1m1_batt</name>
+					<id>79</id>
+				</object>
+				<object>
 					<name>b3m8_batt</name>
 					<id>268</id>
 				</object>
 				<object>
-					<name>b2m4_batt</name>
-					<id>170</id>
+					<name>b2m1_batt</name>
+					<id>149</id>
 				</object>
 				<object>
-					<name>b3m2_batt</name>
-					<id>226</id>
+					<name>b3m7_batt</name>
+					<id>261</id>
 				</object>
 				<object>
 					<name>b3m9_batt</name>
 					<id>275</id>
 				</object>
 				<object>
-					<name>b2m7_batt</name>
-					<id>191</id>
-				</object>
-				<object>
-					<name>b3m10_batt</name>
-					<id>282</id>
-				</object>
-				<object>
-					<name>b1m10_batt</name>
-					<id>142</id>
+					<name>b3m2_batt</name>
+					<id>226</id>
 				</object>
 				<object>
 					<name>b1m2_batt</name>
 					<id>86</id>
 				</object>
 				<object>
-					<name>b1m7_batt</name>
-					<id>121</id>
+					<name>b3m5_batt</name>
+					<id>247</id>
 				</object>
 				<object>
 					<name>b3m4_batt</name>
 					<id>240</id>
 				</object>
 				<object>
-					<name>b3m5_batt</name>
-					<id>247</id>
+					<name>b1m6_batt</name>
+					<id>114</id>
+				</object>
+				<object>
+					<name>b2m3_batt</name>
+					<id>163</id>
+				</object>
+				<object>
+					<name>b1m10_batt</name>
+					<id>142</id>
+				</object>
+				<object>
+					<name>b3m1_batt</name>
+					<id>219</id>
+				</object>
+				<object>
+					<name>b2m4_batt</name>
+					<id>170</id>
+				</object>
+				<object>
+					<name>b1m8_batt</name>
+					<id>128</id>
+				</object>
+				<object>
+					<name>b1m7_batt</name>
+					<id>121</id>
+				</object>
+				<object>
+					<name>b2m8_batt</name>
+					<id>198</id>
+				</object>
+				<object>
+					<name>b3m3_batt</name>
+					<id>233</id>
 				</object>
 				<object>
 					<name>b2m9_batt</name>
 					<id>205</id>
 				</object>
 				<object>
-					<name>b1m8_batt</name>
-					<id>128</id>
+					<name>gridlabdSimulator1</name>
+					<id>11</id>
+				</object>
+				<object>
+					<name>b2m6_batt</name>
+					<id>184</id>
+				</object>
+				<object>
+					<name>b3m6_batt</name>
+					<id>254</id>
+				</object>
+				<object>
+					<name>b1m4_batt</name>
+					<id>100</id>
+				</object>
+				<object>
+					<name>b1m5_batt</name>
+					<id>107</id>
+				</object>
+				<object>
+					<name>b2m2_batt</name>
+					<id>156</id>
+				</object>
+				<object>
+					<name>b3m10_batt</name>
+					<id>282</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>1</ordinal>
 				<object>
-					<name>b1m3_batt_inv</name>
-					<id>92</id>
-				</object>
-				<object>
-					<name>b1m9_batt_inv</name>
-					<id>134</id>
-				</object>
-				<object>
-					<name>b1m6_batt_inv</name>
-					<id>113</id>
-				</object>
-				<object>
-					<name>b2m3_batt_inv</name>
-					<id>162</id>
-				</object>
-				<object>
-					<name>b2m1_batt_inv</name>
-					<id>148</id>
-				</object>
-				<object>
-					<name>b3m5_batt_inv</name>
-					<id>246</id>
-				</object>
-				<object>
-					<name>b2m8_batt_inv</name>
-					<id>197</id>
-				</object>
-				<object>
-					<name>b3m2_batt_inv</name>
-					<id>225</id>
-				</object>
-				<object>
-					<name>b2m2_batt_inv</name>
-					<id>155</id>
-				</object>
-				<object>
-					<name>b1m4_batt_inv</name>
-					<id>99</id>
-				</object>
-				<object>
-					<name>b2m9_batt_inv</name>
-					<id>204</id>
-				</object>
-				<object>
-					<name>b3m6_batt_inv</name>
-					<id>253</id>
-				</object>
-				<object>
-					<name>b3m10_batt_inv</name>
-					<id>281</id>
-				</object>
-				<object>
-					<name>b2m6_batt_inv</name>
-					<id>183</id>
-				</object>
-				<object>
-					<name>b3m4_batt_inv</name>
-					<id>239</id>
-				</object>
-				<object>
-					<name>b2m4_batt_inv</name>
-					<id>169</id>
+					<name>b2m7_batt_inv</name>
+					<id>190</id>
 				</object>
 				<object>
 					<name>b1m5_batt_inv</name>
 					<id>106</id>
 				</object>
 				<object>
-					<name>b3m3_batt_inv</name>
-					<id>232</id>
-				</object>
-				<object>
 					<name>b1m10_batt_inv</name>
 					<id>141</id>
-				</object>
-				<object>
-					<name>b1m1_batt_inv</name>
-					<id>78</id>
-				</object>
-				<object>
-					<name>b3m9_batt_inv</name>
-					<id>274</id>
-				</object>
-				<object>
-					<name>b2m10_batt_inv</name>
-					<id>211</id>
-				</object>
-				<object>
-					<name>b3m1_batt_inv</name>
-					<id>218</id>
-				</object>
-				<object>
-					<name>b2m5_batt_inv</name>
-					<id>176</id>
-				</object>
-				<object>
-					<name>b1m7_batt_inv</name>
-					<id>120</id>
-				</object>
-				<object>
-					<name>b1m2_batt_inv</name>
-					<id>85</id>
-				</object>
-				<object>
-					<name>b2m7_batt_inv</name>
-					<id>190</id>
 				</object>
 				<object>
 					<name>b3m7_batt_inv</name>
 					<id>260</id>
 				</object>
 				<object>
+					<name>b3m9_batt_inv</name>
+					<id>274</id>
+				</object>
+				<object>
+					<name>b2m6_batt_inv</name>
+					<id>183</id>
+				</object>
+				<object>
+					<name>b3m10_batt_inv</name>
+					<id>281</id>
+				</object>
+				<object>
+					<name>b2m8_batt_inv</name>
+					<id>197</id>
+				</object>
+				<object>
+					<name>b3m5_batt_inv</name>
+					<id>246</id>
+				</object>
+				<object>
+					<name>b1m2_batt_inv</name>
+					<id>85</id>
+				</object>
+				<object>
+					<name>b2m4_batt_inv</name>
+					<id>169</id>
+				</object>
+				<object>
+					<name>b2m10_batt_inv</name>
+					<id>211</id>
+				</object>
+				<object>
+					<name>b1m3_batt_inv</name>
+					<id>92</id>
+				</object>
+				<object>
+					<name>b1m6_batt_inv</name>
+					<id>113</id>
+				</object>
+				<object>
 					<name>b1m8_batt_inv</name>
 					<id>127</id>
+				</object>
+				<object>
+					<name>b3m6_batt_inv</name>
+					<id>253</id>
+				</object>
+				<object>
+					<name>b3m3_batt_inv</name>
+					<id>232</id>
+				</object>
+				<object>
+					<name>b3m1_batt_inv</name>
+					<id>218</id>
+				</object>
+				<object>
+					<name>b1m7_batt_inv</name>
+					<id>120</id>
+				</object>
+				<object>
+					<name>b2m2_batt_inv</name>
+					<id>155</id>
+				</object>
+				<object>
+					<name>b2m5_batt_inv</name>
+					<id>176</id>
+				</object>
+				<object>
+					<name>b3m2_batt_inv</name>
+					<id>225</id>
+				</object>
+				<object>
+					<name>b3m4_batt_inv</name>
+					<id>239</id>
 				</object>
 				<object>
 					<name>b3m8_batt_inv</name>
 					<id>267</id>
 				</object>
+				<object>
+					<name>b2m3_batt_inv</name>
+					<id>162</id>
+				</object>
+				<object>
+					<name>b1m9_batt_inv</name>
+					<id>134</id>
+				</object>
+				<object>
+					<name>b1m1_batt_inv</name>
+					<id>78</id>
+				</object>
+				<object>
+					<name>b1m4_batt_inv</name>
+					<id>99</id>
+				</object>
+				<object>
+					<name>b2m1_batt_inv</name>
+					<id>148</id>
+				</object>
+				<object>
+					<name>b2m9_batt_inv</name>
+					<id>204</id>
+				</object>
 			</rank>
 			<rank>
 				<ordinal>2</ordinal>
 				<object>
-					<name>b2m1_batt_meter</name>
-					<id>147</id>
+					<name>b3m8_batt_meter</name>
+					<id>266</id>
 				</object>
 				<object>
-					<name>b2m10_batt_meter</name>
-					<id>210</id>
-				</object>
-				<object>
-					<name>b1m9_batt_meter</name>
-					<id>133</id>
-				</object>
-				<object>
-					<name>b2m6_batt_meter</name>
-					<id>182</id>
-				</object>
-				<object>
-					<name>b1m7_batt_meter</name>
-					<id>119</id>
-				</object>
-				<object>
-					<name>b1m3_batt_meter</name>
-					<id>91</id>
-				</object>
-				<object>
-					<name>b2m8_batt_meter</name>
-					<id>196</id>
-				</object>
-				<object>
-					<name>b2m2_batt_meter</name>
-					<id>154</id>
-				</object>
-				<object>
-					<name>b3m6_batt_meter</name>
-					<id>252</id>
-				</object>
-				<object>
-					<name>b3m1_batt_meter</name>
-					<id>217</id>
-				</object>
-				<object>
-					<name>b2m3_batt_meter</name>
-					<id>161</id>
-				</object>
-				<object>
-					<name>b2m5_batt_meter</name>
-					<id>175</id>
+					<name>b3m5_batt_meter</name>
+					<id>245</id>
 				</object>
 				<object>
 					<name>b3m4_batt_meter</name>
 					<id>238</id>
 				</object>
 				<object>
-					<name>b2m9_batt_meter</name>
-					<id>203</id>
+					<name>b2m3_batt_meter</name>
+					<id>161</id>
 				</object>
 				<object>
-					<name>b2m4_batt_meter</name>
-					<id>168</id>
+					<name>b1m10_batt_meter</name>
+					<id>140</id>
+				</object>
+				<object>
+					<name>b3m3_batt_meter</name>
+					<id>231</id>
+				</object>
+				<object>
+					<name>b3m7_batt_meter</name>
+					<id>259</id>
+				</object>
+				<object>
+					<name>b2m1_batt_meter</name>
+					<id>147</id>
 				</object>
 				<object>
 					<name>b1m5_batt_meter</name>
@@ -1633,52 +1605,80 @@
 					<id>126</id>
 				</object>
 				<object>
-					<name>b3m3_batt_meter</name>
-					<id>231</id>
+					<name>b1m7_batt_meter</name>
+					<id>119</id>
 				</object>
 				<object>
-					<name>b3m10_batt_meter</name>
-					<id>280</id>
+					<name>b3m1_batt_meter</name>
+					<id>217</id>
 				</object>
 				<object>
-					<name>b3m8_batt_meter</name>
-					<id>266</id>
-				</object>
-				<object>
-					<name>b1m1_batt_meter</name>
-					<id>77</id>
-				</object>
-				<object>
-					<name>b1m10_batt_meter</name>
-					<id>140</id>
-				</object>
-				<object>
-					<name>b3m2_batt_meter</name>
-					<id>224</id>
-				</object>
-				<object>
-					<name>b1m6_batt_meter</name>
-					<id>112</id>
-				</object>
-				<object>
-					<name>b3m7_batt_meter</name>
-					<id>259</id>
-				</object>
-				<object>
-					<name>b3m5_batt_meter</name>
-					<id>245</id>
-				</object>
-				<object>
-					<name>b3m9_batt_meter</name>
-					<id>273</id>
+					<name>b2m5_batt_meter</name>
+					<id>175</id>
 				</object>
 				<object>
 					<name>b1m2_batt_meter</name>
 					<id>84</id>
 				</object>
 				<object>
+					<name>b1m6_batt_meter</name>
+					<id>112</id>
+				</object>
+				<object>
+					<name>b2m2_batt_meter</name>
+					<id>154</id>
+				</object>
+				<object>
+					<name>b1m3_batt_meter</name>
+					<id>91</id>
+				</object>
+				<object>
+					<name>b2m8_batt_meter</name>
+					<id>196</id>
+				</object>
+				<object>
+					<name>b3m6_batt_meter</name>
+					<id>252</id>
+				</object>
+				<object>
 					<name>b2m7_batt_meter</name>
 					<id>189</id>
+				</object>
+				<object>
+					<name>b2m9_batt_meter</name>
+					<id>203</id>
+				</object>
+				<object>
+					<name>b2m10_batt_meter</name>
+					<id>210</id>
+				</object>
+				<object>
+					<name>b1m1_batt_meter</name>
+					<id>77</id>
+				</object>
+				<object>
+					<name>b3m2_batt_meter</name>
+					<id>224</id>
+				</object>
+				<object>
+					<name>b2m6_batt_meter</name>
+					<id>182</id>
+				</object>
+				<object>
+					<name>b3m9_batt_meter</name>
+					<id>273</id>
+				</object>
+				<object>
+					<name>b1m9_batt_meter</name>
+					<id>133</id>
+				</object>
+				<object>
+					<name>b2m4_batt_meter</name>
+					<id>168</id>
+				</object>
+				<object>
+					<name>b3m10_batt_meter</name>
+					<id>280</id>
 				</object>
 				<object>
 					<name>b1m4_batt_meter</name>
@@ -1688,175 +1688,199 @@
 			<rank>
 				<ordinal>3</ordinal>
 				<object>
-					<name>(triplex_line:111)</name>
-					<id>111</id>
-				</object>
-				<object>
-					<name>(triplex_line:125)</name>
-					<id>125</id>
-				</object>
-				<object>
-					<name>(triplex_line:76)</name>
-					<id>76</id>
-				</object>
-				<object>
 					<name>(triplex_line:104)</name>
 					<id>104</id>
-				</object>
-				<object>
-					<name>(triplex_line:118)</name>
-					<id>118</id>
-				</object>
-				<object>
-					<name>(triplex_line:181)</name>
-					<id>181</id>
-				</object>
-				<object>
-					<name>(triplex_line:279)</name>
-					<id>279</id>
 				</object>
 				<object>
 					<name>(triplex_line:244)</name>
 					<id>244</id>
 				</object>
 				<object>
-					<name>(triplex_line:209)</name>
-					<id>209</id>
-				</object>
-				<object>
-					<name>(triplex_line:195)</name>
-					<id>195</id>
-				</object>
-				<object>
-					<name>(triplex_line:223)</name>
-					<id>223</id>
-				</object>
-				<object>
-					<name>(triplex_line:237)</name>
-					<id>237</id>
-				</object>
-				<object>
-					<name>(triplex_line:90)</name>
-					<id>90</id>
-				</object>
-				<object>
-					<name>(triplex_line:251)</name>
-					<id>251</id>
-				</object>
-				<object>
-					<name>(triplex_line:97)</name>
-					<id>97</id>
-				</object>
-				<object>
-					<name>(triplex_line:216)</name>
-					<id>216</id>
-				</object>
-				<object>
-					<name>(triplex_line:202)</name>
-					<id>202</id>
-				</object>
-				<object>
 					<name>(triplex_line:272)</name>
 					<id>272</id>
-				</object>
-				<object>
-					<name>(triplex_line:146)</name>
-					<id>146</id>
-				</object>
-				<object>
-					<name>(triplex_line:153)</name>
-					<id>153</id>
-				</object>
-				<object>
-					<name>(triplex_line:188)</name>
-					<id>188</id>
-				</object>
-				<object>
-					<name>(triplex_line:174)</name>
-					<id>174</id>
-				</object>
-				<object>
-					<name>(triplex_line:167)</name>
-					<id>167</id>
-				</object>
-				<object>
-					<name>(triplex_line:160)</name>
-					<id>160</id>
-				</object>
-				<object>
-					<name>(triplex_line:132)</name>
-					<id>132</id>
-				</object>
-				<object>
-					<name>(triplex_line:83)</name>
-					<id>83</id>
-				</object>
-				<object>
-					<name>(triplex_line:230)</name>
-					<id>230</id>
-				</object>
-				<object>
-					<name>(triplex_line:139)</name>
-					<id>139</id>
 				</object>
 				<object>
 					<name>(triplex_line:265)</name>
 					<id>265</id>
 				</object>
 				<object>
+					<name>(triplex_line:188)</name>
+					<id>188</id>
+				</object>
+				<object>
+					<name>(triplex_line:125)</name>
+					<id>125</id>
+				</object>
+				<object>
+					<name>(triplex_line:195)</name>
+					<id>195</id>
+				</object>
+				<object>
+					<name>(triplex_line:111)</name>
+					<id>111</id>
+				</object>
+				<object>
+					<name>(triplex_line:251)</name>
+					<id>251</id>
+				</object>
+				<object>
+					<name>(triplex_line:118)</name>
+					<id>118</id>
+				</object>
+				<object>
+					<name>(triplex_line:174)</name>
+					<id>174</id>
+				</object>
+				<object>
+					<name>(triplex_line:146)</name>
+					<id>146</id>
+				</object>
+				<object>
+					<name>(triplex_line:83)</name>
+					<id>83</id>
+				</object>
+				<object>
+					<name>(triplex_line:153)</name>
+					<id>153</id>
+				</object>
+				<object>
+					<name>(triplex_line:230)</name>
+					<id>230</id>
+				</object>
+				<object>
+					<name>(triplex_line:181)</name>
+					<id>181</id>
+				</object>
+				<object>
+					<name>(triplex_line:97)</name>
+					<id>97</id>
+				</object>
+				<object>
+					<name>(triplex_line:76)</name>
+					<id>76</id>
+				</object>
+				<object>
+					<name>(triplex_line:279)</name>
+					<id>279</id>
+				</object>
+				<object>
+					<name>(triplex_line:90)</name>
+					<id>90</id>
+				</object>
+				<object>
+					<name>(triplex_line:167)</name>
+					<id>167</id>
+				</object>
+				<object>
 					<name>(triplex_line:258)</name>
 					<id>258</id>
+				</object>
+				<object>
+					<name>(triplex_line:237)</name>
+					<id>237</id>
+				</object>
+				<object>
+					<name>(triplex_line:216)</name>
+					<id>216</id>
+				</object>
+				<object>
+					<name>(triplex_line:132)</name>
+					<id>132</id>
+				</object>
+				<object>
+					<name>(triplex_line:202)</name>
+					<id>202</id>
+				</object>
+				<object>
+					<name>(triplex_line:209)</name>
+					<id>209</id>
+				</object>
+				<object>
+					<name>(triplex_line:160)</name>
+					<id>160</id>
+				</object>
+				<object>
+					<name>(triplex_line:223)</name>
+					<id>223</id>
+				</object>
+				<object>
+					<name>(triplex_line:139)</name>
+					<id>139</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>4</ordinal>
 				<object>
-					<name>b3m3_house_node</name>
-					<id>229</id>
-				</object>
-				<object>
 					<name>b3m5_house_node</name>
 					<id>243</id>
 				</object>
 				<object>
-					<name>b2m1_house_node</name>
-					<id>145</id>
+					<name>b3m7_house_node</name>
+					<id>257</id>
+				</object>
+				<object>
+					<name>b1m9_house_node</name>
+					<id>131</id>
+				</object>
+				<object>
+					<name>b1m8_house_node</name>
+					<id>124</id>
+				</object>
+				<object>
+					<name>b2m10_house_node</name>
+					<id>208</id>
 				</object>
 				<object>
 					<name>b3m6_house_node</name>
 					<id>250</id>
 				</object>
 				<object>
-					<name>b1m3_house_node</name>
-					<id>89</id>
+					<name>b1m6_house_node</name>
+					<id>110</id>
 				</object>
 				<object>
-					<name>b2m2_house_node</name>
-					<id>152</id>
-				</object>
-				<object>
-					<name>b3m8_house_node</name>
-					<id>264</id>
-				</object>
-				<object>
-					<name>b2m6_house_node</name>
-					<id>180</id>
-				</object>
-				<object>
-					<name>b3m4_house_node</name>
-					<id>236</id>
-				</object>
-				<object>
-					<name>b2m7_house_node</name>
-					<id>187</id>
+					<name>b2m4_house_node</name>
+					<id>166</id>
 				</object>
 				<object>
 					<name>b1m1_house_node</name>
 					<id>75</id>
 				</object>
 				<object>
-					<name>b2m10_house_node</name>
-					<id>208</id>
+					<name>b1m2_house_node</name>
+					<id>82</id>
+				</object>
+				<object>
+					<name>b1m7_house_node</name>
+					<id>117</id>
+				</object>
+				<object>
+					<name>b1m5_house_node</name>
+					<id>103</id>
+				</object>
+				<object>
+					<name>b1m3_house_node</name>
+					<id>89</id>
+				</object>
+				<object>
+					<name>b2m5_house_node</name>
+					<id>173</id>
+				</object>
+				<object>
+					<name>b2m2_house_node</name>
+					<id>152</id>
+				</object>
+				<object>
+					<name>b1m4_house_node</name>
+					<id>96</id>
+				</object>
+				<object>
+					<name>b3m9_house_node</name>
+					<id>271</id>
+				</object>
+				<object>
+					<name>b2m9_house_node</name>
+					<id>201</id>
 				</object>
 				<object>
 					<name>b2m3_house_node</name>
@@ -1867,103 +1891,95 @@
 					<id>215</id>
 				</object>
 				<object>
-					<name>b1m7_house_node</name>
-					<id>117</id>
+					<name>b2m7_house_node</name>
+					<id>187</id>
+				</object>
+				<object>
+					<name>b2m1_house_node</name>
+					<id>145</id>
+				</object>
+				<object>
+					<name>b3m8_house_node</name>
+					<id>264</id>
 				</object>
 				<object>
 					<name>b3m2_house_node</name>
 					<id>222</id>
 				</object>
 				<object>
-					<name>b1m6_house_node</name>
-					<id>110</id>
+					<name>b1m10_house_node</name>
+					<id>138</id>
 				</object>
 				<object>
-					<name>b2m8_house_node</name>
-					<id>194</id>
+					<name>b2m6_house_node</name>
+					<id>180</id>
 				</object>
 				<object>
-					<name>b1m9_house_node</name>
-					<id>131</id>
+					<name>b3m4_house_node</name>
+					<id>236</id>
 				</object>
 				<object>
-					<name>b2m4_house_node</name>
-					<id>166</id>
-				</object>
-				<object>
-					<name>b1m4_house_node</name>
-					<id>96</id>
+					<name>b3m3_house_node</name>
+					<id>229</id>
 				</object>
 				<object>
 					<name>b3m10_house_node</name>
 					<id>278</id>
 				</object>
 				<object>
-					<name>b1m5_house_node</name>
-					<id>103</id>
-				</object>
-				<object>
-					<name>b2m9_house_node</name>
-					<id>201</id>
-				</object>
-				<object>
-					<name>b1m2_house_node</name>
-					<id>82</id>
-				</object>
-				<object>
-					<name>b1m8_house_node</name>
-					<id>124</id>
-				</object>
-				<object>
-					<name>b2m5_house_node</name>
-					<id>173</id>
-				</object>
-				<object>
-					<name>b1m10_house_node</name>
-					<id>138</id>
-				</object>
-				<object>
-					<name>b3m7_house_node</name>
-					<id>257</id>
-				</object>
-				<object>
-					<name>b3m9_house_node</name>
-					<id>271</id>
+					<name>b2m8_house_node</name>
+					<id>194</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>5</ordinal>
 				<object>
+					<name>b2m2_house_trans</name>
+					<id>151</id>
+				</object>
+				<object>
 					<name>b1m5_house_trans</name>
 					<id>102</id>
 				</object>
 				<object>
-					<name>b1m9_house_trans</name>
-					<id>130</id>
+					<name>b3m7_house_trans</name>
+					<id>256</id>
 				</object>
 				<object>
-					<name>b1m3_house_trans</name>
-					<id>88</id>
+					<name>b2m9_house_trans</name>
+					<id>200</id>
 				</object>
 				<object>
-					<name>b2m6_house_trans</name>
-					<id>179</id>
+					<name>b3m3_house_trans</name>
+					<id>228</id>
 				</object>
 				<object>
-					<name>b1m1_house_trans</name>
-					<id>74</id>
-				</object>
-				<object>
-					<name>b3m10_house_trans</name>
-					<id>277</id>
+					<name>b2m8_house_trans</name>
+					<id>193</id>
 				</object>
 				<object>
 					<name>b2m3_house_trans</name>
 					<id>158</id>
 				</object>
 				<object>
+					<name>b2m5_house_trans</name>
+					<id>172</id>
+				</object>
+				<object>
 					<name>b1m8_house_trans</name>
 					<id>123</id>
+				</object>
+				<object>
+					<name>b1m9_house_trans</name>
+					<id>130</id>
+				</object>
+				<object>
+					<name>b2m1_house_trans</name>
+					<id>144</id>
+				</object>
+				<object>
+					<name>b1m1_house_trans</name>
+					<id>74</id>
 				</object>
 				<object>
 					<name>b3m6_house_trans</name>
@@ -1974,84 +1990,68 @@
 					<id>186</id>
 				</object>
 				<object>
-					<name>b3m1_house_trans</name>
-					<id>214</id>
-				</object>
-				<object>
-					<name>b2m10_house_trans</name>
-					<id>207</id>
-				</object>
-				<object>
 					<name>b1m4_house_trans</name>
 					<id>95</id>
 				</object>
 				<object>
-					<name>b2m5_house_trans</name>
-					<id>172</id>
-				</object>
-				<object>
-					<name>b3m4_house_trans</name>
-					<id>235</id>
-				</object>
-				<object>
-					<name>b2m1_house_trans</name>
-					<id>144</id>
-				</object>
-				<object>
-					<name>b1m6_house_trans</name>
-					<id>109</id>
-				</object>
-				<object>
-					<name>b2m2_house_trans</name>
-					<id>151</id>
-				</object>
-				<object>
-					<name>b3m2_house_trans</name>
-					<id>221</id>
-				</object>
-				<object>
-					<name>b1m2_house_trans</name>
-					<id>81</id>
-				</object>
-				<object>
-					<name>b1m7_house_trans</name>
-					<id>116</id>
-				</object>
-				<object>
-					<name>b1m10_house_trans</name>
-					<id>137</id>
-				</object>
-				<object>
-					<name>b3m7_house_trans</name>
-					<id>256</id>
-				</object>
-				<object>
-					<name>b2m4_house_trans</name>
-					<id>165</id>
-				</object>
-				<object>
-					<name>b2m9_house_trans</name>
-					<id>200</id>
+					<name>b2m6_house_trans</name>
+					<id>179</id>
 				</object>
 				<object>
 					<name>b3m5_house_trans</name>
 					<id>242</id>
 				</object>
 				<object>
+					<name>b3m1_house_trans</name>
+					<id>214</id>
+				</object>
+				<object>
+					<name>b3m2_house_trans</name>
+					<id>221</id>
+				</object>
+				<object>
+					<name>b1m10_house_trans</name>
+					<id>137</id>
+				</object>
+				<object>
+					<name>b1m3_house_trans</name>
+					<id>88</id>
+				</object>
+				<object>
+					<name>b3m10_house_trans</name>
+					<id>277</id>
+				</object>
+				<object>
 					<name>b3m8_house_trans</name>
 					<id>263</id>
 				</object>
 				<object>
-					<name>b2m8_house_trans</name>
-					<id>193</id>
-				</object>
-				<object>
-					<name>b3m3_house_trans</name>
-					<id>228</id>
-				</object>
-				<object>
 					<name>b3m9_house_trans</name>
 					<id>270</id>
+				</object>
+				<object>
+					<name>b1m7_house_trans</name>
+					<id>116</id>
+				</object>
+				<object>
+					<name>b2m4_house_trans</name>
+					<id>165</id>
+				</object>
+				<object>
+					<name>b1m2_house_trans</name>
+					<id>81</id>
+				</object>
+				<object>
+					<name>b1m6_house_trans</name>
+					<id>109</id>
+				</object>
+				<object>
+					<name>b2m10_house_trans</name>
+					<id>207</id>
+				</object>
+				<object>
+					<name>b3m4_house_trans</name>
+					<id>235</id>
 				</object>
 			</rank>
 			<rank>
@@ -2942,112 +2942,56 @@
 			<rank>
 				<ordinal>5</ordinal>
 				<object>
-					<name>b1m8_house_trans</name>
-					<id>123</id>
-				</object>
-				<object>
-					<name>b1m6_house_trans</name>
-					<id>109</id>
-				</object>
-				<object>
-					<name>b1m5_house_trans</name>
-					<id>102</id>
-				</object>
-				<object>
-					<name>b2m3_house_trans</name>
-					<id>158</id>
-				</object>
-				<object>
-					<name>b3m10_house_trans</name>
-					<id>277</id>
-				</object>
-				<object>
-					<name>b2m4_house_trans</name>
-					<id>165</id>
-				</object>
-				<object>
-					<name>b3m6_house_trans</name>
-					<id>249</id>
-				</object>
-				<object>
-					<name>b2m2_house_trans</name>
-					<id>151</id>
-				</object>
-				<object>
-					<name>b2m9_house_trans</name>
-					<id>200</id>
-				</object>
-				<object>
-					<name>b1m2_house_trans</name>
-					<id>81</id>
-				</object>
-				<object>
-					<name>b1m10_house_trans</name>
-					<id>137</id>
-				</object>
-				<object>
-					<name>b2m5_house_trans</name>
-					<id>172</id>
-				</object>
-				<object>
-					<name>b3m5_house_trans</name>
-					<id>242</id>
+					<name>b2m8_house_trans</name>
+					<id>193</id>
 				</object>
 				<object>
 					<name>b1m4_house_trans</name>
 					<id>95</id>
 				</object>
 				<object>
-					<name>b2m6_house_trans</name>
-					<id>179</id>
+					<name>b3m9_house_trans</name>
+					<id>270</id>
 				</object>
 				<object>
-					<name>b2m1_house_trans</name>
-					<id>144</id>
-				</object>
-				<object>
-					<name>b3m4_house_trans</name>
-					<id>235</id>
-				</object>
-				<object>
-					<name>b1m3_house_trans</name>
-					<id>88</id>
+					<name>b1m5_house_trans</name>
+					<id>102</id>
 				</object>
 				<object>
 					<name>b3m7_house_trans</name>
 					<id>256</id>
 				</object>
 				<object>
-					<name>b3m3_house_trans</name>
-					<id>228</id>
-				</object>
-				<object>
-					<name>b2m8_house_trans</name>
-					<id>193</id>
-				</object>
-				<object>
-					<name>b3m1_house_trans</name>
-					<id>214</id>
-				</object>
-				<object>
-					<name>b3m8_house_trans</name>
-					<id>263</id>
-				</object>
-				<object>
-					<name>b3m2_house_trans</name>
-					<id>221</id>
-				</object>
-				<object>
-					<name>b2m10_house_trans</name>
-					<id>207</id>
+					<name>b3m10_house_trans</name>
+					<id>277</id>
 				</object>
 				<object>
 					<name>b2m7_house_trans</name>
 					<id>186</id>
 				</object>
 				<object>
-					<name>b1m9_house_trans</name>
-					<id>130</id>
+					<name>b3m8_house_trans</name>
+					<id>263</id>
+				</object>
+				<object>
+					<name>b2m2_house_trans</name>
+					<id>151</id>
+				</object>
+				<object>
+					<name>b2m3_house_trans</name>
+					<id>158</id>
+				</object>
+				<object>
+					<name>b1m6_house_trans</name>
+					<id>109</id>
+				</object>
+				<object>
+					<name>b3m5_house_trans</name>
+					<id>242</id>
+				</object>
+				<object>
+					<name>b1m3_house_trans</name>
+					<id>88</id>
 				</object>
 				<object>
 					<name>b1m1_house_trans</name>
@@ -3058,234 +3002,202 @@
 					<id>116</id>
 				</object>
 				<object>
-					<name>b3m9_house_trans</name>
-					<id>270</id>
+					<name>b1m9_house_trans</name>
+					<id>130</id>
+				</object>
+				<object>
+					<name>b2m6_house_trans</name>
+					<id>179</id>
+				</object>
+				<object>
+					<name>b1m2_house_trans</name>
+					<id>81</id>
+				</object>
+				<object>
+					<name>b3m1_house_trans</name>
+					<id>214</id>
+				</object>
+				<object>
+					<name>b3m6_house_trans</name>
+					<id>249</id>
+				</object>
+				<object>
+					<name>b1m10_house_trans</name>
+					<id>137</id>
+				</object>
+				<object>
+					<name>b2m10_house_trans</name>
+					<id>207</id>
+				</object>
+				<object>
+					<name>b3m3_house_trans</name>
+					<id>228</id>
+				</object>
+				<object>
+					<name>b2m5_house_trans</name>
+					<id>172</id>
+				</object>
+				<object>
+					<name>b3m2_house_trans</name>
+					<id>221</id>
+				</object>
+				<object>
+					<name>b2m1_house_trans</name>
+					<id>144</id>
+				</object>
+				<object>
+					<name>b3m4_house_trans</name>
+					<id>235</id>
+				</object>
+				<object>
+					<name>b2m4_house_trans</name>
+					<id>165</id>
+				</object>
+				<object>
+					<name>b2m9_house_trans</name>
+					<id>200</id>
+				</object>
+				<object>
+					<name>b1m8_house_trans</name>
+					<id>123</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>4</ordinal>
 				<object>
-					<name>b3m5_house_node</name>
-					<id>243</id>
-				</object>
-				<object>
-					<name>b3m4_house_node</name>
-					<id>236</id>
-				</object>
-				<object>
-					<name>b1m8_house_node</name>
-					<id>124</id>
-				</object>
-				<object>
-					<name>b2m10_house_node</name>
-					<id>208</id>
-				</object>
-				<object>
-					<name>b2m8_house_node</name>
-					<id>194</id>
-				</object>
-				<object>
-					<name>b1m10_house_node</name>
-					<id>138</id>
-				</object>
-				<object>
-					<name>b3m3_house_node</name>
-					<id>229</id>
-				</object>
-				<object>
-					<name>b2m1_house_node</name>
-					<id>145</id>
-				</object>
-				<object>
-					<name>b1m4_house_node</name>
-					<id>96</id>
-				</object>
-				<object>
-					<name>b1m7_house_node</name>
-					<id>117</id>
+					<name>b1m6_house_node</name>
+					<id>110</id>
 				</object>
 				<object>
 					<name>b3m1_house_node</name>
 					<id>215</id>
 				</object>
 				<object>
-					<name>b1m9_house_node</name>
-					<id>131</id>
-				</object>
-				<object>
-					<name>b3m2_house_node</name>
-					<id>222</id>
-				</object>
-				<object>
-					<name>b2m7_house_node</name>
-					<id>187</id>
-				</object>
-				<object>
-					<name>b2m4_house_node</name>
-					<id>166</id>
-				</object>
-				<object>
-					<name>b2m9_house_node</name>
-					<id>201</id>
-				</object>
-				<object>
-					<name>b1m2_house_node</name>
-					<id>82</id>
-				</object>
-				<object>
-					<name>b2m2_house_node</name>
-					<id>152</id>
-				</object>
-				<object>
-					<name>b3m8_house_node</name>
-					<id>264</id>
-				</object>
-				<object>
 					<name>b1m1_house_node</name>
 					<id>75</id>
-				</object>
-				<object>
-					<name>b2m6_house_node</name>
-					<id>180</id>
-				</object>
-				<object>
-					<name>b3m7_house_node</name>
-					<id>257</id>
-				</object>
-				<object>
-					<name>b1m5_house_node</name>
-					<id>103</id>
-				</object>
-				<object>
-					<name>b3m9_house_node</name>
-					<id>271</id>
-				</object>
-				<object>
-					<name>b2m3_house_node</name>
-					<id>159</id>
 				</object>
 				<object>
 					<name>b3m6_house_node</name>
 					<id>250</id>
 				</object>
 				<object>
+					<name>b3m7_house_node</name>
+					<id>257</id>
+				</object>
+				<object>
 					<name>b3m10_house_node</name>
 					<id>278</id>
+				</object>
+				<object>
+					<name>b1m5_house_node</name>
+					<id>103</id>
+				</object>
+				<object>
+					<name>b3m3_house_node</name>
+					<id>229</id>
+				</object>
+				<object>
+					<name>b2m2_house_node</name>
+					<id>152</id>
+				</object>
+				<object>
+					<name>b3m4_house_node</name>
+					<id>236</id>
+				</object>
+				<object>
+					<name>b2m7_house_node</name>
+					<id>187</id>
+				</object>
+				<object>
+					<name>b1m2_house_node</name>
+					<id>82</id>
+				</object>
+				<object>
+					<name>b3m2_house_node</name>
+					<id>222</id>
+				</object>
+				<object>
+					<name>b2m1_house_node</name>
+					<id>145</id>
+				</object>
+				<object>
+					<name>b1m10_house_node</name>
+					<id>138</id>
+				</object>
+				<object>
+					<name>b3m8_house_node</name>
+					<id>264</id>
+				</object>
+				<object>
+					<name>b2m6_house_node</name>
+					<id>180</id>
+				</object>
+				<object>
+					<name>b2m3_house_node</name>
+					<id>159</id>
+				</object>
+				<object>
+					<name>b2m4_house_node</name>
+					<id>166</id>
+				</object>
+				<object>
+					<name>b3m5_house_node</name>
+					<id>243</id>
+				</object>
+				<object>
+					<name>b1m8_house_node</name>
+					<id>124</id>
+				</object>
+				<object>
+					<name>b1m7_house_node</name>
+					<id>117</id>
+				</object>
+				<object>
+					<name>b1m4_house_node</name>
+					<id>96</id>
+				</object>
+				<object>
+					<name>b1m3_house_node</name>
+					<id>89</id>
 				</object>
 				<object>
 					<name>b2m5_house_node</name>
 					<id>173</id>
 				</object>
 				<object>
-					<name>b1m6_house_node</name>
-					<id>110</id>
+					<name>b2m10_house_node</name>
+					<id>208</id>
 				</object>
 				<object>
-					<name>b1m3_house_node</name>
-					<id>89</id>
+					<name>b2m9_house_node</name>
+					<id>201</id>
+				</object>
+				<object>
+					<name>b3m9_house_node</name>
+					<id>271</id>
+				</object>
+				<object>
+					<name>b2m8_house_node</name>
+					<id>194</id>
+				</object>
+				<object>
+					<name>b1m9_house_node</name>
+					<id>131</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>3</ordinal>
 				<object>
-					<name>(triplex_line:251)</name>
-					<id>251</id>
-				</object>
-				<object>
-					<name>(triplex_line:153)</name>
-					<id>153</id>
-				</object>
-				<object>
 					<name>(triplex_line:118)</name>
 					<id>118</id>
-				</object>
-				<object>
-					<name>(triplex_line:265)</name>
-					<id>265</id>
-				</object>
-				<object>
-					<name>(triplex_line:223)</name>
-					<id>223</id>
-				</object>
-				<object>
-					<name>(triplex_line:90)</name>
-					<id>90</id>
 				</object>
 				<object>
 					<name>(triplex_line:174)</name>
 					<id>174</id>
 				</object>
 				<object>
-					<name>(triplex_line:125)</name>
-					<id>125</id>
-				</object>
-				<object>
-					<name>(triplex_line:146)</name>
-					<id>146</id>
-				</object>
-				<object>
-					<name>(triplex_line:209)</name>
-					<id>209</id>
-				</object>
-				<object>
-					<name>(triplex_line:76)</name>
-					<id>76</id>
-				</object>
-				<object>
-					<name>(triplex_line:279)</name>
-					<id>279</id>
-				</object>
-				<object>
-					<name>(triplex_line:230)</name>
-					<id>230</id>
-				</object>
-				<object>
-					<name>(triplex_line:244)</name>
-					<id>244</id>
-				</object>
-				<object>
-					<name>(triplex_line:188)</name>
-					<id>188</id>
-				</object>
-				<object>
-					<name>(triplex_line:272)</name>
-					<id>272</id>
-				</object>
-				<object>
-					<name>(triplex_line:104)</name>
-					<id>104</id>
-				</object>
-				<object>
-					<name>(triplex_line:139)</name>
-					<id>139</id>
-				</object>
-				<object>
 					<name>(triplex_line:195)</name>
 					<id>195</id>
-				</object>
-				<object>
-					<name>(triplex_line:237)</name>
-					<id>237</id>
-				</object>
-				<object>
-					<name>(triplex_line:97)</name>
-					<id>97</id>
-				</object>
-				<object>
-					<name>(triplex_line:202)</name>
-					<id>202</id>
-				</object>
-				<object>
-					<name>(triplex_line:167)</name>
-					<id>167</id>
-				</object>
-				<object>
-					<name>(triplex_line:111)</name>
-					<id>111</id>
-				</object>
-				<object>
-					<name>(triplex_line:181)</name>
-					<id>181</id>
 				</object>
 				<object>
 					<name>(triplex_line:258)</name>
@@ -3296,63 +3208,183 @@
 					<id>83</id>
 				</object>
 				<object>
-					<name>(triplex_line:216)</name>
-					<id>216</id>
-				</object>
-				<object>
 					<name>(triplex_line:132)</name>
 					<id>132</id>
+				</object>
+				<object>
+					<name>(triplex_line:223)</name>
+					<id>223</id>
+				</object>
+				<object>
+					<name>(triplex_line:188)</name>
+					<id>188</id>
 				</object>
 				<object>
 					<name>(triplex_line:160)</name>
 					<id>160</id>
 				</object>
+				<object>
+					<name>(triplex_line:104)</name>
+					<id>104</id>
+				</object>
+				<object>
+					<name>(triplex_line:76)</name>
+					<id>76</id>
+				</object>
+				<object>
+					<name>(triplex_line:265)</name>
+					<id>265</id>
+				</object>
+				<object>
+					<name>(triplex_line:181)</name>
+					<id>181</id>
+				</object>
+				<object>
+					<name>(triplex_line:202)</name>
+					<id>202</id>
+				</object>
+				<object>
+					<name>(triplex_line:244)</name>
+					<id>244</id>
+				</object>
+				<object>
+					<name>(triplex_line:153)</name>
+					<id>153</id>
+				</object>
+				<object>
+					<name>(triplex_line:209)</name>
+					<id>209</id>
+				</object>
+				<object>
+					<name>(triplex_line:272)</name>
+					<id>272</id>
+				</object>
+				<object>
+					<name>(triplex_line:97)</name>
+					<id>97</id>
+				</object>
+				<object>
+					<name>(triplex_line:230)</name>
+					<id>230</id>
+				</object>
+				<object>
+					<name>(triplex_line:111)</name>
+					<id>111</id>
+				</object>
+				<object>
+					<name>(triplex_line:237)</name>
+					<id>237</id>
+				</object>
+				<object>
+					<name>(triplex_line:139)</name>
+					<id>139</id>
+				</object>
+				<object>
+					<name>(triplex_line:125)</name>
+					<id>125</id>
+				</object>
+				<object>
+					<name>(triplex_line:146)</name>
+					<id>146</id>
+				</object>
+				<object>
+					<name>(triplex_line:167)</name>
+					<id>167</id>
+				</object>
+				<object>
+					<name>(triplex_line:90)</name>
+					<id>90</id>
+				</object>
+				<object>
+					<name>(triplex_line:216)</name>
+					<id>216</id>
+				</object>
+				<object>
+					<name>(triplex_line:279)</name>
+					<id>279</id>
+				</object>
+				<object>
+					<name>(triplex_line:251)</name>
+					<id>251</id>
+				</object>
 			</rank>
 			<rank>
 				<ordinal>2</ordinal>
 				<object>
-					<name>b2m1_batt_meter</name>
-					<id>147</id>
+					<name>b3m10_batt_meter</name>
+					<id>280</id>
 				</object>
 				<object>
-					<name>b1m8_batt_meter</name>
-					<id>126</id>
+					<name>b3m9_batt_meter</name>
+					<id>273</id>
 				</object>
 				<object>
-					<name>b3m8_batt_meter</name>
-					<id>266</id>
-				</object>
-				<object>
-					<name>b2m3_batt_meter</name>
-					<id>161</id>
+					<name>b2m8_batt_meter</name>
+					<id>196</id>
 				</object>
 				<object>
 					<name>b1m3_batt_meter</name>
 					<id>91</id>
 				</object>
 				<object>
-					<name>b3m1_batt_meter</name>
-					<id>217</id>
-				</object>
-				<object>
-					<name>b3m4_batt_meter</name>
-					<id>238</id>
-				</object>
-				<object>
-					<name>b2m4_batt_meter</name>
-					<id>168</id>
+					<name>b3m8_batt_meter</name>
+					<id>266</id>
 				</object>
 				<object>
 					<name>b1m10_batt_meter</name>
 					<id>140</id>
 				</object>
 				<object>
-					<name>b2m9_batt_meter</name>
-					<id>203</id>
+					<name>b3m7_batt_meter</name>
+					<id>259</id>
+				</object>
+				<object>
+					<name>b1m9_batt_meter</name>
+					<id>133</id>
 				</object>
 				<object>
 					<name>b3m5_batt_meter</name>
 					<id>245</id>
+				</object>
+				<object>
+					<name>b1m8_batt_meter</name>
+					<id>126</id>
+				</object>
+				<object>
+					<name>b3m2_batt_meter</name>
+					<id>224</id>
+				</object>
+				<object>
+					<name>b2m3_batt_meter</name>
+					<id>161</id>
+				</object>
+				<object>
+					<name>b3m3_batt_meter</name>
+					<id>231</id>
+				</object>
+				<object>
+					<name>b3m1_batt_meter</name>
+					<id>217</id>
+				</object>
+				<object>
+					<name>b1m1_batt_meter</name>
+					<id>77</id>
+				</object>
+				<object>
+					<name>b2m1_batt_meter</name>
+					<id>147</id>
+				</object>
+				<object>
+					<name>b1m7_batt_meter</name>
+					<id>119</id>
+				</object>
+				<object>
+					<name>b2m9_batt_meter</name>
+					<id>203</id>
+				</object>
+				<object>
+					<name>b2m10_batt_meter</name>
+					<id>210</id>
 				</object>
 				<object>
 					<name>b1m2_batt_meter</name>
@@ -3363,24 +3395,28 @@
 					<id>105</id>
 				</object>
 				<object>
-					<name>b1m7_batt_meter</name>
-					<id>119</id>
+					<name>b2m2_batt_meter</name>
+					<id>154</id>
 				</object>
 				<object>
-					<name>b2m10_batt_meter</name>
-					<id>210</id>
+					<name>b1m6_batt_meter</name>
+					<id>112</id>
+				</object>
+				<object>
+					<name>b3m4_batt_meter</name>
+					<id>238</id>
+				</object>
+				<object>
+					<name>b2m6_batt_meter</name>
+					<id>182</id>
+				</object>
+				<object>
+					<name>b2m4_batt_meter</name>
+					<id>168</id>
 				</object>
 				<object>
 					<name>b2m5_batt_meter</name>
 					<id>175</id>
-				</object>
-				<object>
-					<name>b1m1_batt_meter</name>
-					<id>77</id>
-				</object>
-				<object>
-					<name>b3m9_batt_meter</name>
-					<id>273</id>
 				</object>
 				<object>
 					<name>b2m7_batt_meter</name>
@@ -3391,131 +3427,87 @@
 					<id>252</id>
 				</object>
 				<object>
-					<name>b3m7_batt_meter</name>
-					<id>259</id>
-				</object>
-				<object>
-					<name>b3m2_batt_meter</name>
-					<id>224</id>
-				</object>
-				<object>
-					<name>b3m10_batt_meter</name>
-					<id>280</id>
-				</object>
-				<object>
-					<name>b2m8_batt_meter</name>
-					<id>196</id>
-				</object>
-				<object>
-					<name>b2m2_batt_meter</name>
-					<id>154</id>
-				</object>
-				<object>
-					<name>b1m6_batt_meter</name>
-					<id>112</id>
-				</object>
-				<object>
-					<name>b3m3_batt_meter</name>
-					<id>231</id>
-				</object>
-				<object>
-					<name>b1m9_batt_meter</name>
-					<id>133</id>
-				</object>
-				<object>
 					<name>b1m4_batt_meter</name>
 					<id>98</id>
-				</object>
-				<object>
-					<name>b2m6_batt_meter</name>
-					<id>182</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>1</ordinal>
 				<object>
-					<name>b2m7_batt_inv</name>
-					<id>190</id>
-				</object>
-				<object>
-					<name>b3m10_batt_inv</name>
-					<id>281</id>
-				</object>
-				<object>
-					<name>b3m5_batt_inv</name>
-					<id>246</id>
-				</object>
-				<object>
-					<name>b2m4_batt_inv</name>
-					<id>169</id>
+					<name>b1m8_batt_inv</name>
+					<id>127</id>
 				</object>
 				<object>
 					<name>b2m6_batt_inv</name>
 					<id>183</id>
 				</object>
 				<object>
-					<name>b2m10_batt_inv</name>
-					<id>211</id>
-				</object>
-				<object>
-					<name>b1m5_batt_inv</name>
-					<id>106</id>
-				</object>
-				<object>
-					<name>b2m3_batt_inv</name>
-					<id>162</id>
-				</object>
-				<object>
-					<name>b1m6_batt_inv</name>
-					<id>113</id>
-				</object>
-				<object>
-					<name>b1m1_batt_inv</name>
-					<id>78</id>
-				</object>
-				<object>
-					<name>b3m7_batt_inv</name>
-					<id>260</id>
-				</object>
-				<object>
-					<name>b3m8_batt_inv</name>
-					<id>267</id>
-				</object>
-				<object>
-					<name>b2m5_batt_inv</name>
-					<id>176</id>
-				</object>
-				<object>
 					<name>b1m7_batt_inv</name>
 					<id>120</id>
 				</object>
 				<object>
-					<name>b1m3_batt_inv</name>
-					<id>92</id>
-				</object>
-				<object>
-					<name>b3m2_batt_inv</name>
-					<id>225</id>
-				</object>
-				<object>
-					<name>b1m10_batt_inv</name>
-					<id>141</id>
+					<name>b2m8_batt_inv</name>
+					<id>197</id>
 				</object>
 				<object>
 					<name>b1m2_batt_inv</name>
 					<id>85</id>
 				</object>
 				<object>
-					<name>b2m9_batt_inv</name>
-					<id>204</id>
+					<name>b2m1_batt_inv</name>
+					<id>148</id>
 				</object>
 				<object>
-					<name>b3m6_batt_inv</name>
-					<id>253</id>
+					<name>b1m4_batt_inv</name>
+					<id>99</id>
 				</object>
 				<object>
-					<name>b2m8_batt_inv</name>
-					<id>197</id>
+					<name>b1m5_batt_inv</name>
+					<id>106</id>
+				</object>
+				<object>
+					<name>b3m1_batt_inv</name>
+					<id>218</id>
+				</object>
+				<object>
+					<name>b3m5_batt_inv</name>
+					<id>246</id>
+				</object>
+				<object>
+					<name>b2m2_batt_inv</name>
+					<id>155</id>
+				</object>
+				<object>
+					<name>b1m10_batt_inv</name>
+					<id>141</id>
+				</object>
+				<object>
+					<name>b2m3_batt_inv</name>
+					<id>162</id>
+				</object>
+				<object>
+					<name>b3m9_batt_inv</name>
+					<id>274</id>
+				</object>
+				<object>
+					<name>b3m8_batt_inv</name>
+					<id>267</id>
+				</object>
+				<object>
+					<name>b1m6_batt_inv</name>
+					<id>113</id>
+				</object>
+				<object>
+					<name>b3m2_batt_inv</name>
+					<id>225</id>
+				</object>
+				<object>
+					<name>b2m4_batt_inv</name>
+					<id>169</id>
+				</object>
+				<object>
+					<name>b2m5_batt_inv</name>
+					<id>176</id>
 				</object>
 				<object>
 					<name>b3m3_batt_inv</name>
@@ -3526,271 +3518,243 @@
 					<id>134</id>
 				</object>
 				<object>
-					<name>b2m2_batt_inv</name>
-					<id>155</id>
+					<name>b1m3_batt_inv</name>
+					<id>92</id>
+				</object>
+				<object>
+					<name>b2m9_batt_inv</name>
+					<id>204</id>
 				</object>
 				<object>
 					<name>b3m4_batt_inv</name>
 					<id>239</id>
 				</object>
 				<object>
-					<name>b3m9_batt_inv</name>
-					<id>274</id>
+					<name>b1m1_batt_inv</name>
+					<id>78</id>
 				</object>
 				<object>
-					<name>b1m4_batt_inv</name>
-					<id>99</id>
+					<name>b2m10_batt_inv</name>
+					<id>211</id>
 				</object>
 				<object>
-					<name>b2m1_batt_inv</name>
-					<id>148</id>
+					<name>b3m10_batt_inv</name>
+					<id>281</id>
 				</object>
 				<object>
-					<name>b1m8_batt_inv</name>
-					<id>127</id>
+					<name>b2m7_batt_inv</name>
+					<id>190</id>
 				</object>
 				<object>
-					<name>b3m1_batt_inv</name>
-					<id>218</id>
+					<name>b3m6_batt_inv</name>
+					<id>253</id>
+				</object>
+				<object>
+					<name>b3m7_batt_inv</name>
+					<id>260</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>0</ordinal>
 				<object>
-					<name>b1m8_batt</name>
-					<id>128</id>
-				</object>
-				<object>
 					<name>(metrics_collector:157)</name>
 					<id>157</id>
-				</object>
-				<object>
-					<name>b2m1_batt</name>
-					<id>149</id>
-				</object>
-				<object>
-					<name>(metrics_collector:101)</name>
-					<id>101</id>
-				</object>
-				<object>
-					<name>b2m9_batt</name>
-					<id>205</id>
-				</object>
-				<object>
-					<name>b2m6_batt</name>
-					<id>184</id>
-				</object>
-				<object>
-					<name>b2m10_batt</name>
-					<id>212</id>
-				</object>
-				<object>
-					<name>b2m8_batt</name>
-					<id>198</id>
-				</object>
-				<object>
-					<name>b2m7_batt</name>
-					<id>191</id>
-				</object>
-				<object>
-					<name>(metrics_collector:150)</name>
-					<id>150</id>
-				</object>
-				<object>
-					<name>(metrics_collector:108)</name>
-					<id>108</id>
-				</object>
-				<object>
-					<name>b1m9_batt</name>
-					<id>135</id>
-				</object>
-				<object>
-					<name>b3m4_batt</name>
-					<id>240</id>
-				</object>
-				<object>
-					<name>(metrics_collector:129)</name>
-					<id>129</id>
-				</object>
-				<object>
-					<name>(metrics_collector:234)</name>
-					<id>234</id>
-				</object>
-				<object>
-					<name>b2m5_batt</name>
-					<id>177</id>
-				</object>
-				<object>
-					<name>b3m7_batt</name>
-					<id>261</id>
-				</object>
-				<object>
-					<name>b1m10_batt</name>
-					<id>142</id>
-				</object>
-				<object>
-					<name>b2m3_batt</name>
-					<id>163</id>
-				</object>
-				<object>
-					<name>b1m1_batt</name>
-					<id>79</id>
-				</object>
-				<object>
-					<name>b1m6_batt</name>
-					<id>114</id>
-				</object>
-				<object>
-					<name>(metrics_collector:213)</name>
-					<id>213</id>
-				</object>
-				<object>
-					<name>(metrics_collector:178)</name>
-					<id>178</id>
-				</object>
-				<object>
-					<name>gridlabdSimulator1</name>
-					<id>11</id>
-				</object>
-				<object>
-					<name>b3m1_batt</name>
-					<id>219</id>
-				</object>
-				<object>
-					<name>b1m7_batt</name>
-					<id>121</id>
-				</object>
-				<object>
-					<name>(metrics_collector:164)</name>
-					<id>164</id>
-				</object>
-				<object>
-					<name>(metrics_collector:171)</name>
-					<id>171</id>
-				</object>
-				<object>
-					<name>(metrics_collector:192)</name>
-					<id>192</id>
-				</object>
-				<object>
-					<name>(metrics_collector:220)</name>
-					<id>220</id>
 				</object>
 				<object>
 					<name>(metrics_collector:255)</name>
 					<id>255</id>
 				</object>
 				<object>
-					<name>(metrics_collector:199)</name>
-					<id>199</id>
+					<name>b3m7_batt</name>
+					<id>261</id>
 				</object>
 				<object>
-					<name>b3m3_batt</name>
-					<id>233</id>
-				</object>
-				<object>
-					<name>b1m5_batt</name>
-					<id>107</id>
-				</object>
-				<object>
-					<name>(metrics_collector:87)</name>
-					<id>87</id>
-				</object>
-				<object>
-					<name>b3m5_batt</name>
-					<id>247</id>
-				</object>
-				<object>
-					<name>b1m4_batt</name>
-					<id>100</id>
-				</object>
-				<object>
-					<name>(metrics_collector:241)</name>
-					<id>241</id>
-				</object>
-				<object>
-					<name>(metrics_collector:122)</name>
-					<id>122</id>
-				</object>
-				<object>
-					<name>(metrics_collector:115)</name>
-					<id>115</id>
+					<name>(metrics_collector:213)</name>
+					<id>213</id>
 				</object>
 				<object>
 					<name>b1m3_batt</name>
 					<id>93</id>
 				</object>
 				<object>
-					<name>b3m6_batt</name>
-					<id>254</id>
-				</object>
-				<object>
-					<name>(metrics_collector:283)</name>
-					<id>283</id>
-				</object>
-				<object>
-					<name>(metrics_collector:227)</name>
-					<id>227</id>
-				</object>
-				<object>
-					<name>b3m9_batt</name>
-					<id>275</id>
-				</object>
-				<object>
-					<name>(metrics_collector:94)</name>
-					<id>94</id>
-				</object>
-				<object>
-					<name>(metrics_collector:262)</name>
-					<id>262</id>
-				</object>
-				<object>
-					<name>(metrics_collector:143)</name>
-					<id>143</id>
-				</object>
-				<object>
-					<name>(metrics_collector:248)</name>
-					<id>248</id>
+					<name>b3m8_batt</name>
+					<id>268</id>
 				</object>
 				<object>
 					<name>b1m2_batt</name>
 					<id>86</id>
 				</object>
 				<object>
-					<name>(metrics_collector:269)</name>
-					<id>269</id>
+					<name>b1m10_batt</name>
+					<id>142</id>
 				</object>
 				<object>
-					<name>b2m4_batt</name>
-					<id>170</id>
+					<name>b2m5_batt</name>
+					<id>177</id>
 				</object>
 				<object>
-					<name>b3m2_batt</name>
-					<id>226</id>
-				</object>
-				<object>
-					<name>(metrics_collector:206)</name>
-					<id>206</id>
+					<name>(metrics_collector:178)</name>
+					<id>178</id>
 				</object>
 				<object>
 					<name>(metrics_collector:80)</name>
 					<id>80</id>
 				</object>
 				<object>
-					<name>b3m10_batt</name>
-					<id>282</id>
+					<name>(metrics_collector:262)</name>
+					<id>262</id>
 				</object>
 				<object>
-					<name>(metrics_collector:10)</name>
-					<id>10</id>
+					<name>b2m7_batt</name>
+					<id>191</id>
 				</object>
 				<object>
-					<name>b3m8_batt</name>
-					<id>268</id>
+					<name>(metrics_collector:122)</name>
+					<id>122</id>
+				</object>
+				<object>
+					<name>b3m4_batt</name>
+					<id>240</id>
+				</object>
+				<object>
+					<name>b3m5_batt</name>
+					<id>247</id>
+				</object>
+				<object>
+					<name>b1m8_batt</name>
+					<id>128</id>
+				</object>
+				<object>
+					<name>b1m4_batt</name>
+					<id>100</id>
+				</object>
+				<object>
+					<name>(metrics_collector:150)</name>
+					<id>150</id>
+				</object>
+				<object>
+					<name>(metrics_collector:171)</name>
+					<id>171</id>
+				</object>
+				<object>
+					<name>b2m1_batt</name>
+					<id>149</id>
+				</object>
+				<object>
+					<name>(metrics_collector:227)</name>
+					<id>227</id>
+				</object>
+				<object>
+					<name>b3m6_batt</name>
+					<id>254</id>
+				</object>
+				<object>
+					<name>b2m6_batt</name>
+					<id>184</id>
+				</object>
+				<object>
+					<name>(metrics_collector:241)</name>
+					<id>241</id>
+				</object>
+				<object>
+					<name>(metrics_collector:234)</name>
+					<id>234</id>
+				</object>
+				<object>
+					<name>(metrics_collector:283)</name>
+					<id>283</id>
+				</object>
+				<object>
+					<name>(metrics_collector:94)</name>
+					<id>94</id>
+				</object>
+				<object>
+					<name>b1m7_batt</name>
+					<id>121</id>
 				</object>
 				<object>
 					<name>(metrics_collector_writer:0)</name>
 					<id>0</id>
+				</object>
+				<object>
+					<name>b2m9_batt</name>
+					<id>205</id>
+				</object>
+				<object>
+					<name>(metrics_collector:136)</name>
+					<id>136</id>
+				</object>
+				<object>
+					<name>b3m2_batt</name>
+					<id>226</id>
+				</object>
+				<object>
+					<name>b2m8_batt</name>
+					<id>198</id>
+				</object>
+				<object>
+					<name>b1m9_batt</name>
+					<id>135</id>
+				</object>
+				<object>
+					<name>(metrics_collector:220)</name>
+					<id>220</id>
+				</object>
+				<object>
+					<name>(metrics_collector:108)</name>
+					<id>108</id>
+				</object>
+				<object>
+					<name>(metrics_collector:269)</name>
+					<id>269</id>
+				</object>
+				<object>
+					<name>b1m1_batt</name>
+					<id>79</id>
+				</object>
+				<object>
+					<name>(metrics_collector:115)</name>
+					<id>115</id>
+				</object>
+				<object>
+					<name>b3m3_batt</name>
+					<id>233</id>
+				</object>
+				<object>
+					<name>gridlabdSimulator1</name>
+					<id>11</id>
+				</object>
+				<object>
+					<name>(metrics_collector:248)</name>
+					<id>248</id>
+				</object>
+				<object>
+					<name>(metrics_collector:164)</name>
+					<id>164</id>
+				</object>
+				<object>
+					<name>b3m9_batt</name>
+					<id>275</id>
+				</object>
+				<object>
+					<name>b3m1_batt</name>
+					<id>219</id>
+				</object>
+				<object>
+					<name>b1m5_batt</name>
+					<id>107</id>
+				</object>
+				<object>
+					<name>(metrics_collector:192)</name>
+					<id>192</id>
+				</object>
+				<object>
+					<name>b2m4_batt</name>
+					<id>170</id>
+				</object>
+				<object>
+					<name>(metrics_collector:101)</name>
+					<id>101</id>
 				</object>
 				<object>
 					<name>b2m2_batt</name>
@@ -3801,12 +3765,48 @@
 					<id>276</id>
 				</object>
 				<object>
+					<name>(metrics_collector:129)</name>
+					<id>129</id>
+				</object>
+				<object>
 					<name>(metrics_collector:185)</name>
 					<id>185</id>
 				</object>
 				<object>
-					<name>(metrics_collector:136)</name>
-					<id>136</id>
+					<name>(metrics_collector:206)</name>
+					<id>206</id>
+				</object>
+				<object>
+					<name>b2m3_batt</name>
+					<id>163</id>
+				</object>
+				<object>
+					<name>b3m10_batt</name>
+					<id>282</id>
+				</object>
+				<object>
+					<name>b2m10_batt</name>
+					<id>212</id>
+				</object>
+				<object>
+					<name>(metrics_collector:10)</name>
+					<id>10</id>
+				</object>
+				<object>
+					<name>(metrics_collector:143)</name>
+					<id>143</id>
+				</object>
+				<object>
+					<name>b1m6_batt</name>
+					<id>114</id>
+				</object>
+				<object>
+					<name>(metrics_collector:199)</name>
+					<id>199</id>
+				</object>
+				<object>
+					<name>(metrics_collector:87)</name>
+					<id>87</id>
 				</object>
 			</rank>
 		</pass>
@@ -3944,9 +3944,9 @@
 				<parent>F1_Transformer1</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>substation_meter</name>
-				<measured_real_energy>-12228.7561534 Wh</measured_real_energy>
+				<measured_real_energy>-14000.5898 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+40.0265416928 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+45.8172972647 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.0025+0.0025j VA</measured_power>
@@ -4009,7 +4009,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>-12.2287561534 kWh</monthly_energy>
+				<monthly_energy>-14.0005898 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -4106,9 +4106,9 @@
 				<parent>branch_1_line_1</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_1_meter_1</name>
-				<measured_real_energy>-12229.0089773 Wh</measured_real_energy>
+				<measured_real_energy>-14000.8792556 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+38.1815268998 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+43.704958207 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.0025+0.0025j VA</measured_power>
@@ -4171,7 +4171,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>-12.2290089773 kWh</monthly_energy>
+				<monthly_energy>-14.0008792556 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -4269,9 +4269,9 @@
 				<parent>branch_1_line_2</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_1_meter_2</name>
-				<measured_real_energy>+0.0580001687611 Wh</measured_real_energy>
+				<measured_real_energy>+0.0580001932067 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0580001687689 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0580001932144 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00241667+0.00241667j VA</measured_power>
@@ -4334,7 +4334,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+5.80001687611e-005 kWh</monthly_energy>
+				<monthly_energy>+5.80001932067e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -4432,9 +4432,9 @@
 				<parent>branch_1_line_3</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_1_meter_3</name>
-				<measured_real_energy>+0.0560001938086 Wh</measured_real_energy>
+				<measured_real_energy>+0.0560002218835 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0560001938159 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0560002218909 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00233333+0.00233333j VA</measured_power>
@@ -4497,7 +4497,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+5.60001938086e-005 kWh</monthly_energy>
+				<monthly_energy>+5.60002218835e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -4595,9 +4595,9 @@
 				<parent>branch_1_line_4</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_1_meter_4</name>
-				<measured_real_energy>+0.0540002188561 Wh</measured_real_energy>
+				<measured_real_energy>+0.0540002505604 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0540002188631 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0540002505674 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00225+0.00225j VA</measured_power>
@@ -4660,7 +4660,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+5.40002188561e-005 kWh</monthly_energy>
+				<monthly_energy>+5.40002505604e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -4758,9 +4758,9 @@
 				<parent>branch_1_line_5</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_1_meter_5</name>
-				<measured_real_energy>+0.0520002013217 Wh</measured_real_energy>
+				<measured_real_energy>+0.0520002304857 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0520002013283 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0520002304922 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00216667+0.00216667j VA</measured_power>
@@ -4823,7 +4823,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+5.20002013217e-005 kWh</monthly_energy>
+				<monthly_energy>+5.20002304857e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -4921,9 +4921,9 @@
 				<parent>branch_1_line_6</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_1_meter_6</name>
-				<measured_real_energy>+0.0500001837874 Wh</measured_real_energy>
+				<measured_real_energy>+0.050000210411 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0500001837935 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0500002104171 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00208333+0.00208333j VA</measured_power>
@@ -4986,7 +4986,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+5.00001837874e-005 kWh</monthly_energy>
+				<monthly_energy>+5.0000210411e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -5084,9 +5084,9 @@
 				<parent>branch_1_line_7</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_1_meter_7</name>
-				<measured_real_energy>+0.0480001622981 Wh</measured_real_energy>
+				<measured_real_energy>+0.0480001858084 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0480001623039 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0480001858142 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.002+0.002j VA</measured_power>
@@ -5149,7 +5149,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+4.80001622981e-005 kWh</monthly_energy>
+				<monthly_energy>+4.80001858084e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -5247,9 +5247,9 @@
 				<parent>branch_1_line_8</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_1_meter_8</name>
-				<measured_real_energy>+0.0460001447638 Wh</measured_real_energy>
+				<measured_real_energy>+0.0460001657337 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0460001447692 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0460001657392 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00191667+0.00191667j VA</measured_power>
@@ -5312,7 +5312,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+4.60001447638e-005 kWh</monthly_energy>
+				<monthly_energy>+4.60001657337e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -5410,9 +5410,9 @@
 				<parent>branch_1_line_9</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_1_meter_9</name>
-				<measured_real_energy>+0.0440001272294 Wh</measured_real_energy>
+				<measured_real_energy>+0.044000145659 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0440001272345 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0440001456641 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00183333+0.00183333j VA</measured_power>
@@ -5475,7 +5475,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+4.40001272294e-005 kWh</monthly_energy>
+				<monthly_energy>+4.4000145659e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -5573,9 +5573,9 @@
 				<parent>branch_1_line_10</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_1_meter_10</name>
-				<measured_real_energy>+0.0420001057402 Wh</measured_real_energy>
+				<measured_real_energy>+0.0420001210565 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.042000105745 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0420001210613 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00175+0.00175j VA</measured_power>
@@ -5638,7 +5638,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+4.20001057402e-005 kWh</monthly_energy>
+				<monthly_energy>+4.20001210565e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -5736,9 +5736,9 @@
 				<parent>branch_2_line_1</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_2_meter_1</name>
-				<measured_real_energy>+0.040000084251 Wh</measured_real_energy>
+				<measured_real_energy>+0.0400000964539 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0400000842555 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0400000964584 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00166667+0.00166667j VA</measured_power>
@@ -5801,7 +5801,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+4.0000084251e-005 kWh</monthly_energy>
+				<monthly_energy>+4.00000964539e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -5899,9 +5899,9 @@
 				<parent>branch_2_line_2</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_2_meter_2</name>
-				<measured_real_energy>+0.0380001092986 Wh</measured_real_energy>
+				<measured_real_energy>+0.0380001251309 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0380001093028 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0380001251351 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00158333+0.00158333j VA</measured_power>
@@ -5964,7 +5964,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+3.80001092986e-005 kWh</monthly_energy>
+				<monthly_energy>+3.80001251309e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -6062,9 +6062,9 @@
 				<parent>branch_2_line_3</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_2_meter_3</name>
-				<measured_real_energy>+0.0360000878094 Wh</measured_real_energy>
+				<measured_real_energy>+0.0360001005283 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0360000878134 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0360001005323 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.0015+0.0015j VA</measured_power>
@@ -6127,7 +6127,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+3.60000878094e-005 kWh</monthly_energy>
+				<monthly_energy>+3.60001005283e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -6225,9 +6225,9 @@
 				<parent>branch_2_line_4</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_2_meter_4</name>
-				<measured_real_energy>+0.0340000663203 Wh</measured_real_energy>
+				<measured_real_energy>+0.0340000759258 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.034000066324 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0340000759295 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00141667+0.00141667j VA</measured_power>
@@ -6290,7 +6290,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+3.40000663203e-005 kWh</monthly_energy>
+				<monthly_energy>+3.40000759258e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -6388,9 +6388,9 @@
 				<parent>branch_2_line_5</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_2_meter_5</name>
-				<measured_real_energy>+0.0320000448311 Wh</measured_real_energy>
+				<measured_real_energy>+0.0320000513233 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0320000448346 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0320000513268 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00133333+0.00133333j VA</measured_power>
@@ -6453,7 +6453,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+3.20000448311e-005 kWh</monthly_energy>
+				<monthly_energy>+3.20000513233e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -6551,9 +6551,9 @@
 				<parent>branch_2_line_6</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_2_meter_6</name>
-				<measured_real_energy>+0.0300000698787 Wh</measured_real_energy>
+				<measured_real_energy>+0.0300000800003 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0300000698819 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0300000800035 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00125+0.00125j VA</measured_power>
@@ -6616,7 +6616,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+3.00000698787e-005 kWh</monthly_energy>
+				<monthly_energy>+3.00000800003e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -6714,9 +6714,9 @@
 				<parent>branch_2_line_7</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_2_meter_7</name>
-				<measured_real_energy>+0.0280000483896 Wh</measured_real_energy>
+				<measured_real_energy>+0.0280000553978 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0280000483926 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0280000554008 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00116667+0.00116667j VA</measured_power>
@@ -6779,7 +6779,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+2.80000483896e-005 kWh</monthly_energy>
+				<monthly_energy>+2.80000553978e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -6877,9 +6877,9 @@
 				<parent>branch_2_line_8</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_2_meter_8</name>
-				<measured_real_energy>+0.0260000269005 Wh</measured_real_energy>
+				<measured_real_energy>+0.0260000307953 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0260000269032 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0260000307981 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00108333+0.00108333j VA</measured_power>
@@ -6942,7 +6942,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+2.60000269005e-005 kWh</monthly_energy>
+				<monthly_energy>+2.60000307953e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -7040,9 +7040,9 @@
 				<parent>branch_2_line_9</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_2_meter_9</name>
-				<measured_real_energy>+0.0240000519481 Wh</measured_real_energy>
+				<measured_real_energy>+0.0240000594723 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0240000519506 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0240000594748 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.001+0.001j VA</measured_power>
@@ -7105,7 +7105,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+2.40000519481e-005 kWh</monthly_energy>
+				<monthly_energy>+2.40000594723e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -7203,9 +7203,9 @@
 				<parent>branch_2_line_10</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_2_meter_10</name>
-				<measured_real_energy>+0.0220000769957 Wh</measured_real_energy>
+				<measured_real_energy>+0.0220000881493 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.022000076998 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0220000881516 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.000916667+0.000916667j VA</measured_power>
@@ -7268,7 +7268,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+2.20000769957e-005 kWh</monthly_energy>
+				<monthly_energy>+2.20000881493e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -7366,9 +7366,9 @@
 				<parent>branch_3_line_1</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_3_meter_1</name>
-				<measured_real_energy>+0.0200000594614 Wh</measured_real_energy>
+				<measured_real_energy>+0.0200000680747 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0200000594635 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0200000680768 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.000833333+0.000833333j VA</measured_power>
@@ -7431,7 +7431,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+2.00000594614e-005 kWh</monthly_energy>
+				<monthly_energy>+2.00000680747e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -7529,9 +7529,9 @@
 				<parent>branch_3_line_2</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_3_meter_2</name>
-				<measured_real_energy>+0.0180000419271 Wh</measured_real_energy>
+				<measured_real_energy>+0.0180000480001 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.018000041929 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0180000480019 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00075+0.00075j VA</measured_power>
@@ -7594,7 +7594,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+1.80000419271e-005 kWh</monthly_energy>
+				<monthly_energy>+1.80000480001e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -7692,9 +7692,9 @@
 				<parent>branch_3_line_3</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_3_meter_3</name>
-				<measured_real_energy>+0.0160000669748 Wh</measured_real_energy>
+				<measured_real_energy>+0.0160000766771 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0160000669764 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0160000766787 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.000666667+0.000666667j VA</measured_power>
@@ -7757,7 +7757,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+1.60000669748e-005 kWh</monthly_energy>
+				<monthly_energy>+1.60000766771e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -7855,9 +7855,9 @@
 				<parent>branch_3_line_4</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_3_meter_4</name>
-				<measured_real_energy>+0.0140000494405 Wh</measured_real_energy>
+				<measured_real_energy>+0.0140000566025 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0140000494419 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0140000566039 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.000583333+0.000583333j VA</measured_power>
@@ -7920,7 +7920,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+1.40000494405e-005 kWh</monthly_energy>
+				<monthly_energy>+1.40000566025e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -8018,9 +8018,9 @@
 				<parent>branch_3_line_5</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_3_meter_5</name>
-				<measured_real_energy>+0.0120000319062 Wh</measured_real_energy>
+				<measured_real_energy>+0.0120000365279 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0120000319074 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0120000365291 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.0005+0.0005j VA</measured_power>
@@ -8083,7 +8083,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+1.20000319062e-005 kWh</monthly_energy>
+				<monthly_energy>+1.20000365279e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -8181,9 +8181,9 @@
 				<parent>branch_3_line_6</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_3_meter_6</name>
-				<measured_real_energy>+0.010000014372 Wh</measured_real_energy>
+				<measured_real_energy>+0.0100000164533 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0100000143729 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.0100000164542 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.000416667+0.000416667j VA</measured_power>
@@ -8246,7 +8246,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+1.0000014372e-005 kWh</monthly_energy>
+				<monthly_energy>+1.00000164533e-005 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -8344,9 +8344,9 @@
 				<parent>branch_3_line_7</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_3_meter_7</name>
-				<measured_real_energy>+0.00799999288288 Wh</measured_real_energy>
+				<measured_real_energy>+0.00799999185085 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.00799999288361 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.00799999185159 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.000333333+0.000333333j VA</measured_power>
@@ -8409,7 +8409,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+7.99999288288e-006 kWh</monthly_energy>
+				<monthly_energy>+7.99999185085e-006 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -8507,9 +8507,9 @@
 				<parent>branch_3_line_8</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_3_meter_8</name>
-				<measured_real_energy>+0.00599997139378 Wh</measured_real_energy>
+				<measured_real_energy>+0.0059999672484 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.00599997139433 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.00599996724895 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.00025+0.00025j VA</measured_power>
@@ -8572,7 +8572,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+5.99997139378e-006 kWh</monthly_energy>
+				<monthly_energy>+5.9999672484e-006 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -8670,9 +8670,9 @@
 				<parent>branch_3_line_9</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_3_meter_9</name>
-				<measured_real_energy>+0.00399999644144 Wh</measured_real_energy>
+				<measured_real_energy>+0.00399999592542 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.0039999964418 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.00399999592579 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0.000166667+0.000166667j VA</measured_power>
@@ -8735,7 +8735,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+3.99999644144e-006 kWh</monthly_energy>
+				<monthly_energy>+3.99999592542e-006 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -8833,9 +8833,9 @@
 				<parent>branch_3_line_10</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>branch_3_meter_10</name>
-				<measured_real_energy>+0.00199997495234 Wh</measured_real_energy>
+				<measured_real_energy>+0.00199997132297 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>+0.00199997495252 VAh</measured_reactive_energy>
+				<measured_reactive_energy>+0.00199997132316 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+8.33333e-005+8.33333e-005j VA</measured_power>
@@ -8898,7 +8898,7 @@
 				<previous_monthly_bill>+0 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
 				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>+1.99997495234e-006 kWh</monthly_energy>
+				<monthly_energy>+1.99997132297e-006 kWh</monthly_energy>
 				<bill_mode>NONE</bill_mode>
 				<bill_day>15</bill_day>
 				<price>+0 $/kWh</price>
@@ -15737,9 +15737,9 @@
 				<parent>triplex_line:76</parent>
 				<clock>2013-07-02 00:00:00 PDT</clock>
 				<name>b1m1_batt_meter</name>
-				<measured_real_energy>-12239.1666699 Wh</measured_real_energy>
+				<measured_real_energy>-14012.5000032 Wh</measured_real_energy>
 				<measured_real_energy_delta>+0 Wh</measured_real_energy_delta>
-				<measured_reactive_energy>-1.24091330927e-005 VAh</measured_reactive_energy>
+				<measured_reactive_energy>-1.24091331988e-005 VAh</measured_reactive_energy>
 				<measured_reactive_energy_delta>+0 VAh</measured_reactive_energy_delta>
 				<measured_energy_delta_timestep>-1 s</measured_energy_delta_timestep>
 				<measured_power>+0+0d VA</measured_power>
@@ -15780,14 +15780,14 @@
 				<measured_current_N>-0-0j A</measured_current_N>
 				<customer_interrupted>FALSE</customer_interrupted>
 				<customer_interrupted_secondary>FALSE</customer_interrupted_secondary>
-				<monthly_bill>+0 $</monthly_bill>
-				<previous_monthly_bill>+0 $</previous_monthly_bill>
+				<monthly_bill>+4.22041249959 $</monthly_bill>
+				<previous_monthly_bill>+6 $</previous_monthly_bill>
 				<previous_monthly_energy>+0 kWh</previous_monthly_energy>
-				<monthly_fee>+0 $</monthly_fee>
-				<monthly_energy>-12.2391666699 kWh</monthly_energy>
-				<bill_mode>NONE</bill_mode>
-				<bill_day>15</bill_day>
-				<price>+0 $/kWh</price>
+				<monthly_fee>+6 $</monthly_fee>
+				<monthly_energy>-14.0125000032 kWh</monthly_energy>
+				<bill_mode>UNIFORM</bill_mode>
+				<bill_day>1</bill_day>
+				<price>+0.127 $/kWh</price>
 				<price_base>+0 $/kWh</price_base>
 				<first_tier_price>+0 $/kWh</first_tier_price>
 				<first_tier_energy>+0 kWh</first_tier_energy>
@@ -21984,7 +21984,7 @@
 				<distribution_current_A>+1.02757e-008-1.02757e-008j A</distribution_current_A>
 				<distribution_current_B>-1.31809e-008-3.53182e-009j A</distribution_current_B>
 				<distribution_current_C>+3.30248e-009+1.2325e-008j A</distribution_current_C>
-				<distribution_real_energy>-12228.5689883 Wh</distribution_real_energy>
+				<distribution_real_energy>-14000.380211 Wh</distribution_real_energy>
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.133 V</maximum_voltage_error>
@@ -22528,18 +22528,18 @@
 				<V_angle_B>+0</V_angle_B>
 				<V_angle_C>+0</V_angle_C>
 				<pCircuit_V_Avg>+0</pCircuit_V_Avg>
-				<P_Out>+5000 VA</P_Out>
+				<P_Out>+3900 VA</P_Out>
 				<Q_Out>+0 VAr</Q_Out>
 				<power_in>+0 W</power_in>
 				<rated_power>+3800 VA</rated_power>
-				<rated_battery_power>+7222.22222222 W</rated_battery_power>
-				<inverter_efficiency>+0.9</inverter_efficiency>
+				<rated_battery_power>+10000 W</rated_battery_power>
+				<inverter_efficiency>+1</inverter_efficiency>
 				<battery_soc>+0 pu</battery_soc>
 				<soc_reserve>+0 pu</soc_reserve>
 				<power_factor>+1 unit</power_factor>
 				<islanded_state>FALSE</islanded_state>
 				<nominal_frequency>+60 Hz</nominal_frequency>
-				<Pref>+5000</Pref>
+				<Pref>+3900</Pref>
 				<Qref>+0</Qref>
 				<kpd>+0</kpd>
 				<kpq>+0</kpq>
@@ -22670,7 +22670,7 @@
 				<Q4>-2 pu</Q4>
 				<volt_var_control_lockout>-1 s</volt_var_control_lockout>
 				<number_of_phases_out>1</number_of_phases_out>
-				<efficiency_value>+0.9</efficiency_value>
+				<efficiency_value>+1</efficiency_value>
 				<VW_V1>-2 pu</VW_V1>
 				<VW_V2>-2 pu</VW_V2>
 				<VW_P1>-2 pu</VW_P1>
@@ -28184,9 +28184,9 @@
 				<use_internal_battery_model>TRUE</use_internal_battery_model>
 				<battery_type>LI_ION</battery_type>
 				<nominal_voltage>+120 V</nominal_voltage>
-				<rated_power>+7222.22222222 W</rated_power>
+				<rated_power>+10000 W</rated_power>
 				<battery_capacity>+14000 Wh</battery_capacity>
-				<round_trip_efficiency>+0.9 pu</round_trip_efficiency>
+				<round_trip_efficiency>+1 pu</round_trip_efficiency>
 				<state_of_charge>+0 pu</state_of_charge>
 				<battery_load>-0 W</battery_load>
 				<reserve_state_of_charge>+0 pu</reserve_state_of_charge>
