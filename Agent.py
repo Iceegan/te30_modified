@@ -9,14 +9,10 @@ if sys.platform != 'win32':
 time_stop = int(sys.argv[1])
 time_granted = 0
 
-#dict_file = open("TE_Challenge_glm_dict.json").read()
-#glm_dict = json.loads(dict_file)
-
 fncs.initialize()
 
 while time_granted < time_stop:
 	time_granted = fncs.time_request(time_stop)
-	print(time_granted)
 	events = fncs.get_events()
 	for topic in events:
 		value = fncs.get_value(topic)

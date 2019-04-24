@@ -30,6 +30,48 @@ object triplex_line {{
 	configuration TLCFG;
 }}
 
+object triplex_line {{
+	groupid F1_Triplex_Line;
+	phases {0};
+	from {1}_house_node;
+	to {1}_solar_meter;
+	length 10 ft;
+	configuration TLCFG;
+}}
+
+object triplex_meter {{
+  name {1}_solar_meter;
+	phases {0};
+	nominal_voltage 120;
+	groupid inverter_meter;
+
+	object inverter {{
+		name {1}_solar_inv;
+		phases {0};
+		inverter_type FOUR_QUADRANT;
+		power_factor 1;
+		use_multipoint_efficiency TRUE;
+		inverter_manufacturer XANTREX;
+		maximum_dc_power 6500;
+		four_quadrant_control_mode CONSTANT_PF;
+		generator_status ONLINE;
+		rated_power 6500;
+		inverter_efficiency 0.90;
+
+		object solar {{
+			name {1}_solar;
+			generator_mode SUPPLY_DRIVEN;
+			generator_status ONLINE;
+			panel_type SINGLE_CRYSTAL_SILICON;
+			orientation FIXED_AXIS;
+			rated_power 7500;
+		}};
+    object metrics_collector {{
+    	interval 300;
+    }};
+	}};
+}}
+
 object triplex_meter {{
   name {1}_batt_meter;
 	phases {0};

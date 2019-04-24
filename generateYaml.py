@@ -10,10 +10,14 @@ meter_name = ['branch_1_meter_1','branch_1_meter_2','branch_1_meter_3','branch_1
 
 
 ofile = open("yamldata.yaml",'w')
-for i in range(1,30):
-    ostring ="""{0}_batt_charge:\n\ttopic: gridlabdSimulator1/{0}_batt_charge\n\tdefault: 0""".format(house_num[i]);
+for i in range(0,30):
+    ostring ="""{0}_batt_charge:\r\ttopic: gridlabdSimulator1/{0}_batt_charge\r\tdefault: 0""".format(house_num[i]);
     ofile.write(ostring)
-    ofile.write('\n')
+    ostring ="""\r{0}_batt_power:\r\ttopic: gridlabdSimulator1/{0}_batt_power\r\tdefault: 0""".format(house_num[i]);
+    ofile.write(ostring)
+    ostring ="""\r{0}_solar_power:\r\ttopic: gridlabdSimulator1/{0}_solar_power\r\tdefault: 0""".format(house_num[i]);
+    ofile.write(ostring)
+    ofile.write('\r')
 
 
 ofile.close()

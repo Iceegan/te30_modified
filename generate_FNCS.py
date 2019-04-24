@@ -20,5 +20,14 @@ for i in range(30):
     ostring ="""publish "commit:{0}_batt.state_of_charge -> {0}_batt_charge";\n""".format(house_num[i]);
     ofile.write(ostring)
 
+ofile.write('\n')
+for i in range(30):
+    ostring ="""publish "commit:{0}_solar_meter.measured_real_power -> {0}_batt_power";\n""".format(house_num[i]);
+    ofile.write(ostring)
+
+ofile.write('\n')
+for i in range(30):
+    ostring ="""publish "commit:{0}_batt_meter.measured_real_power -> {0}_solar_power";\n""".format(house_num[i]);
+    ofile.write(ostring)
 
 ofile.close()

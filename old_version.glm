@@ -18,10 +18,14 @@ module powerflow {
 	solver_method FBS;
 	NR_iteration_limit 100;
 }
-
+module residential {
+	implicit_enduses NONE;
+}
 module tape;
 module generators;
 
+#include "../../support/schedules/water_and_setpoint_schedule_v3.glm"
+#include "../../support/schedules/appliance_schedules.glm"
 #include "outputs_te.glm"
 
 // summer
@@ -608,6 +612,7 @@ object meter {
 //#######################################################################
 //                        --Load Setup--
 //#######################################################################
+
 //branch_1_meter_1
 object transformer {
      name b1m1_house_trans;
@@ -632,53 +637,15 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases BS;
-	from b1m1_house_node;
-	to b1m1_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b1m1_solar_meter;
-	phases BS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b1m1_solar_inv;
-		phases BS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b1m1_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b1m1_batt_meter;
 	phases BS;
 	nominal_voltage 120;
 	groupid inverter_meter;
+	bill_mode UNIFORM;
+  price ${FIXED_PRICE};
+  bill_day 1;
+  monthly_fee 6;
 
 	object inverter {
 		name b1m1_batt_inv;
@@ -690,10 +657,10 @@ object triplex_meter {
 		//maximum_dc_power 10000; //Might need to less than rated_power for the battery
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 6500;
+		rated_power 10000;
 		//rated_battery_power 10000;
-		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		inverter_efficiency 1;
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m1_batt;
@@ -703,7 +670,7 @@ object triplex_meter {
 			rated_power 10000;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
-			round_trip_efficiency 0.9;
+			round_trip_efficiency 1;
 			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		};
@@ -737,48 +704,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases CS;
-	from b1m2_house_node;
-	to b1m2_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b1m2_solar_meter;
-	phases CS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b1m2_solar_inv;
-		phases CS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b1m2_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b1m2_batt_meter;
 	phases CS;
@@ -798,7 +723,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m2_batt;
@@ -842,48 +767,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases CS;
-	from b1m3_house_node;
-	to b1m3_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b1m3_solar_meter;
-	phases CS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b1m3_solar_inv;
-		phases CS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b1m3_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b1m3_batt_meter;
 	phases CS;
@@ -903,7 +786,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m3_batt;
@@ -947,48 +830,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases BS;
-	from b1m4_house_node;
-	to b1m4_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b1m4_solar_meter;
-	phases BS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b1m4_solar_inv;
-		phases BS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b1m4_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b1m4_batt_meter;
 	phases BS;
@@ -1008,7 +849,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m4_batt;
@@ -1052,48 +893,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases BS;
-	from b1m5_house_node;
-	to b1m5_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b1m5_solar_meter;
-	phases BS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b1m5_solar_inv;
-		phases BS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b1m5_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b1m5_batt_meter;
 	phases BS;
@@ -1113,7 +912,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m5_batt;
@@ -1157,48 +956,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases AS;
-	from b1m6_house_node;
-	to b1m6_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b1m6_solar_meter;
-	phases AS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b1m6_solar_inv;
-		phases AS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b1m6_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b1m6_batt_meter;
 	phases AS;
@@ -1218,7 +975,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m6_batt;
@@ -1262,48 +1019,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases BS;
-	from b1m7_house_node;
-	to b1m7_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b1m7_solar_meter;
-	phases BS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b1m7_solar_inv;
-		phases BS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b1m7_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b1m7_batt_meter;
 	phases BS;
@@ -1323,7 +1038,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m7_batt;
@@ -1367,48 +1082,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases BS;
-	from b1m8_house_node;
-	to b1m8_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b1m8_solar_meter;
-	phases BS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b1m8_solar_inv;
-		phases BS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b1m8_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b1m8_batt_meter;
 	phases BS;
@@ -1428,7 +1101,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m8_batt;
@@ -1472,48 +1145,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases AS;
-	from b1m9_house_node;
-	to b1m9_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b1m9_solar_meter;
-	phases AS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b1m9_solar_inv;
-		phases AS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b1m9_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b1m9_batt_meter;
 	phases AS;
@@ -1533,7 +1164,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m9_batt;
@@ -1577,48 +1208,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases AS;
-	from b1m10_house_node;
-	to b1m10_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b1m10_solar_meter;
-	phases AS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b1m10_solar_inv;
-		phases AS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b1m10_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b1m10_batt_meter;
 	phases AS;
@@ -1638,7 +1227,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m10_batt;
@@ -1682,48 +1271,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases CS;
-	from b2m1_house_node;
-	to b2m1_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b2m1_solar_meter;
-	phases CS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b2m1_solar_inv;
-		phases CS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b2m1_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b2m1_batt_meter;
 	phases CS;
@@ -1743,7 +1290,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m1_batt;
@@ -1787,48 +1334,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases AS;
-	from b2m2_house_node;
-	to b2m2_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b2m2_solar_meter;
-	phases AS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b2m2_solar_inv;
-		phases AS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b2m2_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b2m2_batt_meter;
 	phases AS;
@@ -1848,7 +1353,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m2_batt;
@@ -1892,48 +1397,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases AS;
-	from b2m3_house_node;
-	to b2m3_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b2m3_solar_meter;
-	phases AS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b2m3_solar_inv;
-		phases AS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b2m3_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b2m3_batt_meter;
 	phases AS;
@@ -1953,7 +1416,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m3_batt;
@@ -1997,48 +1460,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases AS;
-	from b2m4_house_node;
-	to b2m4_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b2m4_solar_meter;
-	phases AS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b2m4_solar_inv;
-		phases AS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b2m4_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b2m4_batt_meter;
 	phases AS;
@@ -2058,7 +1479,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m4_batt;
@@ -2102,48 +1523,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases CS;
-	from b2m5_house_node;
-	to b2m5_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b2m5_solar_meter;
-	phases CS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b2m5_solar_inv;
-		phases CS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b2m5_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b2m5_batt_meter;
 	phases CS;
@@ -2163,7 +1542,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m5_batt;
@@ -2207,48 +1586,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases AS;
-	from b2m6_house_node;
-	to b2m6_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b2m6_solar_meter;
-	phases AS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b2m6_solar_inv;
-		phases AS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b2m6_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b2m6_batt_meter;
 	phases AS;
@@ -2268,7 +1605,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m6_batt;
@@ -2312,48 +1649,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases AS;
-	from b2m7_house_node;
-	to b2m7_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b2m7_solar_meter;
-	phases AS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b2m7_solar_inv;
-		phases AS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b2m7_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b2m7_batt_meter;
 	phases AS;
@@ -2373,7 +1668,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m7_batt;
@@ -2417,48 +1712,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases CS;
-	from b2m8_house_node;
-	to b2m8_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b2m8_solar_meter;
-	phases CS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b2m8_solar_inv;
-		phases CS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b2m8_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b2m8_batt_meter;
 	phases CS;
@@ -2478,7 +1731,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m8_batt;
@@ -2522,48 +1775,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases CS;
-	from b2m9_house_node;
-	to b2m9_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b2m9_solar_meter;
-	phases CS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b2m9_solar_inv;
-		phases CS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b2m9_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b2m9_batt_meter;
 	phases CS;
@@ -2583,7 +1794,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m9_batt;
@@ -2627,48 +1838,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases BS;
-	from b2m10_house_node;
-	to b2m10_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b2m10_solar_meter;
-	phases BS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b2m10_solar_inv;
-		phases BS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b2m10_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b2m10_batt_meter;
 	phases BS;
@@ -2688,7 +1857,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m10_batt;
@@ -2732,48 +1901,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases BS;
-	from b3m1_house_node;
-	to b3m1_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b3m1_solar_meter;
-	phases BS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b3m1_solar_inv;
-		phases BS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b3m1_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b3m1_batt_meter;
 	phases BS;
@@ -2793,7 +1920,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m1_batt;
@@ -2837,48 +1964,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases CS;
-	from b3m2_house_node;
-	to b3m2_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b3m2_solar_meter;
-	phases CS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b3m2_solar_inv;
-		phases CS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b3m2_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b3m2_batt_meter;
 	phases CS;
@@ -2898,7 +1983,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m2_batt;
@@ -2942,48 +2027,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases BS;
-	from b3m3_house_node;
-	to b3m3_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b3m3_solar_meter;
-	phases BS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b3m3_solar_inv;
-		phases BS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b3m3_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b3m3_batt_meter;
 	phases BS;
@@ -3003,7 +2046,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m3_batt;
@@ -3047,48 +2090,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases BS;
-	from b3m4_house_node;
-	to b3m4_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b3m4_solar_meter;
-	phases BS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b3m4_solar_inv;
-		phases BS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b3m4_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b3m4_batt_meter;
 	phases BS;
@@ -3108,7 +2109,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m4_batt;
@@ -3152,48 +2153,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases BS;
-	from b3m5_house_node;
-	to b3m5_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b3m5_solar_meter;
-	phases BS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b3m5_solar_inv;
-		phases BS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b3m5_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b3m5_batt_meter;
 	phases BS;
@@ -3213,7 +2172,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m5_batt;
@@ -3257,48 +2216,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases AS;
-	from b3m6_house_node;
-	to b3m6_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b3m6_solar_meter;
-	phases AS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b3m6_solar_inv;
-		phases AS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b3m6_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b3m6_batt_meter;
 	phases AS;
@@ -3318,7 +2235,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m6_batt;
@@ -3362,48 +2279,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases AS;
-	from b3m7_house_node;
-	to b3m7_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b3m7_solar_meter;
-	phases AS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b3m7_solar_inv;
-		phases AS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b3m7_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b3m7_batt_meter;
 	phases AS;
@@ -3423,7 +2298,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m7_batt;
@@ -3467,48 +2342,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases CS;
-	from b3m8_house_node;
-	to b3m8_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b3m8_solar_meter;
-	phases CS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b3m8_solar_inv;
-		phases CS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b3m8_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b3m8_batt_meter;
 	phases CS;
@@ -3528,7 +2361,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m8_batt;
@@ -3572,48 +2405,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases AS;
-	from b3m9_house_node;
-	to b3m9_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b3m9_solar_meter;
-	phases AS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b3m9_solar_inv;
-		phases AS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b3m9_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b3m9_batt_meter;
 	phases AS;
@@ -3633,7 +2424,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m9_batt;
@@ -3677,48 +2468,6 @@ object triplex_line {
 	configuration TLCFG;
 }
 
-object triplex_line {
-	groupid F1_Triplex_Line;
-	phases CS;
-	from b3m10_house_node;
-	to b3m10_solar_meter;
-	length 10 ft;
-	configuration TLCFG;
-}
-
-object triplex_meter {
-  name b3m10_solar_meter;
-	phases CS;
-	nominal_voltage 120;
-	groupid inverter_meter;
-
-	object inverter {
-		name b3m10_solar_inv;
-		phases CS;
-		inverter_type FOUR_QUADRANT;
-		power_factor 1;
-		use_multipoint_efficiency TRUE;
-		inverter_manufacturer XANTREX;
-		maximum_dc_power 6500;
-		four_quadrant_control_mode CONSTANT_PF;
-		generator_status ONLINE;
-		rated_power 6500;
-		inverter_efficiency 0.90;
-
-		object solar {
-			name b3m10_solar;
-			generator_mode SUPPLY_DRIVEN;
-			generator_status ONLINE;
-			panel_type SINGLE_CRYSTAL_SILICON;
-			orientation FIXED_AXIS;
-			rated_power 7500;
-		};
-    object metrics_collector {
-    	interval 300;
-    };
-	};
-}
-
 object triplex_meter {
   name b3m10_batt_meter;
 	phases CS;
@@ -3738,7 +2487,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m10_batt;
