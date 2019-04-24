@@ -660,7 +660,7 @@ object triplex_meter {
 		rated_power 10000;
 		//rated_battery_power 10000;
 		inverter_efficiency 1;
-		P_Out 3900; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m1_batt;
@@ -671,7 +671,7 @@ object triplex_meter {
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 1;
-			state_of_charge 1;
+			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		};
     object metrics_collector {
@@ -723,7 +723,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m2_batt;
@@ -786,7 +786,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m3_batt;
@@ -849,7 +849,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m4_batt;
@@ -912,7 +912,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m5_batt;
@@ -975,7 +975,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m6_batt;
@@ -1038,7 +1038,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m7_batt;
@@ -1101,7 +1101,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m8_batt;
@@ -1164,7 +1164,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m9_batt;
@@ -1227,7 +1227,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b1m10_batt;
@@ -1290,7 +1290,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m1_batt;
@@ -1353,7 +1353,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m2_batt;
@@ -1416,7 +1416,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m3_batt;
@@ -1479,7 +1479,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m4_batt;
@@ -1542,7 +1542,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m5_batt;
@@ -1605,7 +1605,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m6_batt;
@@ -1668,7 +1668,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m7_batt;
@@ -1731,7 +1731,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m8_batt;
@@ -1794,7 +1794,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m9_batt;
@@ -1857,7 +1857,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b2m10_batt;
@@ -1920,7 +1920,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m1_batt;
@@ -1983,7 +1983,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m2_batt;
@@ -2046,7 +2046,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m3_batt;
@@ -2109,7 +2109,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m4_batt;
@@ -2172,7 +2172,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m5_batt;
@@ -2235,7 +2235,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m6_batt;
@@ -2298,7 +2298,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m7_batt;
@@ -2361,7 +2361,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m8_batt;
@@ -2424,7 +2424,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m9_batt;
@@ -2487,7 +2487,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out 0; //VA
+		P_Out -1000; //VA
 
 		object battery {
 			name b3m10_batt;

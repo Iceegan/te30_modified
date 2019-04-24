@@ -16,16 +16,19 @@ fncs.initialize()
 
 while time_granted < time_stop:
 	time_granted = fncs.time_request(time_stop)
+	print(time_granted)
 	events = fncs.get_events()
 	for topic in events:
 		value = fncs.get_value(topic)
 		#can improve this by creating a set of all the relevant topics
 		#Check if topic is in the set
-		#if ('batt_charge' in topic):
-			#batt_num = topic[0:3]
-		#	if simple_auction.parse_fncs_number(value) > 0.95:
-		#		fncs.publish('batt_' + batt_num + '_P_Out', 50)
-		#		print('batt_', batt_num, '_P_Out', flush=True)
+		if ('batt_charge' in topic):
+			#print('Charge topic')
+			batt_num = topic[0:4]
+			if simple_auction.parse_fncs_number(value) > 0.95:
+				#print('inside charge topic')
+				#print(batt_num, '_batt_P_Out')
+				fncs.publish(batt_num + '_batt_P_Out', 1000)
 
 fncs.finalize()
 
