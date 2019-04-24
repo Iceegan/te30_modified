@@ -1,5 +1,5 @@
 name = tesp_monitor
-time_delta = 5m
+time_delta = 15m
 broker = tcp://localhost:5570
 values
     vpos7
@@ -20,4 +20,3 @@ values
     electric_demand_power
         topic = eplus/WHOLE BUILDING FACILITY TOTAL ELECTRIC DEMAND POWER
         default = 0
-
