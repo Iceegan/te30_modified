@@ -611,20 +611,6 @@ object meter {
 //#######################################################################
 //                        --Load Setup--
 //#######################################################################
-//branch_1_meter_2
-object transformer {
-     name b1m2_house_trans;
-     phases CS;
-     from branch_1_meter_2;
-     to b1m2_house_node;
-     configuration house_transformer;
-}
-
-object triplex_node {
-  name b1m2_house_node;
-  phases CS;
-  nominal_voltage 120;
-}
 
 object house {
 	name house_1;
