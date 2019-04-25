@@ -7,7 +7,6 @@ set FNCS_TIME_DELTA=
 set FNCS_CONFIG_FILE=
 start /b cmd /c fncs_broker 3 ^>broker.log 2^>^&1
 
-REM set FNCS_CONFIG_FILE=eventGen.yaml
 start /b cmd /c fncs_player 24h step.player ^>player.log 2^>^&1
 
 set FNCS_CONFIG_FILE=TE_Challenge_agent.yaml

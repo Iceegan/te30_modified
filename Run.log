@@ -1,191 +1,122 @@
-15 step 0
-1
-915 step 1
-92
-1815 step 2
-91
-2715 step 3
-91
-3615 step 4
-91
-4515 step 5
-91
-5415 step 6
-91
-6315 step 7
-91
-7215 step 8
-91
-8115 step 9
-91
-9015 step 10
-91
-9915 step 11
-91
-10815 step 12
-91
-11715 step 13
-91
-12615 step 14
-91
-13515 step 15
-91
-14415 step 16
-91
-15315 step 17
-1
-16215 step 18
-1
-17115 step 19
-1
-18015 step 20
-91
-18915 step 21
-91
-19815 step 22
-91
-20715 step 23
-91
-21615 step 24
-91
-22515 step 25
-91
-23415 step 26
-91
-24315 step 27
-91
-25215 step 28
-91
-26115 step 29
-91
-27015 step 30
-92
-27915 step 31
-92
-28815 step 32
-92
-29715 step 33
-92
-30615 step 34
-92
-31515 step 35
-92
-32415 step 36
-92
-33315 step 37
-92
-34215 step 38
-92
-35115 step 39
-92
-36015 step 40
-92
-36915 step 41
-92
-37815 step 42
-92
-38715 step 43
-92
-39615 step 44
-92
-40515 step 45
-92
-41415 step 46
-92
-42315 step 47
-92
-43215 step 48
-92
-44115 step 49
-91
-45015 step 50
-92
-45915 step 51
-92
-46815 step 52
-92
-47715 step 53
-92
-48615 step 54
-92
-49515 step 55
-92
-50415 step 56
-92
-51315 step 57
-92
-52215 step 58
-91
-53115 step 59
-92
-54015 step 60
-92
-54915 step 61
-92
-55815 step 62
-91
-56715 step 63
-92
-57615 step 64
-92
-58515 step 65
-92
-59415 step 66
-92
-60315 step 67
-92
-61215 step 68
-92
-62115 step 69
-92
-63015 step 70
-92
-63915 step 71
-92
-64815 step 72
-92
-65715 step 73
-92
-66615 step 74
-92
-67515 step 75
-92
-68415 step 76
-92
-69315 step 77
-92
-70215 step 78
-92
-71115 step 79
-91
-72015 step 80
-92
-72915 step 81
-91
-73815 step 82
-92
-74715 step 83
-92
-75615 step 84
-92
-76515 step 85
-91
-77415 step 86
-92
-78315 step 87
-91
-79215 step 88
-91
-80115 step 89
-91
-81015 step 90
-91
-81915 step 91
-91
-82815 step 92
-91
-83715 step 93
-91
-84615 step 94
-91
-85515 step 95
+375 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge', 'refload']
+1275 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+1695 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+2595 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+3495 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+3615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+4455 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+5355 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+6255 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+6615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+7215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+8115 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+9015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+9435 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+9615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+10215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+10815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+11415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+12015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+12615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+13215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+13815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+14415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+15015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+15615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+15675 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+16215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+16815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+16995 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+17415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+18015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+18615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+19215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+19755 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+19815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+20415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+21015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+21615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+22215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+22515 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+22815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+23415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+24015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+24315 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+24615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+24735 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+25215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+25815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+26415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+26535 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+27015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+27615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+28215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+28815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+29415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+29715 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+30015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+30075 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+30555 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+30615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+31215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+31395 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+31515 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+31815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+32415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+33015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge', 'refload']
+33315 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+33615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+34215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+34515 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+34815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+35415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+35715 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+36015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+36375 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+36615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+36795 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+37695 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge', 'refload']
+38595 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+38715 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+39615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+39915 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+40455 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+41355 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+41715 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+41835 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+42735 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+42915 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+43215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+44115 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+45015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+45915 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+46815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge', 'refload']
+47715 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+48615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+49515 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+49815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+50115 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+50415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+51015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+51615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+51675 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+51915 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+52095 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+52215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+52575 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+52815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+52995 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+53115 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+53415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+54015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+54615 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+54915 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+55215 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+55395 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+55755 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+55815 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+55935 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+56295 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+56415 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+57015 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
+57135 ['b1m1_batt_power', 'b1m1_solar_power', 'b1m1_batt_charge']
