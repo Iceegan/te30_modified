@@ -5,7 +5,7 @@ set FNCS_TRACE=no
 set FNCS_TIME_DELTA=
 
 set FNCS_CONFIG_FILE=
-start /b cmd /c fncs_broker 2 ^>broker.log 2^>^&1
+start /b cmd /c fncs_broker 3 ^>broker.log 2^>^&1
 
 start /b cmd /c fncs_player 24h step.player ^>player.log 2^>^&1
 
