@@ -2,6 +2,8 @@ name: agent
 time_delta: 15s
 broker: tcp://localhost:5570
 values:
+  step:
+    topic: player/step
   refload:
     topic: gridlabdSimulator1/distribution_load
     default: 0

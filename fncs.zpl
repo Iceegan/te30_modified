@@ -20,4 +20,3 @@ values
     electric_demand_power
         topic = eplus/WHOLE BUILDING FACILITY TOTAL ELECTRIC DEMAND POWER
         default = 0
-
