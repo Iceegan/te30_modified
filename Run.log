@@ -1,0 +1,107 @@
+Simulation Continue, new time_granted: 15
+charge 15
+charge 15
+step 15
+315 b1m1_solar_power -3439.86962066 W
+Simulation Continue, new time_granted: 600
+600 b1m1_solar_power -3399.32995744 W
+Simulation Continue, new time_granted: 900
+900 b1m1_solar_power -3367.7554804 W
+Simulation Continue, new time_granted: 915
+charge 915
+postTrade 915
+msg['power']:  3380
+solar power: -3367.7554804
+batt_out: 12.244519599999876
+fncs published: b1m1_batt_P_Out 12.244519599999876
+charge 915
+postTrade 915
+fncs published: b1m2_batt_P_Out 0
+step 915
+945 b1m1_solar_power -3329.44653378 W
+Simulation Continue, new time_granted: 1245
+1245 b1m1_solar_power -3321.94656896 W
+Simulation Continue, new time_granted: 1275
+1275 b1m1_solar_power -3285.29915971 W
+Simulation Continue, new time_granted: 1350
+1350 b1m1_solar_power -3278.14391014 W
+Simulation Continue, new time_granted: 1395
+1395 b1m1_solar_power -3271.0487549 W
+Simulation Continue, new time_granted: 1515
+1515 b1m1_solar_power -3264.01373631 W
+Simulation Continue, new time_granted: 1725
+1725 b1m1_solar_power -3250.12703288 W
+Simulation Continue, new time_granted: 1815
+1815 b1m1_solar_power -3229.76257282 W
+charge 1815
+postTrade 1815
+msg['power']:  7992
+solar power: -3229.76257282
+batt_out: 4762.23742718
+fncs published: b1m1_batt_P_Out 4762.23742718
+charge 1815
+postTrade 1815
+fncs published: b1m2_batt_P_Out 0
+step 1815
+1845 b1m1_solar_power -3216.50301849 W
+Simulation Continue, new time_granted: 1965
+1965 b1m1_solar_power -3216.5030166 W
+Simulation Continue, new time_granted: 2085
+2085 b1m1_solar_power -3203.5010669 W
+Simulation Continue, new time_granted: 2175
+2175 b1m1_solar_power -3190.75979493 W
+Simulation Continue, new time_granted: 2205
+2205 b1m1_solar_power -3178.28324247 W
+Simulation Continue, new time_granted: 2325
+2325 b1m1_solar_power -3178.28303403 W
+Simulation Continue, new time_granted: 2400
+2400 b1m1_solar_power -3166.0735375 W
+Simulation Continue, new time_granted: 2505
+2505 b1m1_solar_power -3160.06943404 W
+Simulation Continue, new time_granted: 2520
+2520 b1m1_solar_power -3148.26538972 W
+Simulation Continue, new time_granted: 2640
+2640 b1m1_solar_power -3148.26519584 W
+Simulation Continue, new time_granted: 2685
+2685 b1m1_solar_power -3136.73416001 W
+Simulation Continue, new time_granted: 2715
+charge 2715
+postTrade 2715
+msg['power']:  8132
+solar power: -3136.73416001
+batt_out: 4995.26583999
+fncs published: b1m1_batt_P_Out 4995.26583999
+charge 2715
+postTrade 2715
+fncs published: b1m2_batt_P_Out 0
+step 2715
+2745 b1m1_solar_power -3131.07131663 W
+Simulation Continue, new time_granted: 2790
+2790 b1m1_solar_power -3125.47776071 W
+Simulation Continue, new time_granted: 2805
+2805 b1m1_solar_power -3119.95321642 W
+Simulation Continue, new time_granted: 2925
+2925 b1m1_solar_power -3119.95313293 W
+Simulation Continue, new time_granted: 2940
+2940 b1m1_solar_power -3109.1122873 W
+Simulation Continue, new time_granted: 3015
+3015 b1m1_solar_power -3109.11207865 W
+Simulation Continue, new time_granted: 3045
+3045 b1m1_solar_power -3098.54961293 W
+Simulation Continue, new time_granted: 3060
+3060 b1m1_solar_power -3098.54943305 W
+Simulation Continue, new time_granted: 3180
+3180 b1m1_solar_power -3098.54944461 W
+Simulation Continue, new time_granted: 3195
+3195 b1m1_solar_power -3088.26614686 W
+Simulation Continue, new time_granted: 3315
+3315 b1m1_solar_power -3083.22911064 W
+Simulation Continue, new time_granted: 3435
+3435 b1m1_solar_power -3073.36546501 W
+Simulation Continue, new time_granted: 3555
+3555 b1m1_solar_power -3063.78182008 W
+Simulation Continue, new time_granted: 3570
+3570 b1m1_solar_power -3054.47828606 W
+Simulation Continue, new time_granted: 3600
+End of Simulation
+zmq Closed

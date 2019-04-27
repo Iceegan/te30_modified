@@ -68,6 +68,7 @@ for key, val in meta_s.items():
         SUB_LOSSES_UNITS = val['units']
 
 # create a NumPy array of all metrics for the substation
+sub_keys = ['network_node']
 data_s = np.empty(shape=(len(sub_keys), len(times), len(lst_s[time_key][sub_keys[0]])), dtype=np.float)
 print ("\nConstructed", data_s.shape, "NumPy array for Substations")
 j = 0

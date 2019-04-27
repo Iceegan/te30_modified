@@ -7,8 +7,8 @@
 
 clock {
 	timezone PST+8PDT;
-	starttime '2013-07-01 08:00:00';
-	stoptime '2013-07-01 16:00:00';
+	starttime '2013-07-01 13:00:00';
+	stoptime '2013-07-01 14:00:00';
 }
 
 module residential;
@@ -33,7 +33,7 @@ module generators;
 //#define FIXED_PRICE=0.088
 
 object metrics_collector_writer {
-     interval 900;
+     interval 300;
      filename ${METRICS_FILE}; // TE_Challenge_metrics.json
 };
 
@@ -126,7 +126,7 @@ object substation {
   base_power 12MVA;
   power_convergence_value 100VA;
   object metrics_collector {
-    interval 900;
+    interval 300;
   };
 }
 
@@ -673,7 +673,7 @@ object triplex_meter {
 			rated_power 7500;
 		};
     object metrics_collector {
-    	interval 900;
+    	interval 300;
     };
 	};
 }
@@ -697,7 +697,7 @@ object triplex_meter {
 		rated_power 6500;
 		//rated_battery_power 10000;
 		inverter_efficiency 0.90;
-		P_Out -50; //VA
+		P_Out 0; //VA
 
 		object battery {
 			name b1m1_batt;
@@ -708,11 +708,11 @@ object triplex_meter {
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 0.9;
-			state_of_charge 0;
+			state_of_charge 0.5;
 			generator_mode SUPPLY_DRIVEN;
 		};
     object metrics_collector {
-    	interval 900;
+    	interval 300;
     };
 	};
 }
@@ -823,6 +823,6 @@ object ZIPload {
 	impedance_fraction 0;
 };
  object metrics_collector {
-  interval 900;
+  interval 300;
  };
 }

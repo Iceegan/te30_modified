@@ -48,19 +48,23 @@ while time_granted < time_stop:
 				m_batt_num = 'b' + first + 'm' + second
 				keyname = m_batt_num + '_solar_power'
 				if(keyname in solar_power):
-					batt_out = msg['power'] - solar_power[keyname]
+					batt_out = msg['power'] + float(solar_power[keyname].split(' ')[0])
+					print('msg[\'power\']: ', str(msg['power']),flush=True)
+					print('solar power:', str(float(solar_power[keyname].split(' ')[0])),flush=True)
+					print('batt_out:', str(batt_out),flush=True)
 				else:
 					batt_out = 0
 				fncs.publish(m_batt_num + '_batt_P_Out', str(batt_out))
+				print('fncs published:', m_batt_num + '_batt_P_Out', str(batt_out))
 				server.send_pyobj('Trade Posted')
 			if (request == 'charge'):
+				print(request, time_granted, flush=True)
 				req_batt_num = msg['ID']
 				first = req_batt_num[0:1]
 				second = req_batt_num[1:3]
 				if (second[0] == '0'):
 					second = second[1]
 				m_batt_num = 'b' + first + 'm' + second
-				print(request, time_granted, flush=True)
 				keyname = m_batt_num + '_batt_charge'
 				if(keyname in batt_charges):
 					charge = batt_charges[keyname]
@@ -68,15 +72,22 @@ while time_granted < time_stop:
 					charge = '+0 pu'
 				server.send_pyobj(charge)
 		print(request, time_granted, flush=True)
-		server.send_pyobj('Step Granted')
 		time_granted = fncs.time_request(time_stop)
+		server.send_pyobj('Step Granted')
+		"""if(time_granted >= time_stop):
+			server.send_pyobj('end')
+		else:"""
 	else:
 		time_granted = fncs.time_request(time_stop)
+		print("Simulation Continue, new time_granted:", str(time_granted))
 
 
+
+print('End of Simulation', flush=True)
 
 server.close()
 context.term()
+print('zmq Closed', flush=True)
 fncs.finalize()
 
 if sys.platform != 'win32':
