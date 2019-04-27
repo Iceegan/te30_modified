@@ -4,3 +4,5 @@ subscribe "precommit:b1m1_batt_inv.P_Out <- Agent/b1m1_batt_P_Out";
 publish "commit:b1m1_batt.state_of_charge -> b1m1_batt_charge";
 publish "commit:b1m1_solar_meter.measured_real_power -> b1m1_solar_power";
 publish "commit:b1m1_batt_meter.measured_real_power -> b1m1_batt_power";
+
+publish "commit:house_1.total_load -> b1m2_house_load";
