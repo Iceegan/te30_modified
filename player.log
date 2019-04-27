@@ -1,4 +1,0 @@
-stops at 86400000000000 nanoseconds
-stops at 86400000000000 in sim time
-done
-E: 19-04-25 16:18:42 dangling 'DEALER' socket created at src/fncs.cpp:502

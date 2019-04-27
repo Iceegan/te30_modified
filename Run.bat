@@ -10,7 +10,7 @@ start /b cmd /c fncs_broker 3 ^>broker.log 2^>^&1
 start /b cmd /c fncs_player 24h step.player ^>player.log 2^>^&1
 
 set FNCS_CONFIG_FILE=TE_Challenge_agent.yaml
-start /b cmd /c python Agent.py 86400 ^>Run.log 2^>^&1
+start /b cmd /c python Agent.py 28800 ^>Run.log 2^>^&1
 
 set FNCS_CONFIG_FILE=
 set FNCS_LOG_LEVEL=

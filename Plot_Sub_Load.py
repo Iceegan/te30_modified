@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt;
 
 nameroot = "TE_Challenge"
 lp = open ("TE_Challenge_glm_dict.json").read()
-
+"""
 dict = json.loads(lp)
 sub_keys = list(dict['feeders'].keys())
 sub_keys.sort()
@@ -37,7 +37,7 @@ for key in inv_keys:
     row = dict['inverters'][key]
     print (key, "on", row['billingmeter_id'], "has", row['rated_W'], "W", row['resource'], "resource")
     # row['feeder_id'] is also available
-
+"""
 # parse the substation metrics file first; there should just be one entity per time sample
 # each metrics file should have matching time points
 lp_s = open ("substation_TE_Challenge_metrics.json").read()
