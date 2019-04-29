@@ -30,7 +30,9 @@ print(times)
 
 for obj in obj_keys:
     if('solar' in obj):
-        filename = './profiles/' + obj + '.csv'
+        nameParts= obj.split('_')[0].split('m')
+        name = (nameParts[0])[1:2] + '0' + nameParts[1]
+        filename = './profiles/prosumer_' + name + '.csv'
         with open(filename, 'w', newline='') as csvfile:
             outwriter = csv.writer(csvfile, delimiter=',')
             outwriter.writerow(['startTime','endTime','energy'])
