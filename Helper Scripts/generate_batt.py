@@ -127,7 +127,7 @@ object triplex_node {{
 }}
 
 object house {{
-	name house_{3};
+	name {1}_house;
 	parent {1}_house_node;
 	schedule_skew 577;
 	Rroof 17.618;

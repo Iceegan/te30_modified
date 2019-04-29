@@ -92,4 +92,11 @@ publish "commit:b3m7_batt_meter.measured_real_power -> b3m7_solar_power";
 publish "commit:b3m8_batt_meter.measured_real_power -> b3m8_solar_power";
 publish "commit:b3m10_batt_meter.measured_real_power -> b3m10_solar_power";
 
-publish "commit:b1m1_.measured_real_power -> b3m10_solar_power";
+publish "commit:b1m1_house.total_load -> b1m1_house_load";
+publish "commit:b1m5_house.total_load -> b1m5_house_load";
+publish "commit:b1m9_house.total_load -> b1m9_house_load";
+publish "commit:b2m3_house.total_load -> b2m3_house_load";
+publish "commit:b2m7_house.total_load -> b2m7_house_load";
+publish "commit:b3m1_house.total_load -> b3m1_house_load";
+publish "commit:b3m5_house.total_load -> b3m5_house_load";
+publish "commit:b3m9_house.total_load -> b3m9_house_load";

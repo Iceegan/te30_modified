@@ -14,7 +14,7 @@ object triplex_node {
 }
 
 object house {
-	name house_0;
+	name b1m1_house;
 	parent b1m1_house_node;
 	schedule_skew 577;
 	Rroof 17.618;
@@ -433,7 +433,7 @@ object triplex_node {
 }
 
 object house {
-	name house_4;
+	name b1m5_house;
 	parent b1m5_house_node;
 	schedule_skew 577;
 	Rroof 17.618;
@@ -852,7 +852,7 @@ object triplex_node {
 }
 
 object house {
-	name house_8;
+	name b1m9_house;
 	parent b1m9_house_node;
 	schedule_skew 577;
 	Rroof 17.618;
@@ -1271,7 +1271,7 @@ object triplex_node {
 }
 
 object house {
-	name house_12;
+	name b2m3_house;
 	parent b2m3_house_node;
 	schedule_skew 577;
 	Rroof 17.618;
@@ -1690,7 +1690,7 @@ object triplex_node {
 }
 
 object house {
-	name house_16;
+	name b2m7_house;
 	parent b2m7_house_node;
 	schedule_skew 577;
 	Rroof 17.618;
@@ -2109,7 +2109,7 @@ object triplex_node {
 }
 
 object house {
-	name house_20;
+	name b3m1_house;
 	parent b3m1_house_node;
 	schedule_skew 577;
 	Rroof 17.618;
@@ -2528,7 +2528,7 @@ object triplex_node {
 }
 
 object house {
-	name house_24;
+	name b3m5_house;
 	parent b3m5_house_node;
 	schedule_skew 577;
 	Rroof 17.618;
@@ -2947,7 +2947,7 @@ object triplex_node {
 }
 
 object house {
-	name house_28;
+	name b3m9_house;
 	parent b3m9_house_node;
 	schedule_skew 577;
 	Rroof 17.618;
