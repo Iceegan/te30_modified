@@ -18,7 +18,7 @@ from collections import OrderedDict
 lp = open ("house_TE_Challenge_metrics.json").read()
 
 json_data = json.loads(lp)
-#total_load_index = json_data['Metadata']['total_load_avg']['index']
+total_load_index = json_data['Metadata']['total_load_avg']['index']
 json_data.pop('Metadata')
 json_data.pop('StartTime')
 #make this more generic below
@@ -38,4 +38,4 @@ for obj in obj_keys:
         for timestamp in times:
             if(obj in json_data[timestamp]):
                 interval = str(int(timestamp)/900).split('.')[0]
-                outwriter.writerow([interval, interval, (json_data[timestamp][obj][total_load_index])])
+                outwriter.writerow([interval, interval, (-json_data[timestamp][obj][total_load_index])])

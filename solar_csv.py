@@ -29,13 +29,14 @@ times.sort(key=float)
 print(times)
 
 for obj in obj_keys:
-    filename = './profiles/' + obj + '.csv'
-    with open(filename, 'w', newline='') as csvfile:
-        outwriter = csv.writer(csvfile, delimiter=',')
-        outwriter.writerow(['startTime','endTime','energy'])
-        for time in times:
-            time = str(time)
-        for timestamp in times:
-            if(obj in json_data[timestamp]):
-                interval = str(int(timestamp)/900).split('.')[0]
-                outwriter.writerow([interval, interval, (json_data[timestamp][obj][index]/1000)])
+    if('solar' in obj):
+        filename = './profiles/' + obj + '.csv'
+        with open(filename, 'w', newline='') as csvfile:
+            outwriter = csv.writer(csvfile, delimiter=',')
+            outwriter.writerow(['startTime','endTime','energy'])
+            for time in times:
+                time = str(time)
+            for timestamp in times:
+                if(obj in json_data[timestamp]):
+                    interval = str(int(timestamp)/900).split('.')[0]
+                    outwriter.writerow([interval, interval, (json_data[timestamp][obj][index]/1000)])
