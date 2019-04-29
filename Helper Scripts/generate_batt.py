@@ -6,7 +6,8 @@ meter_name = ['branch_1_meter_1','branch_1_meter_2','branch_1_meter_3','branch_1
 
 ofile = open("inverters.txt",'w')
 for i in range(30):
-    ostring ="""//{2}
+    if(i%4 != 0):
+        ostring ="""//{2}
 object transformer {{
      name {1}_house_trans;
      phases {0};
@@ -52,10 +53,10 @@ object triplex_meter {{
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
-		maximum_dc_power 5000;
+		maximum_dc_power 7500;
 		four_quadrant_control_mode CONSTANT_PF;
 		generator_status ONLINE;
-		rated_power 5000;
+		rated_power 7500;
 		inverter_efficiency 0.90;
 
 		object solar {{
@@ -64,10 +65,10 @@ object triplex_meter {{
 			generator_status ONLINE;
 			panel_type SINGLE_CRYSTAL_SILICON;
 			orientation FIXED_AXIS;
-			rated_power 5000;
+			rated_power 7500;
 		}};
     object metrics_collector {{
-    	interval 300;
+    	interval 900;
     }};
 	}};
 }}
@@ -87,7 +88,7 @@ object triplex_meter {{
 		inverter_manufacturer XANTREX;
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 5000;
+		rated_power 7500;
 		inverter_efficiency 0.90;
 		P_Out 0; //VA
 
@@ -96,7 +97,7 @@ object triplex_meter {{
 			parent {1}_batt_inv;
 			use_internal_battery_model TRUE;
 			battery_type LI_ION;
-			rated_power 5000;
+			rated_power 7500;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 0.9;
@@ -104,10 +105,122 @@ object triplex_meter {{
 			generator_mode SUPPLY_DRIVEN;
 		}};
     object metrics_collector {{
-    	interval 300;
+    	interval 900;
     }};
 	}};
 }}\n\n""".format(phases[i], house_num[i], meter_name[i]);
-    ofile.write(ostring)
+        ofile.write(ostring)
+    else:
+        ostring ="""//{2}
+object transformer {{
+     name {1}_house_trans;
+     phases {0};
+     from {2};
+     to {1}_house_node;
+     configuration house_transformer;
+}}
+
+object triplex_node {{
+  name {1}_house_node;
+  phases {0};
+  nominal_voltage 120;
+}}
+
+object house {{
+	name house_{3};
+	parent {1}_house_node;
+	schedule_skew 577;
+	Rroof 17.618;
+	Rwall 6.872;
+	Rfloor 4.818;
+	Rdoors 3;
+	Rwindows 1.315;
+	airchange_per_hour 1.288;
+	hvac_power_factor 0.97;
+	cooling_system_type ELECTRIC;
+	heating_system_type GAS;
+	fan_type ONE_SPEED;
+	hvac_breaker_rating 200;
+	total_thermal_mass_per_floor_area 4.311;
+	motor_efficiency AVERAGE;
+	motor_model BASIC;
+	cooling_COP 2.502;
+	floor_area 637.886;
+	number_of_doors 1;
+	air_temperature 68.886;
+	mass_temperature 68.886;
+	heating_setpoint heating5*1.043+1.41;
+object ZIPload {{
+	schedule_skew 577;
+	heat_fraction 0.889;
+	base_power LIGHTS*1.7284;
+	power_pf 0;
+	power_fraction 0;
+	current_pf 0;
+	current_fraction 0;
+	impedance_pf 1;
+	impedance_fraction 1;
+}};
+object ZIPload {{
+	schedule_skew 577;
+	heat_fraction 0.732;
+	base_power CLOTHESWASHER*0.9135;
+	power_pf 0.97;
+	power_fraction 1;
+	current_pf 0.97;
+	current_fraction 0;
+	impedance_pf 0.97;
+	impedance_fraction 0;
+}};
+object ZIPload {{
+	schedule_skew 577;
+	heat_fraction 0.853;
+	base_power REFRIGERATOR*0.8837;
+	power_pf 0.97;
+	power_fraction 1;
+	current_pf 0.97;
+	current_fraction 0;
+	impedance_pf 0.97;
+	impedance_fraction 0;
+}};
+object ZIPload {{
+	schedule_skew 577;
+	heat_fraction 0.875;
+	base_power DRYER*0.5453;
+	power_pf 0.9;
+	power_fraction 0.1;
+	current_pf 0.9;
+	current_fraction 0.1;
+	impedance_pf 1;
+	impedance_fraction 0.8;
+}};
+object ZIPload {{
+	schedule_skew 577;
+	heat_fraction 0.76;
+	base_power RANGE*0.6705;
+	power_pf 0;
+	power_fraction 0;
+	current_pf 0;
+	current_fraction 0;
+	impedance_pf 1;
+	impedance_fraction 1;
+}};
+object ZIPload {{
+	schedule_skew 577;
+	heat_fraction 0.951;
+	base_power MICROWAVE*0.7977;
+	power_pf 0.97;
+	power_fraction 1;
+	current_pf 0.97;
+	current_fraction 0;
+	impedance_pf 0.97;
+	impedance_fraction 0;
+}};
+ object metrics_collector {{
+  interval 300;
+ }};
+}}\n\n""".format(phases[i], house_num[i], meter_name[i],i);
+        ofile.write(ostring)
+
 
 ofile.close()
