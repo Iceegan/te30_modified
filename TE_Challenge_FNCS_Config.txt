@@ -91,3 +91,5 @@ publish "commit:b3m6_batt_meter.measured_real_power -> b3m6_solar_power";
 publish "commit:b3m7_batt_meter.measured_real_power -> b3m7_solar_power";
 publish "commit:b3m8_batt_meter.measured_real_power -> b3m8_solar_power";
 publish "commit:b3m10_batt_meter.measured_real_power -> b3m10_solar_power";
+
+publish "commit:b1m1_.measured_real_power -> b3m10_solar_power";
