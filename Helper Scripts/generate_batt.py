@@ -67,9 +67,6 @@ object triplex_meter {{
 			orientation FIXED_AXIS;
 			rated_power 5000;
 		}};
-    object metrics_collector {{
-    	interval 900;
-    }};
 	}};
 }}
 
@@ -104,9 +101,6 @@ object triplex_meter {{
 			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		}};
-    object metrics_collector {{
-    	interval 900;
-    }};
 	}};
 }}\n\n""".format(phases[i], house_num[i], meter_name[i]);
         ofile.write(ostring)
@@ -216,9 +210,6 @@ object ZIPload {{
 	impedance_pf 0.97;
 	impedance_fraction 0;
 }};
- object metrics_collector {{
-  interval 300;
- }};
 }}\n\n""".format(phases[i], house_num[i], meter_name[i],i);
         ofile.write(ostring)
 
