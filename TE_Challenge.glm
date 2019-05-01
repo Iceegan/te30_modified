@@ -25,7 +25,6 @@ module tape;
 module generators;
 #include "./schedules/water_and_setpoint_schedule_v3.glm"
 #include "./schedules/appliance_schedules.glm"
-#include "outputs_te.glm"
 
 // summer
 #define FIXED_PRICE=0.127
