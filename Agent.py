@@ -1,9 +1,8 @@
 import string;
 import json
 import sys
-import tesp_support.fncs as fncs
-import tesp_support.simple_auction as simple_auction
 import zmq
+import fncs
 
 if sys.platform != 'win32':
 	import resource
@@ -26,7 +25,8 @@ solar_power = {}
 
 while time_granted < time_stop:
 	events = fncs.get_events()
-	for topic in events:
+	print(events,flush=True)
+	"""for topic in events:
 		value = fncs.get_value(topic)
 		#Collect Most recent charge data
 		if('batt_charge' in topic):
@@ -74,12 +74,10 @@ while time_granted < time_stop:
 		print(request, time_granted, flush=True)
 		time_granted = fncs.time_request(time_stop)
 		server.send_pyobj('Step Granted')
-		"""if(time_granted >= time_stop):
-			server.send_pyobj('end')
-		else:"""
 	else:
 		time_granted = fncs.time_request(time_stop)
-		print("Simulation Continue, new time_granted:", str(time_granted))
+		print("Simulation Continue, new time_granted:", str(time_granted))"""
+	time_granted=fncs.time_request(time_stop)
 
 
 

@@ -32,16 +32,19 @@ module generators;
 // winter
 //#define FIXED_PRICE=0.088
 
-object metrics_collector_writer {
-     interval 900;
-     filename ${METRICS_FILE}; // TE_Challenge_metrics.json
-};
-
 object climate {
      name "RegionalWeather";
-     tmyfile "../../support/weather/AZ-Tucson_International_Ap.tmy3";
+     tmyfile "./weather/AZ-Tucson_International_Ap.tmy3";
      interpolate QUADRATIC;
 };
+
+
+object fncs_msg {
+     name gridlabdSimulator1;
+     parent network_node;
+     configure TE_Challenge_FNCS_Config.txt;
+     option "transport:hostname localhost, port 5570";
+}
 
 //#######################################################################
 //                        --Configurations--
@@ -129,15 +132,6 @@ object substation {
     interval 900;
   };
 }
-
-#ifdef USE_FNCS
-object fncs_msg {
-     name gridlabdSimulator1;
-     parent network_node;
-     configure TE_Challenge_FNCS_Config.txt;
-     option "transport:hostname localhost, port 5570";
-}
-#endif
 
 object meter {
 	name substation_meter;
@@ -716,9 +710,6 @@ object ZIPload {
 	impedance_pf 0.97;
 	impedance_fraction 0;
 };
- object metrics_collector {
-  interval 900;
- };
 }
 
 //branch_1_meter_2
@@ -767,10 +758,10 @@ object triplex_meter {
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
-		maximum_dc_power 10000;
+		maximum_dc_power 5000;
 		four_quadrant_control_mode CONSTANT_PF;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 
 		object solar {
@@ -779,11 +770,8 @@ object triplex_meter {
 			generator_status ONLINE;
 			panel_type SINGLE_CRYSTAL_SILICON;
 			orientation FIXED_AXIS;
-			rated_power 10000;
+			rated_power 5000;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -802,7 +790,7 @@ object triplex_meter {
 		inverter_manufacturer XANTREX;
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 		P_Out 0; //VA
 
@@ -811,16 +799,13 @@ object triplex_meter {
 			parent b1m2_batt_inv;
 			use_internal_battery_model TRUE;
 			battery_type LI_ION;
-			rated_power 10000;
+			rated_power 5000;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 0.9;
 			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -870,10 +855,10 @@ object triplex_meter {
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
-		maximum_dc_power 10000;
+		maximum_dc_power 5000;
 		four_quadrant_control_mode CONSTANT_PF;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 
 		object solar {
@@ -882,11 +867,8 @@ object triplex_meter {
 			generator_status ONLINE;
 			panel_type SINGLE_CRYSTAL_SILICON;
 			orientation FIXED_AXIS;
-			rated_power 10000;
+			rated_power 5000;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -905,7 +887,7 @@ object triplex_meter {
 		inverter_manufacturer XANTREX;
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 		P_Out 0; //VA
 
@@ -914,16 +896,13 @@ object triplex_meter {
 			parent b1m3_batt_inv;
 			use_internal_battery_model TRUE;
 			battery_type LI_ION;
-			rated_power 10000;
+			rated_power 5000;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 0.9;
 			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -973,10 +952,10 @@ object triplex_meter {
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
-		maximum_dc_power 10000;
+		maximum_dc_power 5000;
 		four_quadrant_control_mode CONSTANT_PF;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 
 		object solar {
@@ -985,11 +964,8 @@ object triplex_meter {
 			generator_status ONLINE;
 			panel_type SINGLE_CRYSTAL_SILICON;
 			orientation FIXED_AXIS;
-			rated_power 10000;
+			rated_power 5000;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -1008,7 +984,7 @@ object triplex_meter {
 		inverter_manufacturer XANTREX;
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 		P_Out 0; //VA
 
@@ -1017,16 +993,13 @@ object triplex_meter {
 			parent b1m4_batt_inv;
 			use_internal_battery_model TRUE;
 			battery_type LI_ION;
-			rated_power 10000;
+			rated_power 5000;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 0.9;
 			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -1135,9 +1108,6 @@ object ZIPload {
 	impedance_pf 0.97;
 	impedance_fraction 0;
 };
- object metrics_collector {
-  interval 900;
- };
 }
 
 //branch_2_meter_1
@@ -1186,10 +1156,10 @@ object triplex_meter {
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
-		maximum_dc_power 10000;
+		maximum_dc_power 5000;
 		four_quadrant_control_mode CONSTANT_PF;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 
 		object solar {
@@ -1198,11 +1168,8 @@ object triplex_meter {
 			generator_status ONLINE;
 			panel_type SINGLE_CRYSTAL_SILICON;
 			orientation FIXED_AXIS;
-			rated_power 10000;
+			rated_power 5000;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -1221,7 +1188,7 @@ object triplex_meter {
 		inverter_manufacturer XANTREX;
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 		P_Out 0; //VA
 
@@ -1230,16 +1197,13 @@ object triplex_meter {
 			parent b2m1_batt_inv;
 			use_internal_battery_model TRUE;
 			battery_type LI_ION;
-			rated_power 10000;
+			rated_power 5000;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 0.9;
 			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -1289,10 +1253,10 @@ object triplex_meter {
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
-		maximum_dc_power 10000;
+		maximum_dc_power 5000;
 		four_quadrant_control_mode CONSTANT_PF;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 
 		object solar {
@@ -1301,11 +1265,8 @@ object triplex_meter {
 			generator_status ONLINE;
 			panel_type SINGLE_CRYSTAL_SILICON;
 			orientation FIXED_AXIS;
-			rated_power 10000;
+			rated_power 5000;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -1324,7 +1285,7 @@ object triplex_meter {
 		inverter_manufacturer XANTREX;
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 		P_Out 0; //VA
 
@@ -1333,16 +1294,13 @@ object triplex_meter {
 			parent b2m2_batt_inv;
 			use_internal_battery_model TRUE;
 			battery_type LI_ION;
-			rated_power 10000;
+			rated_power 5000;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 0.9;
 			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -1451,9 +1409,6 @@ object ZIPload {
 	impedance_pf 0.97;
 	impedance_fraction 0;
 };
- object metrics_collector {
-  interval 900;
- };
 }
 
 //branch_2_meter_4
@@ -1502,10 +1457,10 @@ object triplex_meter {
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
-		maximum_dc_power 10000;
+		maximum_dc_power 5000;
 		four_quadrant_control_mode CONSTANT_PF;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 
 		object solar {
@@ -1514,11 +1469,8 @@ object triplex_meter {
 			generator_status ONLINE;
 			panel_type SINGLE_CRYSTAL_SILICON;
 			orientation FIXED_AXIS;
-			rated_power 10000;
+			rated_power 5000;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -1537,7 +1489,7 @@ object triplex_meter {
 		inverter_manufacturer XANTREX;
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 		P_Out 0; //VA
 
@@ -1546,37 +1498,34 @@ object triplex_meter {
 			parent b2m4_batt_inv;
 			use_internal_battery_model TRUE;
 			battery_type LI_ION;
-			rated_power 10000;
+			rated_power 5000;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 0.9;
 			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
-//branch_2_meter_7
+//branch_2_meter_5
 object transformer {
-     name b2m7_house_trans;
+     name b2m5_house_trans;
      phases AS;
      from branch_2_meter_7;
-     to b2m7_house_node;
+     to b2m5_house_node;
      configuration house_transformer;
 }
 
 object triplex_node {
-  name b2m7_house_node;
+  name b2m5_house_node;
   phases AS;
   nominal_voltage 120;
 }
 
 object house {
-	name b2m7_house;
-	parent b2m7_house_node;
+	name b2m5_house;
+	parent b2m5_house_node;
 	schedule_skew 577;
 	Rroof 17.618;
 	Rwall 6.872;
@@ -1664,9 +1613,6 @@ object ZIPload {
 	impedance_pf 0.97;
 	impedance_fraction 0;
 };
- object metrics_collector {
-  interval 900;
- };
 }
 
 //branch_3_meter_1
@@ -1774,9 +1720,6 @@ object ZIPload {
 	impedance_pf 0.97;
 	impedance_fraction 0;
 };
- object metrics_collector {
-  interval 900;
- };
 }
 
 //branch_3_meter_2
@@ -1825,10 +1768,10 @@ object triplex_meter {
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
-		maximum_dc_power 10000;
+		maximum_dc_power 5000;
 		four_quadrant_control_mode CONSTANT_PF;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 
 		object solar {
@@ -1837,11 +1780,8 @@ object triplex_meter {
 			generator_status ONLINE;
 			panel_type SINGLE_CRYSTAL_SILICON;
 			orientation FIXED_AXIS;
-			rated_power 10000;
+			rated_power 5000;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -1860,7 +1800,7 @@ object triplex_meter {
 		inverter_manufacturer XANTREX;
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 		P_Out 0; //VA
 
@@ -1869,16 +1809,13 @@ object triplex_meter {
 			parent b3m2_batt_inv;
 			use_internal_battery_model TRUE;
 			battery_type LI_ION;
-			rated_power 10000;
+			rated_power 5000;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 0.9;
 			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -1928,10 +1865,10 @@ object triplex_meter {
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
-		maximum_dc_power 10000;
+		maximum_dc_power 5000;
 		four_quadrant_control_mode CONSTANT_PF;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 
 		object solar {
@@ -1940,11 +1877,8 @@ object triplex_meter {
 			generator_status ONLINE;
 			panel_type SINGLE_CRYSTAL_SILICON;
 			orientation FIXED_AXIS;
-			rated_power 10000;
+			rated_power 5000;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -1963,7 +1897,7 @@ object triplex_meter {
 		inverter_manufacturer XANTREX;
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 		P_Out 0; //VA
 
@@ -1972,16 +1906,13 @@ object triplex_meter {
 			parent b3m3_batt_inv;
 			use_internal_battery_model TRUE;
 			battery_type LI_ION;
-			rated_power 10000;
+			rated_power 5000;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 0.9;
 			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -2031,10 +1962,10 @@ object triplex_meter {
 		power_factor 1;
 		use_multipoint_efficiency TRUE;
 		inverter_manufacturer XANTREX;
-		maximum_dc_power 10000;
+		maximum_dc_power 5000;
 		four_quadrant_control_mode CONSTANT_PF;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 
 		object solar {
@@ -2043,11 +1974,8 @@ object triplex_meter {
 			generator_status ONLINE;
 			panel_type SINGLE_CRYSTAL_SILICON;
 			orientation FIXED_AXIS;
-			rated_power 10000;
+			rated_power 5000;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -2066,7 +1994,7 @@ object triplex_meter {
 		inverter_manufacturer XANTREX;
 		four_quadrant_control_mode CONSTANT_PQ;
 		generator_status ONLINE;
-		rated_power 10000;
+		rated_power 5000;
 		inverter_efficiency 0.90;
 		P_Out 0; //VA
 
@@ -2075,16 +2003,13 @@ object triplex_meter {
 			parent b3m4_batt_inv;
 			use_internal_battery_model TRUE;
 			battery_type LI_ION;
-			rated_power 10000;
+			rated_power 5000;
 			nominal_voltage 120;
 			battery_capacity 14 kWh;
 			round_trip_efficiency 0.9;
 			state_of_charge 0;
 			generator_mode SUPPLY_DRIVEN;
 		};
-    object metrics_collector {
-    	interval 900;
-    };
 	};
 }
 
@@ -2193,7 +2118,4 @@ object ZIPload {
 	impedance_pf 0.97;
 	impedance_fraction 0;
 };
- object metrics_collector {
-  interval 900;
- };
 }

@@ -43,6 +43,6 @@ publish "commit:b3m4_batt_meter.measured_real_power -> b3m4_solar_power";
 publish "commit:b1m1_house.total_load -> b1m1_house_load";
 publish "commit:b1m5_house.total_load -> b1m5_house_load";
 publish "commit:b2m3_house.total_load -> b2m3_house_load";
-publish "commit:b2m7_house.total_load -> b2m7_house_load";
+publish "commit:b2m5_house.total_load -> b2m5_house_load";
 publish "commit:b3m1_house.total_load -> b3m1_house_load";
 publish "commit:b3m5_house.total_load -> b3m5_house_load";
