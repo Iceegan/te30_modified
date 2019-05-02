@@ -9,7 +9,7 @@ if sys.platform != 'win32':
 	import resource
 
 
-RIAPS = True 
+RIAPS = False 
 
 time_stop = int(sys.argv[1])
 time_granted = 0
@@ -80,6 +80,11 @@ if(RIAPS):
 		else:
 			time_granted = fncs.time_request(time_stop)
 			print("Simulation Continue, new time_granted:", str(time_granted))
+
+	server.close()
+	context.term()
+	print('zmq Closed', flush=True)
+
 else:
 	while time_granted < time_stop:
 		time_granted = fncs.time_request(time_stop)
@@ -87,10 +92,6 @@ else:
 
 
 print('End of Simulation', flush=True)
-
-server.close()
-context.term()
-print('zmq Closed', flush=True)
 fncs.finalize()
 
 if sys.platform != 'win32':
