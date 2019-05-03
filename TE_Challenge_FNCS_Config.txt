@@ -1,14 +1,14 @@
 publish "commit:network_node.distribution_load -> distribution_load; 1000";
 
-subscribe "precommit:b1m2_batt_inv.P_Out <- Agent/b1m2_batt_P_Out";
-subscribe "precommit:b1m3_batt_inv.P_Out <- Agent/b1m3_batt_P_Out";
-subscribe "precommit:b1m4_batt_inv.P_Out <- Agent/b1m4_batt_P_Out";
-subscribe "precommit:b2m1_batt_inv.P_Out <- Agent/b2m1_batt_P_Out";
-subscribe "precommit:b2m2_batt_inv.P_Out <- Agent/b2m2_batt_P_Out";
-subscribe "precommit:b2m4_batt_inv.P_Out <- Agent/b2m4_batt_P_Out";
-subscribe "precommit:b3m2_batt_inv.P_Out <- Agent/b3m2_batt_P_Out";
-subscribe "precommit:b3m3_batt_inv.P_Out <- Agent/b3m3_batt_P_Out";
-subscribe "precommit:b3m4_batt_inv.P_Out <- Agent/b3m4_batt_P_Out";
+subscribe "precommit:b1m2_batt_inv.P_Out <- agent/b1m2_batt_P_Out";
+subscribe "precommit:b1m3_batt_inv.P_Out <- agent/b1m3_batt_P_Out";
+subscribe "precommit:b1m4_batt_inv.P_Out <- agent/b1m4_batt_P_Out";
+subscribe "precommit:b2m1_batt_inv.P_Out <- agent/b2m1_batt_P_Out";
+subscribe "precommit:b2m2_batt_inv.P_Out <- agent/b2m2_batt_P_Out";
+subscribe "precommit:b2m4_batt_inv.P_Out <- agent/b2m4_batt_P_Out";
+subscribe "precommit:b3m2_batt_inv.P_Out <- agent/b3m2_batt_P_Out";
+subscribe "precommit:b3m3_batt_inv.P_Out <- agent/b3m3_batt_P_Out";
+subscribe "precommit:b3m4_batt_inv.P_Out <- agent/b3m4_batt_P_Out";
 
 publish "commit:b1m2_batt.state_of_charge -> b1m2_batt_charge";
 publish "commit:b1m3_batt.state_of_charge -> b1m3_batt_charge";

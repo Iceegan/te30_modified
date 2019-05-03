@@ -9,22 +9,20 @@ if sys.platform != 'win32':
 	import resource
 
 
-RIAPS = False 
+RIAPS = True 
 
 time_stop = int(sys.argv[1])
 time_granted = 0
 
 fncs.initialize()
 
+batt_charges = {}
+solar_power = {}
 
 if(RIAPS):
 	context = zmq.Context(1)
 	server = context.socket(zmq.REP)
 	server.bind("tcp://*:5555")
-
-
-	batt_charges = {}
-	solar_power = {}
 
 	while time_granted < time_stop:
 		events = fncs.get_events()
@@ -50,8 +48,8 @@ if(RIAPS):
 					m_batt_num = 'b' + first + 'm' + second
 					keyname = m_batt_num + '_solar_power'
 					if(keyname in solar_power):
-						#Solar power is now positive in GridLabD
-						batt_out = msg['power'] - float(solar_power[keyname].split(' ')[0])
+						#Solar power is negative in GridLabD
+						batt_out = msg['power'] + float(solar_power[keyname].split(' ')[0])
 						print('msg[\'power\']: ', str(msg['power']),flush=True)
 						print('solar power:', str(float(solar_power[keyname].split(' ')[0])),flush=True)
 						print('batt_out:', str(batt_out),flush=True)
@@ -88,6 +86,14 @@ if(RIAPS):
 else:
 	while time_granted < time_stop:
 		time_granted = fncs.time_request(time_stop)
+		events = fncs.get_events()
+		for topic in events:
+			value = fncs.get_value(topic)
+			#Collect Most recent charge data
+			if('batt_charge' in topic):
+				batt_charges[topic] = value
+			if('solar_power' in topic):
+				solar_power[topic] = value
 
 
 

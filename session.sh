@@ -4,7 +4,7 @@ SESSION=$USER
 tmux -2 new-session -d -s $SESSION
 
 # Setup a window for tailing log files
-tmux new-window -t Simulation:1 -n 'Logs'
+tmux new-window -t $USER:1 -n 'Logs'
 tmux split-window -h
 tmux select-pane -t 0
 tmux send-keys "tail -f logs/gridlabd.log" C-m
