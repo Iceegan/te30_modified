@@ -22,3 +22,8 @@ fi
 #GridLAB-D env vars
 export GLPATH=$FNCS_INSTALL/bin:$FNCS_INSTALL/lib/gridlabd:$FNCS_INSTALL/share/gridlabd/ 
 export GRIDLABD=$FNCS_INSTALL/lib/gridlabd/
+
+export hours=1
+export startTime='2013-07-01 10:00:00'
+export stopTime='2013-07-01 11:00:00'
+export RIAPS=True

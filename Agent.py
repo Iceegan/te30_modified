@@ -4,12 +4,18 @@ import sys
 import zmq
 import fncs
 import time
+import os
 
 if sys.platform != 'win32':
 	import resource
 
-
-RIAPS = True 
+if os.getenv('RIAPS')=='True':
+	RIAPS = True
+	print("RIAPS: %s" %(RIAPS==True))
+else:
+	RIAPS = False
+	print("RIAPS: %s" %(RIAPS==True))
+	
 
 time_stop = int(sys.argv[1])
 time_granted = 0
