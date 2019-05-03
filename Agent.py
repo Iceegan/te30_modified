@@ -77,15 +77,33 @@ class Agent():
 
 		keyname = m_batt_num + '_solar_power'
 		if(keyname in self.solar_power):
-			solarActual = np.mean(self.solar_power[keyname])
+			solarActual = np.mean(self.solar_power[keyname]).item()
 		else:
 			solarActual = 0
 
 		keyname = m_batt_num + '_batt_power'
 		if(keyname in self.batt_power):
-			battActual = np.mean(self.batt_power[keyname][1:]) #Command takes one time step to actuate
+			battActual = np.mean(self.batt_power[keyname][1:]).item() #Command takes one time step to actuate
 		else:
 			battActual = 0
+
+		# print("charge: %s" %charge)
+		# print("battCMD: %s" %battCMD)
+		# print("solarActual: %s" %solarActual)
+		# print("battActual: %s" %battActual)
+		# print("\n")
+		
+		# print("charge: %s" %type(charge))
+		# print("battCMD: %s" %type(battCMD))
+		# print("solarActual: %s" %type(solarActual))
+		# print("battActual: %s" %type(battActual))
+		# print("\n")
+
+		# print("charge: %s" %type(charge))
+		# print("battCMD: %s" %type(battCMD))
+		# print("solarActual: %s" %type(-solarActual))
+		# print("battActual: %s" %type(-battActual))
+		# print("\n")
 
 		response = {
 		"perUnitCharge":charge,
