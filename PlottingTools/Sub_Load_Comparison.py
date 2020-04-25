@@ -4,8 +4,8 @@ import csv
 import matplotlib.pyplot as plt
 import sys
 
-mFile0 = sys.argv[1] + '\\power_output.csv'
-mFile1 = sys.argv[2] + '\\power_output.csv'
+mFile0 = sys.argv[1]
+mFile1 = sys.argv[2]
 
 def strToComp(str):
     #print(type(row[1][1]))
@@ -30,7 +30,9 @@ avgFrame.columns = ['Original', 'With Transax']
 print(avgFrame)
 
 
-ax = avgFrame.plot(title='Substation Load', y=['Original', 'With Transax'], sharey=True)
+ax = avgFrame.plot(title='Substation Load', y=['Original', 'With Transax'], sharey=True, grid=True)
 ax.set_xlabel('15 Minute Interval')
 ax.set_ylabel('Real Power Load (W)')
+ax.xaxis.set_ticks(np.arange(0,48,5))
+ax.yaxis.set_ticks(np.arange(-25000,25000,5000))
 plt.show()
