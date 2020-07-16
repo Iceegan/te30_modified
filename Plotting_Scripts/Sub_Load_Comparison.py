@@ -2,7 +2,6 @@ import pandas
 import numpy as np
 import csv
 import matplotlib.pyplot as plt
-import tikzplotlib
 import sys
 from pathlib import Path
 
@@ -32,9 +31,12 @@ avgFrame.columns = ['Traditional', 'With Transax']
 print(avgFrame)
 
 
-ax = avgFrame.plot(y=['Traditional', 'With Transax'], sharey=True)
+ax = avgFrame.plot(title='Substation Load', y=['Traditional', 'With Transax'], sharey=True, grid=True)
 ax.set_xlabel('Number of Elapsed 15 Minute Intervals')
 ax.set_ylabel('Real Power Load (kW)')
-# plt.show()
+#ax.xaxis.set_ticks(np.arange(0,48,5))
+#ax.yaxis.set_ticks(np.arange(-25,25,5))
+plt.show()
 
-tikzplotlib.save("mytikz.tex")
+#tikzplotlib.save("mytikz.tex")
+
