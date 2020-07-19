@@ -1,7 +1,29 @@
 # Modified TE30 Simulation for use with TRANSAX
 This is a Gridlab-D simulation based on a modified version of PNNL's [TE30 model](https://github.com/pnnl/tesp/tree/master/examples/te30) to simulate a small distribution network as a proof of concept for the TRANSAX system. The simulation can run on its own with a generic control strategy, or it can be connected to a RIAPS system in real-time using the FNCS framework.
 
+## Table of Contents
+
+- [Installation Instructions](#installation-instructions)
+    - [Requirements](#requirements)
+    - [Software and Dependencies](#software-and-dependencies)
+        - [ZeroMQ Installation](#zeromq-installation)
+        - [CZMQ Installation](#czmq-installation)
+        - [FNCS Installation](#fncs-installation)
+        - [Xerces-C++ Installation](#xerces-c-installation)
+        - [GridLAB-D Installation](#gridlab-d-installation)
+        - [ns-3 Installation](#ns-3-installation)
+        - [Python and Python Dependencies](#python-and-python-dependencies)
+        - [Environment Variables](#environment-variables)
+- [Running the Simulation](#running-the-simulation)
+- [Installing and Connecting with RIAPS](#installing-and-connecting-with-RIAPS)
+- [Modifying the Simulation Parameters](#modifying-the-simulation-parameters)
+    - [GridLAB-D Simulation](#gridlab-d-simulation)
+    - [FNCS Modifications](#fncs-modifications)
+    - [Python Agent Modifications](#python-agent-modifications)
+
+
 # Installation Instructions
+[back to contents](#table-of-contents)
 
 ## Requirements
 This project was tested and verified in a virtual machine with 64-bit Ubuntu 18.0.4.
@@ -9,7 +31,7 @@ This project was tested and verified in a virtual machine with 64-bit Ubuntu 18.
 ## Software and Dependencies
 [back to contents](#table-of-contents)
 
-These instructions are a slightly modified version of the instructions provided in the [FNCS Tutorial](https://github.com/FNCS/FNCS-Tutorial/tree/master/demo-gld-ns3) on FNCS with GridLAB-D.
+These instructions are a modified version of the instructions provided in the [FNCS Tutorial](https://github.com/FNCS/FNCS-Tutorial/tree/master/demo-gld-ns3) on FNCS with GridLAB-D.
 
 `git` and `build-essential` will need to be installed to perform the following software installations.
 
@@ -261,6 +283,8 @@ CFLAGS="-g -O2" CXXFLAGS="-g -O2" ./waf configure --prefix=$FNCS_INSTALL --with-
 Congratulations, you have now installed ns-3.
 
 ## Python and Python Dependencies
+[back to contents](#table-of-contents)
+
 The `Agent.py` python file was written and works with the following python dependencies:
 
 * Python 3.7.3
@@ -268,17 +292,23 @@ The `Agent.py` python file was written and works with the following python depen
 * pyzmq 18.0.0
 
 ## Command Line Utilities
+[back to contents](#table-of-contents)
+
 The `run.sh` file uses tmux for easy monitoring of all logs during simulation runtime. To install tmux:
 ```
 sudo apt install tmux
 ```
 
 ## Environment Variables
+[back to contents](#table-of-contents)
+
 Several environment variables need to be set for the bash scripts to work properly. Make sure these are correct in `env.sh`:
 * Update `FNCS_INSTALL` (line 4) to point to the location where FNCS was installed. This should be the same as the `FNCS_INSTALL` variable set at the beginning of this guide.
 * Make sure that the `GLPATH` and `GRIDLABD` variables are correct (lines 23 and 24). They should not need to be changed if the instructions above were followed for installation.
 
 # Running the Simulation
+[back to contents](#table-of-contents)
+
 The simulation can be run either with or without RIAPS communication. Recommended to try running without RIAPS to verify correct installation.
 ### Without RIAPS
 1. Set RIAPS=False in `env.sh` (line 29)
@@ -292,15 +322,20 @@ The simulation can be run either with or without RIAPS communication. Recommende
 1. `./run.sh`
 
 # Installing and Connecting with RIAPS
+[back to contents](#table-of-contents)
 * To Do
 
 # Modifying the Simulation Parameters
+[back to contents](#table-of-contents)
+
 The simulation has 3 major parts.
 1. `TE_Challenge.glm`, which describes the underlying GridLAB-D model
 1. FNCS, which coordinates communication and time synchronization between the Python agent, the GridLAB-D model, and RIAPS
 1. `Agent.py`, which runs the main loop of program iteration and data processing.
 
 ### GridLAB-D Simulation
+[back to contents](#table-of-contents)
+
 The simulated microgrid is described in the GridLAB-D File `TE_Challenge.glm`. The file is organized into sections that describe the feeders, lines, and loads. More information on `glm` files can be found on the [GridLAB-D Website](https://www.gridlabd.org/) or the [GridLAB-D GitHub](https://github.com/gridlab-d).
 
 The helper scripts `generate_batt.py` and `generate_lines.py` can be used to generate the text for any changes to be made to all the batteries or all the overhead lines. Individual changes must be made in `TE_Challenge.glm`.
@@ -310,6 +345,8 @@ Changing the length of time for running the simulation requires changes to two p
 1. In `env.sh`, the `hours` variable (line 26) must be modified to be equal to the time difference between start and stop time.
 
 ### FNCS Modifications
+[back to contents](#table-of-contents)
+
 The FNCS parameters are dictated by two files.
 1.  `TE_Challenge_agent.yaml`
     * This describes the GridLAB-D values that can published and subscribed to through FNCS
@@ -320,6 +357,7 @@ The FNCS parameters are dictated by two files.
 Any modifications to the topology of the circuit in `TE_Challenge.glm` will require changes in the FNCS values and subscriptions. More information on how FNCS works can be found in the [FNCS Tutorial](https://github.com/FNCS/FNCS-Tutorial/tree/master/demo-gld-ns3).
 
 ### Python Agent Modifications
+[back to contents](#table-of-contents)
 
 
 ## TODO: 
