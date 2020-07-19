@@ -11,7 +11,13 @@ This project was tested and verified in a virtual machine with 64-bit Ubuntu 18.
 
 These instructions are a slightly modified version of the instructions provided in the [FNCS Tutorial](https://github.com/FNCS/FNCS-Tutorial/tree/master/demo-gld-ns3) on FNCS with GridLAB-D.
 
-Git and make will need to be installed to perform the following software installations.
+`git` and `build-essential` will need to be installed to perform the following software installations.
+
+```
+sudo apt install git
+
+sudo apt install build-essential
+```
 
 The following software will need to be installed:
 
