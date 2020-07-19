@@ -122,7 +122,7 @@ other simulators. The FNCS library and header represent the needed API
 for communicating with the broker using the sync and messaging function
 calls.
 
-Get the FNCS software and install it using the following steps:
+We will need the most recent develop branch of FNCS to work with the Python publishers and subscribers. Get the FNCS software and install it using the following steps:
 
 ```
 # we are doing everything from your $HOME directory
@@ -132,7 +132,10 @@ cd $HOME
 git clone https://github.com/FNCS/fncs
 
 # change to FNCS directory
-cd FNCS
+cd fncs
+
+# checkout the develop branch
+git checkout develop
 
 # configure, make, and make install
 ./configure --prefix=$FNCS_INSTALL --with-zmq=$FNCS_INSTALL
