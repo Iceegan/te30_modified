@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #FNCS env vars - FNCS_INSTALL needs to be updated with FNCS install location
-export FNCS_INSTALL="$HOME/FNCS_install"
+export FNCS_INSTALL="$HOME/FNCS-install"
 
 # update LD_LIBRARY_PATH
 if test "x$LD_LIBRARY_PATH" = x
