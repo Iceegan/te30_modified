@@ -6,8 +6,10 @@ import tikzplotlib
 import sys
 from pathlib import Path
 
+
 mFile0 = Path(sys.argv[1] + "/power_output.csv")
 mFile1 = Path(sys.argv[2] + "/power_output.csv")
+
 
 def strToComp(str):
     #print(type(row[1][1]))
@@ -35,6 +37,8 @@ print(avgFrame)
 ax = avgFrame.plot(y=['Traditional', 'With Transax'], sharey=True)
 ax.set_xlabel('Number of Elapsed 15 Minute Intervals')
 ax.set_ylabel('Real Power Load (kW)')
+# ax.xaxis.set_ticks(np.arange(0,48,5))
+# ax.yaxis.set_ticks(np.arange(-25000,25000,5000))
 # plt.show()
 
 tikzplotlib.save("mytikz.tex")
