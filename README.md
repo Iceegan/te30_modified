@@ -359,6 +359,20 @@ Any modifications to the topology of the circuit in `TE_Challenge.glm` will requ
 ### Python Agent Modifications
 [back to contents](#table-of-contents)
 
+The Python Agent, `Agent.py`, contains the application logic for progressing the simulation and, when connected to RIAPS, communicating the simulation state to RIAPS. The `mainLoop` function controls this process. The loop works by repeatedly performing FNCS time requests until the desired simulation time is reached. 
 
-## TODO: 
-Add instructions on how to modify the simulation characteristics,how to run it with different parameters/time steps/lengths of time, and how to use the helper scripts and plotting scripts.
+If the simulation is run without RIAPS, the Agent will step through each simulated time step without modifying any parameters. The result of this will depend only on the parameters described in the `TE_Challenge.glm` file.
+
+When run with RIAPS, the agent controls the interface between GridLAB-D and RIAPS. For each loop, the following actions are taken:
+1. Collect all events from FNCS and update the battery charge levels, battery power output, and solar panel power output.
+1. Check for a 'step' event. Step events are defined by `step.player`, and are what tell the simulation to hold until it communicates with RIAPS. The simulation is by default set to have a step every 15 minutes of simulation time to align with the trading period of the TRANSAX system. The simulation can be paused at a different frequency by modifying `step.player`.
+  * If there is a step event, call the `chargeResp` and `tradeResp` functions to communicate with RIAPS before continuing the simulation.
+  * If there is not a request, the simulation will continue until it reaches a step event to wait for commands from RIAPS.
+
+<!---
+# Helper Scripts
+There are several helper scripts that make it easier to set up and run this simulation, located in the `Helper Scripts/` Directory. These files are for quickly generating the required text for the simulation network, however fine tuning differences between each modeled house, battery, solar panel, and overhead line will require manual modification of the helper script outputs.
+1. `create_events.py`: This script will create the `step.player` file. `step_size` and `final_step` can be modified to change how long the simulation runs and how frequently it pauses for communication with RIAPS.
+1. `generate_batt.py`and `generate_lines.py`: these scripts will generate text files that can be copied and pasted into `TE_Challenge.glm`. They are useful for quickly modifying the names, power ratings, and phases of the overhead lines and batteries between houses in the simulation.
+1. `generate_FNCS.py`: this file can be quickly used to generate the FNCS publishers and subscribers. The output text file can be copied into
+-->
