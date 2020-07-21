@@ -1,7 +1,9 @@
 #!/bin/bash
 
 #FNCS env vars - FNCS_INSTALL needs to be updated with FNCS install location
-export FNCS_INSTALL="$HOME/FNCS-install"
+#export FNCS_INSTALL="$HOME/FNCS_install"
+export FNCS_INSTALL="/usr/local"
+
 
 # update LD_LIBRARY_PATH
 if test "x$LD_LIBRARY_PATH" = x
@@ -20,8 +22,12 @@ else
 fi
 
 #GridLAB-D env vars
-export GLPATH=$FNCS_INSTALL/bin:$FNCS_INSTALL/lib/gridlabd:$FNCS_INSTALL/share/gridlabd/ 
-export GRIDLABD=$FNCS_INSTALL/lib/gridlabd/
+#export GLPATH=$FNCS_INSTALL/bin:$FNCS_INSTALL/lib/gridlabd:$FNCS_INSTALL/share/gridlabd/ 
+#export GRIDLABD=$FNCS_INSTALL/lib/gridlabd/
 
 export hours=12
+
+#export startTime='2013-07-01 10:00:00'
+#export stopTime='2013-07-01 11:00:00'
 export RIAPS=False
+

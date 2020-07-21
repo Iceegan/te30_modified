@@ -2,6 +2,10 @@
 
 . ./env.sh
 
+mkdir -p outputs
+mkdir -p logs
+
+
 echo $startTime
 
 (exec fncs_broker 3 &> logs/broker.log &)
