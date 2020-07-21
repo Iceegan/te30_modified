@@ -369,6 +369,16 @@ When run with RIAPS, the agent controls the interface between GridLAB-D and RIAP
   * If there is a step event, call the `chargeResp` and `tradeResp` functions to communicate with RIAPS before continuing the simulation.
   * If there is not a request, the simulation will continue until it reaches a step event to wait for commands from RIAPS.
 
+# Plotting Tools
+The `Plotting_Scripts/` directory contains 3 Python scripts that are useful for visualizing the general results of each simulation. These tools require `matplotlib` for Python.
+1. `Plot_Batt_Charge.py`: this script will plot the average battery charge over the time of the simulation. It is useful to show how the batteries are being utilized by the simulation control parameters. It takes an argument to the directory with the battery charge output csv.
+  * ex. `python3 Plotting_Scripts/Plott_Batt_Charge.py Results`
+1. `Plot_Sub_Load_.py`: this script will plot the load on the substation over the time of the simulation. It is useful to show the net load on the grid during the simulation. It takes an argument to the directory with the power output csv.
+  * ex. `python3 Plotting_Scripts/Plott_Sub_Load.py Results`
+1. `Sub_Load_Comparison.py`: this script plots the substation load for two runs of the simulation. It is useful for comparing how different control parameters result in different amounts of grid load, or in comparing how the simulation responds with and without TRANSAX control. To use this script, the simulation must be run twice. After running the first simulation, copy the results into a saved directory since the files in `Results/` will be overwritten when the simulation is re-run. It takes an argument to the two directories with results. By default the first argument is labeled "Traditional" and the second is labeled "With Transax". These labels can be changed on line 30.
+  * ex. `python3 Plotting_Scripts/Sub_Load_Comparison.py Experiment1_Results Experiment2_Results`
+
+
 <!---
 # Helper Scripts
 There are several helper scripts that make it easier to set up and run this simulation, located in the `Helper Scripts/` Directory. These files are for quickly generating the required text for the simulation network, however fine tuning differences between each modeled house, battery, solar panel, and overhead line will require manual modification of the helper script outputs.
