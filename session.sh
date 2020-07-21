@@ -1,5 +1,5 @@
 #!/bin/bash
-SESSION=$USER
+SESSION=demo
 
 tmux -2 new-session -d -s $SESSION
 
